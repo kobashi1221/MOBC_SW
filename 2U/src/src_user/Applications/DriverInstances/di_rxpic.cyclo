@@ -1,0 +1,13 @@
+di_rxpic.c:48:13:rxpic_init_	2
+di_rxpic.c:126:13:rxpic_cmd_dispatcher_	1
+di_rxpic.c:121:13:rxpic_cmd_dispatcher_init_	1
+di_rxpic.c:43:9:rxpic_update	1
+di_rxpic.c:114:9:rxpic_cmd_dispatcher	1
+di_rxpic.c:132:12:rxpic_dispatch_command	1
+di_rxpic.c:158:12:Cmd_RXPIC_CDIS_CLEAR_ALL_REALTIME	1
+di_rxpic.c:167:12:Cmd_RXPIC_CDIS_CLEAR_ERR_LOG	1
+di_rxpic.c:179:12:Cmd_RXPIC_seq_reset	1
+di_rxpic.c:186:6:RXPIC_TCPacket_Fixedheader_Checker	3
+di_rxpic.c:61:13:rxpic_update_	12
+di_rxpic.c:270:6:RXPIC_add_retransmit_cmd	1
+di_rxpic.c:319:6:rxpic_unexpected_shutdown_send_data_generator	1

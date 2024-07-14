@@ -1,0 +1,3 @@
+../src/src_user/Drivers/Cdh/Com_Fault_Detection_driver.c:12:6:ANOMALY_Default_Settings	32	static
+../src/src_user/Drivers/Cdh/Com_Fault_Detection_driver.c:4:6:ANOMALY_Port_init_	16	static
+../src/src_user/Drivers/Cdh/Com_Fault_Detection_driver.c:26:6:ANOMALY_HAL_ACK_Detect	16	static

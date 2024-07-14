@@ -1,0 +1,11 @@
+../src/src_user/Applications/DriverInstances/di_sobc.c:47:13:sobc_init_	8	static
+../src/src_user/Applications/DriverInstances/di_sobc.c:128:13:sobc_cmd_dispatcher_	8	static
+../src/src_user/Applications/DriverInstances/di_sobc.c:123:13:sobc_cmd_dispatcher_init_	80	static
+../src/src_user/Applications/DriverInstances/di_sobc.c:39:9:sobc_update	8	static
+../src/src_user/Applications/DriverInstances/di_sobc.c:116:9:sobc_cmd_dispatcher	8	static
+../src/src_user/Applications/DriverInstances/di_sobc.c:134:12:sobc_dispatch_command	16	static
+../src/src_user/Applications/DriverInstances/di_sobc.c:161:6:SOBC_TCPacket_Fixedheader_Checker	8	static
+../src/src_user/Applications/DriverInstances/di_sobc.c:171:12:sobc_debug_command_send	32	dynamic
+../src/src_user/Applications/DriverInstances/di_sobc.c:221:6:sobc_check_life_command	16	static
+../src/src_user/Applications/DriverInstances/di_sobc.c:61:13:sobc_update_	16	static
+../src/src_user/Applications/DriverInstances/di_sobc.c:236:6:SOBC_Regular_Tlm_ganerator	16	static

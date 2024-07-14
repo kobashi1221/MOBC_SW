@@ -1,0 +1,4 @@
+../src/src_user/Applications/UserDefined/Cdh/RTC_handler.c:45:13:RTC_exe	8	static
+../src/src_user/Applications/UserDefined/Cdh/RTC_handler.c:22:13:RTC_init	8	static
+../src/src_user/Applications/UserDefined/Cdh/RTC_handler.c:17:9:RTC_update	8	static
+../src/src_user/Applications/UserDefined/Cdh/RTC_handler.c:56:12:Cmd_RTC_SET	16	static

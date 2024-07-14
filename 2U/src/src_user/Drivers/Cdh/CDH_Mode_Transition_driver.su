@@ -1,0 +1,6 @@
+../src/src_user/Drivers/Cdh/CDH_Mode_Transition_driver.c:4:15:aoce_trans_vote	4	static
+../src/src_user/Drivers/Cdh/CDH_Mode_Transition_driver.c:33:11:modeBC_trans_vote	8	static
+../src/src_user/Drivers/Cdh/CDH_Mode_Transition_driver.c:68:15:AOCS_mode_change_checker	0	static
+../src/src_user/Drivers/Cdh/CDH_Mode_Transition_driver.c:81:9:auto_flag_vote	0	static
+../src/src_user/Drivers/Cdh/CDH_Mode_Transition_driver.c:96:6:Auto_trans_set	0	static
+../src/src_user/Drivers/Cdh/CDH_Mode_Transition_driver.c:100:6:Auto_trans_reset	0	static

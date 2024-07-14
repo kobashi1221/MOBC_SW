@@ -1,0 +1,7 @@
+block_command_user_settings.c:22:6:BCUS_load_user_settings	3
+block_command_user_settings.c:43:5:BCUS_bc_should_clear	1
+block_command_user_settings.c:50:12:Cmd_BCUS_CLEAR_USER_SETTINGS	1
+block_command_user_settings.c:58:12:Cmd_BCUS_SWAP_ADDRESS	1
+block_command_user_settings.c:89:12:Cmd_BCUS_SWAP_CONTENTS	1
+block_command_user_settings.c:108:12:Cmd_BCUS_SWAP_RAM	7
+block_command_user_settings.c:165:12:Cmd_BCUS_SWAP_MODE	1

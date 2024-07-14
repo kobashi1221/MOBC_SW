@@ -1,0 +1,3 @@
+../src/src_user/Drivers/Aocs/Qmethod.cpp:45:6:void QMETHOD_CLASS::Qmethod(const float*, const float*, const float*, const float*, float*, float (*)[3])	384	static
+../src/src_user/Drivers/Aocs/Qmethod.cpp:216:6:void QMETHOD_CLASS::reset()	0	static
+../src/src_user/Drivers/Aocs/Qmethod.cpp:199:6:void QMETHOD_CLASS::cal(const float*, const float*, const float*, const float*)	40	static

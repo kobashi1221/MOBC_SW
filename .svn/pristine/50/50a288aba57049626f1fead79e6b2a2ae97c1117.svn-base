@@ -1,0 +1,22 @@
+name: check_encoding
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+
+jobs:
+  check_encoding:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: .github/workflows/.python-version
+          architecture: 'x64'
+      - run: pip install chardet
+      - name: check_encoding
+        run: python ./check_encoding.py ./check_encoding.json
+        working-directory: ./Script/CI

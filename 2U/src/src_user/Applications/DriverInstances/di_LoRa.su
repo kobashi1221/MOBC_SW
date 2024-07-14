@@ -1,0 +1,12 @@
+../src/src_user/Applications/DriverInstances/di_LoRa.c:81:13:lora_cmd_dispatcher_	8	static
+../src/src_user/Applications/DriverInstances/di_LoRa.c:77:13:lora_cmd_dispatcher_init_	80	static
+../src/src_user/Applications/DriverInstances/di_LoRa.c:45:9:COM_LoRa_receive_update	8	static
+../src/src_user/Applications/DriverInstances/di_LoRa.c:49:9:lora_update	8	static
+../src/src_user/Applications/DriverInstances/di_LoRa.c:53:9:lora_cmd_dispathcer	8	static
+../src/src_user/Applications/DriverInstances/di_LoRa.c:59:6:COM_LoRa_init	8	static
+../src/src_user/Applications/DriverInstances/di_LoRa.c:85:12:lora_dispatch_command	16	static
+../src/src_user/Applications/DriverInstances/di_LoRa.c:166:6:lora_TCPacket_Fixedheader_Checker	8	static
+../src/src_user/Applications/DriverInstances/di_LoRa.c:175:6:lora_check_life_command	8	static
+../src/src_user/Applications/DriverInstances/di_LoRa.c:125:13:lora_update_	16	static
+../src/src_user/Applications/DriverInstances/di_LoRa.c:259:9:lora_length_checker	16	static
+../src/src_user/Applications/DriverInstances/di_LoRa.c:188:13:COM_LoRa_receive_exe	528	static

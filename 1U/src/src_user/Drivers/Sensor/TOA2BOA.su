@@ -1,0 +1,8 @@
+../src/src_user/Drivers/Sensor/TOA2BOA.cpp:109:13:void toa2boa_initialize_param()	8	static
+../src/src_user/Drivers/Sensor/TOA2BOA.cpp:62:13:void toa2boa_load_param()	16	static
+../src/src_user/Drivers/Sensor/TOA2BOA.cpp:279:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../src/src_user/Drivers/Sensor/TOA2BOA.cpp:128:9:AppInfo toa2boa_param_update()	8	static
+../src/src_user/Drivers/Sensor/TOA2BOA.cpp:134:5:int deduct_Lp_RGB565(uint32_t*, uint32_t, float*, float*, float*, float*, float*, uint8_t*)	64	static
+../src/src_user/Drivers/Sensor/TOA2BOA.cpp:185:5:int TOA2BOA_DOS(uint32_t*, uint32_t, float, uint32_t, uint8_t, uint8_t, uint8_t*)	136	static
+../src/src_user/Drivers/Sensor/TOA2BOA.cpp:279:1:cpp)	8	static
+../src/src_user/Drivers/Sensor/TOA2BOA.cpp:279:1:cpp)	8	static

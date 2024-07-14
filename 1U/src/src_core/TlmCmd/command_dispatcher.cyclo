@@ -1,0 +1,5 @@
+command_dispatcher.c:82:13:CDIS_clear_exec_info_	1
+command_dispatcher.c:35:19:CDIS_init	3
+command_dispatcher.c:90:6:CDIS_dispatch_command	7
+command_dispatcher.c:163:6:CDIS_clear_command_list	2
+command_dispatcher.c:171:6:CDIS_clear_error_status	1

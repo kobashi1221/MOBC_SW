@@ -1,0 +1,7 @@
+../src/src_user/Applications/DriverInstances/mode_auto_transition.c:60:13:CDH_mode_auto_transition_init	0	static
+../src/src_user/Applications/DriverInstances/mode_auto_transition.c:53:13:CDH_mode_param_init	8	static
+../src/src_user/Applications/DriverInstances/mode_auto_transition.c:45:13:CDH_mode_param_load	8	static
+../src/src_user/Applications/DriverInstances/mode_auto_transition.c:35:9:CDH_mode_param_update	8	static
+../src/src_user/Applications/DriverInstances/mode_auto_transition.c:40:9:CDH_mode_auto_transition	8	static
+../src/src_user/Applications/DriverInstances/mode_auto_transition.c:63:12:Cmd_MODE_AUTO_Transition	280	static
+../src/src_user/Applications/DriverInstances/mode_auto_transition.c:171:12:Cmd_MODE_auto_flag_setting	8	static

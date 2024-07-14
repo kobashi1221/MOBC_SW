@@ -1,0 +1,20 @@
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:85:13:void pwr_IOEXPANDER_init()	8	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:347:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:73:9:AppInfo PWR_IOEXPANDER_update()	8	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:106:12:CCP_CmdRet Cmd_PWR_IOEX_PWR2_Init(const CommonCmdPacket*)	8	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:120:12:CCP_CmdRet Cmd_PWR_SUNS_MXPZ_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:137:12:CCP_CmdRet Cmd_PWR_SUNS_PXPYMY_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:154:12:CCP_CmdRet Cmd_PWR_GYRO_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:171:12:CCP_CmdRet Cmd_PWR_SEMP_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:188:12:CCP_CmdRet Cmd_PWR_SEPCOIL1_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:205:12:CCP_CmdRet Cmd_PWR_SEPCOIL2_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:220:12:CCP_CmdRet Cmd_PWR_SEPCOIL3_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:234:12:CCP_CmdRet Cmd_PWR_SEPCOIL4_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:248:12:CCP_CmdRet Cmd_PWR_SEPCOIL1_GUARD_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:265:12:CCP_CmdRet Cmd_PWR_SEPCOIL2_GUARD_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:282:12:CCP_CmdRet Cmd_PWR_SEPCOIL3_GUARD_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:299:12:CCP_CmdRet Cmd_PWR_SEPCOIL4_GUARD_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:316:12:CCP_CmdRet Cmd_PWR_MIS1_ON_OFF_ONReset(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:336:12:CCP_CmdRet Cmd_PWR_MAGS_ON_OFF(const CommonCmdPacket*)	24	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:347:1:cpp)	8	static
+../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.cpp:347:1:cpp)	8	static

@@ -1,0 +1,7 @@
+../src/src_user/TlmCmd/block_command_user_settings.c:22:6:BCUS_load_user_settings	8	static
+../src/src_user/TlmCmd/block_command_user_settings.c:43:5:BCUS_bc_should_clear	0	static
+../src/src_user/TlmCmd/block_command_user_settings.c:50:12:Cmd_BCUS_CLEAR_USER_SETTINGS	8	static
+../src/src_user/TlmCmd/block_command_user_settings.c:58:12:Cmd_BCUS_SWAP_ADDRESS	8	static
+../src/src_user/TlmCmd/block_command_user_settings.c:89:12:Cmd_BCUS_SWAP_CONTENTS	8	static
+../src/src_user/TlmCmd/block_command_user_settings.c:108:12:Cmd_BCUS_SWAP_RAM	24	static
+../src/src_user/TlmCmd/block_command_user_settings.c:165:12:Cmd_BCUS_SWAP_MODE	8	static

@@ -1,0 +1,7 @@
+MRAM.c:97:13:SetHeader	1
+MRAM.c:109:13:SetPayload	1
+MRAM.c:47:19:MRAM_Enable	1
+MRAM.c:67:19:MRAM_Disable	1
+MRAM.c:85:6:MRAM_Init	1
+MRAM.c:118:19:MRAM_GeneralWrite	1
+MRAM.c:143:19:MRAM_GeneralRead	1

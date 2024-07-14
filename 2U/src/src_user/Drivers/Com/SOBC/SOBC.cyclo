@@ -1,0 +1,7 @@
+SOBC.c:50:6:SOBC_SendReceive	1
+SOBC.c:83:6:SOBC_reset	1
+SOBC.c:91:6:SOBC_debug_GPIO	1
+SOBC.c:98:6:SOBC_PORT_INIT	1
+SOBC.c:29:6:SOBC_SPI_init	1
+SOBC.c:124:6:SOBC_TLM_UPDATE	1
+SOBC.c:104:6:SOBC_check_tcp_headers	3

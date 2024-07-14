@@ -1,0 +1,4 @@
+../src/src_user/Applications/UserDefined/Com/COM_cmd_TXPIC.c:42:6:COM_txpic_clear_count_	24	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_TXPIC.c:37:9:COM_txpic_clear_count	8	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_TXPIC.c:57:12:Cmd_COM_scam_downlink	8	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_TXPIC.c:80:12:Cmd_COM_picture_data_resend	296	static

@@ -1,0 +1,29 @@
+../src/src_user/Drivers/Sensor/ADC.h:37:7:ADC_CLASS::ADC_CLASS()	32	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:900:1:void __static_initialization_and_destruction_0(int, int)	24	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:94:6:void MTQ_CLASS::MTQA_init()	24	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:111:6:void MTQ_CLASS::MTQO_init()	24	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:444:6:void MTQ_CLASS::MTQ_Target_Current_Setting(int, float)	16	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:339:6:void MTQ_CLASS::MTQ_Calculate_HighSpin_Control(int, float)	24	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:526:6:void MTQ_CLASS::MTQ_Read_Current(int)	32	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:127:6:void MTQ_CLASS::MTQA_FunctionCore4debug(const float*)	40	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:156:6:void MTQ_CLASS::MTQO_FunctionCore4debug(float)	32	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:604:6:void MTQ_CLASS::MTQ_PID_Param_Setting()	0	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:624:6:void MTQ_CLASS::MTQ_Calculate_PID_Control(int, float, float)	8	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:245:6:void MTQ_CLASS::MTQA_X(float)	8	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:270:6:void MTQ_CLASS::MTQA_Y(float)	8	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:296:6:void MTQ_CLASS::MTQA_Z(float)	8	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:324:6:void MTQ_CLASS::MTQO_Z(float)	8	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:729:6:void MTQ_CLASS::MTQ_Output(int, uint16_t)	24	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:649:6:void MTQ_CLASS::MTQA_DCM_Calc(uint16_t*)	24	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:687:6:void MTQ_CLASS::MTQO_DCM_Calc(uint16_t*)	16	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:746:6:void MTQ_CLASS::MTQAX_Const_Mag_Moment_Control()	16	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:781:6:void MTQ_CLASS::MTQAY_Const_Mag_Moment_Control()	16	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:817:6:void MTQ_CLASS::MTQAZ_Const_Mag_Moment_Control()	16	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:181:6:void MTQ_CLASS::MTQA_FunctionCore(const float*)	16	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:856:6:void MTQ_CLASS::MTQO_Const_Mag_Moment_Control()	16	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:227:6:void MTQ_CLASS::MTQO_FunctionCore(float)	16	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:879:9:uint8_t MTQ_CLASS::mtq_flag_vote(uint8_t*)	0	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:894:6:void MTQ_CLASS::mtq_trans_set(uint8_t*)	0	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:898:6:void MTQ_CLASS::mtqtrans_reset(uint8_t*)	0	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:900:1:cpp)	8	static
+../src/src_user/Drivers/Sensor/MTQ.cpp:900:1:cpp)	8	static

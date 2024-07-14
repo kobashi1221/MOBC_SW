@@ -1,0 +1,5 @@
+../src/src_user/Drivers/Etc/uart_test.c:50:20:UART_TEST_load_driver_super_init_settings_	24	static
+../src/src_user/Drivers/Etc/uart_test.c:121:20:UART_TEST_analyze_rec_data_	16	static
+../src/src_user/Drivers/Etc/uart_test.c:31:18:UART_TEST_init	8	static
+../src/src_user/Drivers/Etc/uart_test.c:93:17:UART_TEST_rec	16	static
+../src/src_user/Drivers/Etc/uart_test.c:147:17:UART_TEST_send	8	static

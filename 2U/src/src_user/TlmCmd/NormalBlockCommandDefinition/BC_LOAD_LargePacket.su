@@ -1,0 +1,2 @@
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_LargePacket.c:18:6:BCL_load_cobc_large_packet_set	8	static
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_LargePacket.c:31:6:BCL_load_cobc_large_packet_receive	8	static

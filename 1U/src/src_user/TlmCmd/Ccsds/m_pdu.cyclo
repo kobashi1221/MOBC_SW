@@ -1,0 +1,6 @@
+m_pdu.c:53:13:M_PDU_clear_spare_	1
+m_pdu.c:8:6:M_PDU_generate_byte_stream	1
+m_pdu.c:61:10:M_PDU_get_1st_hdr_ptr	1
+m_pdu.c:73:6:M_PDU_set_1st_hdr_ptr	1
+m_pdu.c:17:6:M_PDU_setup_idle_m_pdu	1
+m_pdu.c:84:6:M_PDU_set_data	2

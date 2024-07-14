@@ -1,0 +1,2 @@
+../src/src_user/TlmCmd/Ccsds/tcp_to_m_pdu.c:11:6:T2M_initialize	8	static
+../src/src_user/TlmCmd/Ccsds/tcp_to_m_pdu.c:26:9:T2M_form_m_pdu	32	static

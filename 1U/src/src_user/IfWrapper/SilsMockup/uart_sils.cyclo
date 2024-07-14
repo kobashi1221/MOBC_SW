@@ -1,0 +1,4 @@
+uart_sils.c:4:5:UART_init	1
+uart_sils.c:10:5:UART_rx	1
+uart_sils.c:18:5:UART_tx	1
+uart_sils.c:26:5:UART_reopen	1

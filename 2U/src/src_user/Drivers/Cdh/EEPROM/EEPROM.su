@@ -1,0 +1,5 @@
+../src/src_user/Drivers/Cdh/EEPROM/EEPROM.c:27:6:EEPROM_Init	0	static
+../src/src_user/Drivers/Cdh/EEPROM/EEPROM.c:37:19:EEPROM_BLOCK_WRITE	24	static
+../src/src_user/Drivers/Cdh/EEPROM/EEPROM.c:62:19:EEPROM_WRITE	24	static
+../src/src_user/Drivers/Cdh/EEPROM/EEPROM.c:94:19:EEPROM_GeneralWrite	48	static
+../src/src_user/Drivers/Cdh/EEPROM/EEPROM.c:138:19:EEPROM_GeneralRead	40	static

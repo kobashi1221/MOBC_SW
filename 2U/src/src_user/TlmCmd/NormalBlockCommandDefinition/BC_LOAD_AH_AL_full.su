@@ -1,0 +1,4 @@
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_AH_AL_full.c:10:6:BC_load_ah_al_full	8	static
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_AH_AL_full.c:34:6:BC_load_ah_al	0	static
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_AH_AL_full.c:51:6:BC_load_ah_ah	0	static
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_AH_AL_full.c:68:6:BC_load_ah_ah_res	0	static

@@ -1,0 +1,4 @@
+../src/src_core/Drivers/Protocol/eb90_packet_for_driver_super.c:15:10:EB90_PACKET_get_version_from_dssc	8	static
+../src/src_core/Drivers/Protocol/eb90_packet_for_driver_super.c:22:10:EB90_PACKET_get_count_from_dssc	8	static
+../src/src_core/Drivers/Protocol/eb90_packet_for_driver_super.c:37:10:EB90_PACKET_get_id_from_dssc	16	static
+../src/src_core/Drivers/Protocol/eb90_packet_for_driver_super.c:54:16:EB90_PACKET_get_user_data_head_from_dssc	8	static

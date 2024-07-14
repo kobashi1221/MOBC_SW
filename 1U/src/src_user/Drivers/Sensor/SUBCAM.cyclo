@@ -1,0 +1,24 @@
+SUBCAM.cpp:1815:1:void __static_initialization_and_destruction_0(int, int)	3
+SUBCAM.cpp:73:6:void SUBCAM_Init()	1
+SUBCAM.cpp:84:19:HAL_StatusTypeDef subcam_read_reg(uint8_t, uint8_t*)	5
+SUBCAM.cpp:109:9:uint8_t subcam_write_reg(uint8_t, uint8_t)	5
+SUBCAM.cpp:136:9:uint8_t subcam_init()	3
+SUBCAM.cpp:171:9:uint8_t subcam_reset()	1
+SUBCAM.cpp:182:6:void subcam_set_Framesize(uint8_t)	17
+SUBCAM.cpp:258:6:void subcam_set_Saturation(int)	4
+SUBCAM.cpp:277:6:void subcam_set_Brightness(int)	4
+SUBCAM.cpp:296:6:void subcam_set_Contrast(int)	4
+SUBCAM.cpp:315:5:int subcam_set_colorbar(bool)	3
+SUBCAM.cpp:336:6:void subcam_set_AutoExposure(bool, int)	10
+SUBCAM.cpp:383:6:void subcam_set_Exposure(bool, int)	2
+SUBCAM.cpp:409:6:void subcam_set_reg()	2
+SUBCAM.cpp:647:6:void subcam_bmp_capture(uint8_t)	27
+SUBCAM.cpp:1060:6:void RGB24_to_thumbnail(uint8_t)	22
+SUBCAM.cpp:1435:6:void save_SD_BOA(uint32_t*, uint32_t)	14
+SUBCAM.cpp:1565:6:void HAL_DCMI_FrameEventCallback(DCMI_HandleTypeDef*)	1
+SUBCAM.cpp:1578:6:void HAL_DCMI_ErrorCallback(DCMI_HandleTypeDef*)	1
+SUBCAM.cpp:1587:9:uint8_t subcam_configuration()	19
+SUBCAM.cpp:1756:9:uint8_t subcam_take_picture()	1
+SUBCAM.cpp:1775:5:int outputDCMI()	4
+SUBCAM.cpp:1809:6:void SCAM_default_setting()	1
+SUBCAM.cpp:1815:1:cpp)	1

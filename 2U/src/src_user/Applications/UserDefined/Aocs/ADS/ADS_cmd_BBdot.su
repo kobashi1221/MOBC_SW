@@ -1,0 +1,8 @@
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_BBdot.cpp:312:1:void __static_initialization_and_destruction_0(int, int)	4	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_BBdot.cpp:66:13:void BBdot_initialize_param()	8	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_BBdot.cpp:59:13:void BBdot_load_param()	8	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_BBdot.cpp:78:13:void BBdot_init()	8	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_BBdot.cpp:91:13:void BBdot_exe()	280	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_BBdot.cpp:45:9:AppInfo BBdot_param_update()	8	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_BBdot.cpp:52:9:AppInfo BBdot_update()	8	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_BBdot.cpp:312:1:cpp)	8	static

@@ -1,0 +1,8 @@
+../src/src_user/Drivers/Com/INTER_SAT/Inter_Sat.c:73:6:INTERSAT_Send	40	static
+../src/src_user/Drivers/Com/INTER_SAT/Inter_Sat.c:120:6:INTERSAT_Receive	32	static
+../src/src_user/Drivers/Com/INTER_SAT/Inter_Sat.c:145:6:INTERSAT_check_receive_flag	0	static
+../src/src_user/Drivers/Com/INTER_SAT/Inter_Sat.c:136:6:INTERSAT_Receive_tcp	8	static
+../src/src_user/Drivers/Com/INTER_SAT/Inter_Sat.c:175:6:INTERSAT_TLM_UPDATE	16	static
+../src/src_user/Drivers/Com/INTER_SAT/Inter_Sat.c:154:6:INTERSAT_check_tcp_headers	16	static
+../src/src_user/Drivers/Com/INTER_SAT/Inter_Sat.c:233:6:INTERSAT_PORT_INIT	16	static
+../src/src_user/Drivers/Com/INTER_SAT/Inter_Sat.c:53:6:INTERSAT_UART_init	16	static

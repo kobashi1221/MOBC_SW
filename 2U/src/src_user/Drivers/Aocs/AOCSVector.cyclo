@@ -1,0 +1,19 @@
+AOCSVector.cpp:15:12:AOCSVector AOCSVectorHelper(uint8_t)	1
+AOCSVector.cpp:21:12:AOCSMatrix AOCSMatrixHelper(uint8_t, uint8_t)	1
+AOCSVector.cpp:28:12:AOCSVector AOCSVeccopy(AOCSVector*)	2
+AOCSVector.cpp:34:6:void AOCSVecCopy_(AOCSVector*, AOCSVector*)	1
+AOCSVector.cpp:38:12:AOCSVector AOCSVecRetrieve(AOCSVector*, uint8_t, uint8_t)	1
+AOCSVector.cpp:44:6:void AOCSVecReset(AOCSVector*)	2
+AOCSVector.cpp:51:6:void AOCSVecUpdate(AOCSVector*, AOCSVector*)	1
+AOCSVector.cpp:55:8:double AOCSNorm(AOCSVector*)	2
+AOCSVector.cpp:72:5:int AOCSIsInforNan(AOCSVector*)	6
+AOCSVector.cpp:82:6:void Vecmul(AOCSVector*, float, AOCSVector*)	2
+AOCSVector.cpp:64:12:AOCSVector AOCSVecNormalize(AOCSVector*)	1
+AOCSVector.cpp:90:8:double AOCSVecMax(AOCSVector*)	3
+AOCSVector.cpp:101:6:)	4
+AOCSVector.cpp:123:6:void AOCSMatScale(AOCSMatrix*, AOCSMatrix*, AOCStype)	3
+AOCSVector.cpp:131:6:void AOCSMatSum(AOCSMatrix*, AOCSMatrix*, AOCSMatrix*)	3
+AOCSVector.cpp:171:6:void AOCSMatReset(AOCSMatrix*)	3
+AOCSVector.cpp:139:12:AOCSMatrix AOCSMatEye(uint8_t)	2
+AOCSVector.cpp:148:6:)	5
+AOCSVector.cpp:179:6:void AOCSMatUpdate(AOCSMatrix*, AOCSMatrix*)	5

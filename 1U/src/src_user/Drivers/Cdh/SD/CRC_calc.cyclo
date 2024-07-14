@@ -1,0 +1,4 @@
+CRC_calc.c:16:9:X	3
+CRC_calc.c:29:15:calc_crc7	2
+CRC_calc.c:52:10:calc_crc16	4
+CRC_calc.c:83:6:calc_crc16_update	4

@@ -1,0 +1,11 @@
+../src/src_core/TlmCmd/command_analyze.c:172:27:CA_get_param_size_type_	0	static
+../src/src_core/TlmCmd/command_analyze.c:37:6:CA_initialize	8	static
+../src/src_core/TlmCmd/command_analyze.c:93:9:CA_get_cmd_param_num	16	static
+../src/src_core/TlmCmd/command_analyze.c:108:9:CA_get_cmd_param_size	8	static
+../src/src_core/TlmCmd/command_analyze.c:132:10:CA_get_cmd_param_min_len	16	static
+../src/src_core/TlmCmd/command_analyze.c:164:5:CA_has_raw_param	8	static
+../src/src_core/TlmCmd/command_analyze.c:146:8:CA_ckeck_cmd_param_len	16	static
+../src/src_core/TlmCmd/command_analyze.c:56:12:CA_execute_cmd	24	static
+../src/src_core/TlmCmd/command_analyze.c:186:12:Cmd_CA_INIT	8	static
+../src/src_core/TlmCmd/command_analyze.c:193:12:Cmd_CA_REGISTER_CMD	32	static
+../src/src_core/TlmCmd/command_analyze.c:224:12:Cmd_CA_SET_PAGE_FOR_TLM	8	static

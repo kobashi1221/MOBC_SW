@@ -1,0 +1,10 @@
+app_manager.c:104:15:AM_initialize_app_	3
+app_manager.c:155:15:AM_execute_app_	5
+app_manager.c:22:6:AM_initialize	2
+app_manager.c:35:8:AM_register_ai	2
+app_manager.c:48:6:AM_initialize_all_apps	2
+app_manager.c:58:12:Cmd_AM_REGISTER_APP	3
+app_manager.c:85:12:Cmd_AM_INITIALIZE_APP	4
+app_manager.c:136:12:Cmd_AM_EXECUTE_APP	3
+app_manager.c:197:12:Cmd_AM_SET_PAGE_FOR_TLM	2
+app_manager.c:213:12:Cmd_AM_CLEAR_APP_INFO	2

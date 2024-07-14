@@ -1,0 +1,3 @@
+../src/src_user/Applications/UserDefined/Cdh/ResetUtility.c:28:13:RESET_init_	40	static
+../src/src_user/Applications/UserDefined/Cdh/ResetUtility.c:22:9:RESET_create_app	8	static
+../src/src_user/Applications/UserDefined/Cdh/ResetUtility.c:44:12:Cmd_RESET_SET_COUNT	48	static

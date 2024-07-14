@@ -1,0 +1,7 @@
+../src/src_user/Drivers/Com/gs.c:143:13:GS_load_default_driver_super_init_settings_	16	static
+../src/src_user/Drivers/Com/gs.c:135:20:GS_load_uart_driver_super_init_settings_	8	static
+../src/src_user/Drivers/Com/gs.c:127:20:GS_load_ccsds_driver_super_init_settings_	8	static
+../src/src_user/Drivers/Com/gs.c:204:20:GS_analyze_rec_data_	32	static
+../src/src_user/Drivers/Com/gs.c:59:18:GS_init	24	static
+../src/src_user/Drivers/Com/gs.c:166:17:GS_rec_tctf	24	static
+../src/src_user/Drivers/Com/gs.c:257:17:GS_send_vcdu	16	static

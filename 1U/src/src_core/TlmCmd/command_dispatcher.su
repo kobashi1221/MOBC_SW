@@ -1,0 +1,5 @@
+../src/src_core/TlmCmd/command_dispatcher.c:82:13:CDIS_clear_exec_info_	24	static
+../src/src_core/TlmCmd/command_dispatcher.c:35:19:CDIS_init	88	static
+../src/src_core/TlmCmd/command_dispatcher.c:90:6:CDIS_dispatch_command	32	static
+../src/src_core/TlmCmd/command_dispatcher.c:163:6:CDIS_clear_command_list	8	static
+../src/src_core/TlmCmd/command_dispatcher.c:171:6:CDIS_clear_error_status	8	static

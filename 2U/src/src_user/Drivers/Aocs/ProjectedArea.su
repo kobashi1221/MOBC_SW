@@ -1,0 +1,2 @@
+../src/src_user/Drivers/Aocs/ProjectedArea.cpp:29:7:float PROJECTEDAREA_CLASS::ProjectedArea(float*, char*)	216	static
+../src/src_user/Drivers/Aocs/ProjectedArea.cpp:72:6:void PROJECTEDAREA_CLASS::cal(float*, char*)	8	static

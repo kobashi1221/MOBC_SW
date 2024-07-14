@@ -1,0 +1,7 @@
+../src/src_user/Applications/UserDefined/Com/COM_cmd_SOBC.c:54:6:SOBC_regular_tlm	8	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_SOBC.c:19:9:SOBC_Regular_Tlm	8	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_SOBC.c:23:12:Cmd_SOBC_DEBUG_SPI_Send	8	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_SOBC.c:35:12:Cmd_SOBC_Reset	16	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_SOBC.c:46:12:Cmd_DEBUG_GPIO	8	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_SOBC.c:82:12:Cmd_DEBUG_regular_tlm_on	8	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_SOBC.c:96:12:Cmd_DEBUG_anomaly_count	8	static

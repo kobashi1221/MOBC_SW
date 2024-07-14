@@ -1,0 +1,15 @@
+PWR_cmd_AnomalyHandle.c:60:6:PWR_ANOMALY_Handle_param_init	3
+PWR_cmd_AnomalyHandle.c:81:6:PWR_ANOMALY_Handle_param_exec	3
+PWR_cmd_AnomalyHandle.c:55:9:PWR_ANOMALY_Handle_update	1
+PWR_cmd_AnomalyHandle.c:325:6:PWR_AH_CURS_OFF	12
+PWR_cmd_AnomalyHandle.c:518:6:PWR_AH_VOLS_OFF	14
+PWR_cmd_AnomalyHandle.c:247:12:Cmd_PWR_AH_PSI_ON	7
+PWR_cmd_AnomalyHandle.c:692:6:PWR_AH_TXPIC_REG_CDH3V3_Restart	1
+PWR_cmd_AnomalyHandle.c:415:6:PWR_AH_CURS_Restart	12
+PWR_cmd_AnomalyHandle.c:106:12:Cmd_PWR_AH_OC	9
+PWR_cmd_AnomalyHandle.c:153:12:Cmd_PWR_AH_UC	3
+PWR_cmd_AnomalyHandle.c:604:6:PWR_AH_VOLS_Restart	14
+PWR_cmd_AnomalyHandle.c:176:12:Cmd_PWR_AH_OV	10
+PWR_cmd_AnomalyHandle.c:222:12:Cmd_PWR_AH_UV	3
+PWR_cmd_AnomalyHandle.c:282:12:Cmd_PWR_AH_PSI_OFF	10
+PWR_cmd_AnomalyHandle.c:708:12:Cmd_PWR_AH_SYSTEM_ENABLE	1

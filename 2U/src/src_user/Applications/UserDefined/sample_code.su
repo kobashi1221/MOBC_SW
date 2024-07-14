@@ -1,0 +1,4 @@
+../src/src_user/Applications/UserDefined/sample_code.c:58:13:CDH_sample_code_init_	0	static
+../src/src_user/Applications/UserDefined/sample_code.c:72:13:CDH_sample_code_update_	80	static
+../src/src_user/Applications/UserDefined/sample_code.c:48:9:CDH_sample_code_create_app	8	static
+../src/src_user/Applications/UserDefined/sample_code.c:156:12:Cmd_CDH_SAMPLE_CODE_TEST	8	static

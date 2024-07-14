@@ -1,0 +1,5 @@
+../src/src_user/Drivers/Cdh/RTC/UNIX.c:32:12:getLeapYearNum	8	static
+../src/src_user/Drivers/Cdh/RTC/UNIX.c:43:12:getLeapYearNum2	16	static
+../src/src_user/Drivers/Cdh/RTC/UNIX.c:48:12:isLeapYear	0	static
+../src/src_user/Drivers/Cdh/RTC/UNIX.c:53:6:ut2date	40	static
+../src/src_user/Drivers/Cdh/RTC/UNIX.c:131:10:date2unix	12	static

@@ -1,0 +1,14 @@
+PWR_cmd_FETREG.cpp:107:13:void PWR_FETREG_exe()	1
+PWR_cmd_FETREG.cpp:87:13:void PWR_FETREG_init()	1
+PWR_cmd_FETREG.cpp:76:13:void PWR_FETREG_init_param()	1
+PWR_cmd_FETREG.cpp:70:13:void PWR_FETREG_load_param()	1
+PWR_cmd_FETREG.cpp:58:9:AppInfo PWR_FETREG_update()	1
+PWR_cmd_FETREG.cpp:65:9:AppInfo PWR_FETREG_param_update()	1
+PWR_cmd_FETREG.cpp:119:12:CCP_CmdRet Cmd_PWR_GPS_ON_OFF(const CommonCmdPacket*)	1
+PWR_cmd_FETREG.cpp:135:12:CCP_CmdRet Cmd_PWR_SUNS_ON_OFF(const CommonCmdPacket*)	1
+PWR_cmd_FETREG.cpp:153:12:CCP_CmdRet Cmd_PWR_LORA_ON_OFF_ONInit(const CommonCmdPacket*)	2
+PWR_cmd_FETREG.cpp:177:12:CCP_CmdRet Cmd_PWR_REG_CDH3V3_ON_OFF(const CommonCmdPacket*)	2
+PWR_cmd_FETREG.cpp:211:12:CCP_CmdRet Cmd_PWR_IOEX_PWR2_ON_OFF_ONInit(const CommonCmdPacket*)	4
+PWR_cmd_FETREG.cpp:241:12:CCP_CmdRet Cmd_PWR_MTQA_ON_OFF_ONInit(const CommonCmdPacket*)	3
+PWR_cmd_FETREG.cpp:270:12:CCP_CmdRet Cmd_PWR_MTQO_PLASMA_ON_OFF_ONInit(const CommonCmdPacket*)	3
+PWR_cmd_FETREG.cpp:296:12:CCP_CmdRet Cmd_PWR_LORA_AUTO_ONInit(const CommonCmdPacket*)	4

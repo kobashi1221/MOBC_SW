@@ -1,0 +1,6 @@
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_all_param_init.c:14:6:BC_load_param_load_cdh_com	8	static
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_all_param_init.c:76:6:BC_load_param_load_sensor_aocs	8	static
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_all_param_init.c:161:6:BC_load_param_load_sensor_aocs2	8	static
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_all_param_init.c:169:6:BC_load_param_init_cdh_com	8	static
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_all_param_init.c:228:6:BC_load_param_init_sensor_aocs	8	static
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_all_param_init.c:309:6:BC_load_param_init_sensor_aocs2	8	static

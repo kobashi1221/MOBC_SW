@@ -1,0 +1,8 @@
+../src/src_user/Drivers/Com/RXPIC/RXPIC.c:51:6:RXPIC_Send	24	static
+../src/src_user/Drivers/Com/RXPIC/RXPIC.c:73:6:RXPIC_Receive	32	static
+../src/src_user/Drivers/Com/RXPIC/RXPIC.c:120:6:RXPIC_TLM_UPDATE	16	static
+../src/src_user/Drivers/Com/RXPIC/RXPIC.c:165:6:RXPIC_AH1_UPDATE	8	static
+../src/src_user/Drivers/Com/RXPIC/RXPIC.c:247:6:RXPIC_AH2_UPDATE	8	static
+../src/src_user/Drivers/Com/RXPIC/RXPIC.c:90:6:RXPIC_check_tcp_headers	16	static
+../src/src_user/Drivers/Com/RXPIC/RXPIC.c:331:6:RXPIC_PORT_INIT	16	static
+../src/src_user/Drivers/Com/RXPIC/RXPIC.c:31:6:RXPIC_UART_init	8	static

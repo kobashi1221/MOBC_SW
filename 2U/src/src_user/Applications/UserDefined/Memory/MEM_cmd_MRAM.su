@@ -1,0 +1,8 @@
+../src/src_user/Applications/UserDefined/Memory/MEM_cmd_MRAM.c:60:13:mram_initialize_param	8	static
+../src/src_user/Applications/UserDefined/Memory/MEM_cmd_MRAM.c:56:13:mram_load_param	8	static
+../src/src_user/Applications/UserDefined/Memory/MEM_cmd_MRAM.c:64:13:mram_memory_patrol	24	dynamic
+../src/src_user/Applications/UserDefined/Memory/MEM_cmd_MRAM.c:45:9:MRAM_param_update	8	static
+../src/src_user/Applications/UserDefined/Memory/MEM_cmd_MRAM.c:50:9:MRAM_memory_patorol	8	static
+../src/src_user/Applications/UserDefined/Memory/MEM_cmd_MRAM.c:95:12:Cmd_MEM_mram_writeData	48	dynamic
+../src/src_user/Applications/UserDefined/Memory/MEM_cmd_MRAM.c:168:12:Cmd_MEM_mram_ReadData	32	dynamic
+../src/src_user/Applications/UserDefined/Memory/MEM_cmd_MRAM.c:200:12:Cmd_MEM_mram_set_patrol_addr	16	static

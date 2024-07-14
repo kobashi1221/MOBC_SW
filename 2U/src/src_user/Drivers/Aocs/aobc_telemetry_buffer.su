@@ -1,0 +1,5 @@
+../src/src_user/Drivers/Aocs/aobc_telemetry_buffer.c:50:20:AOBC_analyze_tlm_aobc_aobc_	32	static
+../src/src_user/Drivers/Aocs/aobc_telemetry_buffer.c:198:20:AOBC_analyze_tlm_aobc_hk_	32	static
+../src/src_user/Drivers/Aocs/aobc_telemetry_buffer.c:18:6:AOBC_init_tlm_buffer	0	static
+../src/src_user/Drivers/Aocs/aobc_telemetry_buffer.c:28:13:AOBC_buffer_tlm_packet	8	static
+../src/src_user/Drivers/Aocs/aobc_telemetry_buffer.c:427:17:AOBC_pick_up_tlm_buffer	24	static

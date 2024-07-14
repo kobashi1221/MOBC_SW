@@ -1,0 +1,2 @@
+../src/src_user/Applications/UserDefined/Cdh/Repro/CDH_cmd_patch.c:12:12:Cmd_CDH_patch_seq_data	32	static
+../src/src_user/Applications/UserDefined/Cdh/Repro/CDH_cmd_patch.c:44:12:Cmd_CDH_patch_scatter_data	552	static

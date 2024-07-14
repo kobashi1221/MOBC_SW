@@ -1,0 +1,10 @@
+../src/src_user/Library/vt100.c:6:6:VT100_erase_down	8	static
+../src/src_user/Library/vt100.c:11:6:VT100_erase_up	8	static
+../src/src_user/Library/vt100.c:16:6:VT100_erase_screen	8	static
+../src/src_user/Library/vt100.c:21:6:VT100_erase_end_of_line	8	static
+../src/src_user/Library/vt100.c:26:6:VT100_erase_start_of_line	8	static
+../src/src_user/Library/vt100.c:31:6:VT100_erase_line	8	static
+../src/src_user/Library/vt100.c:36:6:VT100_set_color	8	static
+../src/src_user/Library/vt100.c:62:6:VT100_set_background	8	static
+../src/src_user/Library/vt100.c:88:6:VT100_reset_color	8	static
+../src/src_user/Library/vt100.c:93:6:VT100_reset_cursor	8	static

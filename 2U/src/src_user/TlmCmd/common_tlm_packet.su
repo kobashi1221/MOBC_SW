@@ -1,0 +1,10 @@
+../src/src_user/TlmCmd/common_tlm_packet.c:22:6:CTP_get_apid	8	static
+../src/src_user/TlmCmd/common_tlm_packet.c:27:6:CTP_set_apid	8	static
+../src/src_user/TlmCmd/common_tlm_packet.c:56:18:CTP_get_dest_flags	8	static
+../src/src_user/TlmCmd/common_tlm_packet.c:74:6:CTP_set_dest_flags	16	static
+../src/src_user/TlmCmd/common_tlm_packet.c:85:10:CTP_get_id	8	static
+../src/src_user/TlmCmd/common_tlm_packet.c:90:6:CTP_set_id	8	static
+../src/src_user/TlmCmd/common_tlm_packet.c:95:10:CTP_get_packet_len	8	static
+../src/src_user/TlmCmd/common_tlm_packet.c:14:5:CTP_is_valid_packet	8	static
+../src/src_user/TlmCmd/common_tlm_packet.c:100:10:CTP_get_user_data_head	8	static
+../src/src_user/TlmCmd/common_tlm_packet.c:105:6:CTP_copy_packet	8	static

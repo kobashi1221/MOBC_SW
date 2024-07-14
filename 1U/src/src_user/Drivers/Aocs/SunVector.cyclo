@@ -1,0 +1,2 @@
+SunVector.cpp:38:7:float SUNVECTOR_CLASS::SunLambda_calc(double)	4
+SunVector.cpp:90:6:void SUNVECTOR_CLASS::SunVector_calc(double)	1

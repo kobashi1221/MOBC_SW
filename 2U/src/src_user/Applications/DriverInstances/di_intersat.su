@@ -1,0 +1,12 @@
+../src/src_user/Applications/DriverInstances/di_intersat.c:37:13:intersat_init_	8	static
+../src/src_user/Applications/DriverInstances/di_intersat.c:110:13:intersat_cmd_dispatcher_	8	static
+../src/src_user/Applications/DriverInstances/di_intersat.c:105:13:intersat_cmd_dispatcher_init_	80	static
+../src/src_user/Applications/DriverInstances/di_intersat.c:32:9:COM_intersat_update	8	static
+../src/src_user/Applications/DriverInstances/di_intersat.c:100:9:intersat_cmd_dispatcher	8	static
+../src/src_user/Applications/DriverInstances/di_intersat.c:117:12:Cmd_intersat_Transmit_command	32	dynamic
+../src/src_user/Applications/DriverInstances/di_intersat.c:165:12:intersat_dispatch_command	16	static
+../src/src_user/Applications/DriverInstances/di_intersat.c:207:12:Cmd_intersat_CDIS_CLEAR_ALL_REALTIME	8	static
+../src/src_user/Applications/DriverInstances/di_intersat.c:216:12:Cmd_intersat_CDIS_CLEAR_ERR_LOG	8	static
+../src/src_user/Applications/DriverInstances/di_intersat.c:226:6:intersat_check_life_command	8	static
+../src/src_user/Applications/DriverInstances/di_intersat.c:238:6:INTERSAT_TCPacket_Fixedheader_Checker	8	static
+../src/src_user/Applications/DriverInstances/di_intersat.c:46:13:intersat_update_	16	static

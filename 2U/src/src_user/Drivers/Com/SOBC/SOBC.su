@@ -1,0 +1,7 @@
+../src/src_user/Drivers/Com/SOBC/SOBC.c:50:6:SOBC_SendReceive	32	static
+../src/src_user/Drivers/Com/SOBC/SOBC.c:83:6:SOBC_reset	8	static
+../src/src_user/Drivers/Com/SOBC/SOBC.c:91:6:SOBC_debug_GPIO	8	static
+../src/src_user/Drivers/Com/SOBC/SOBC.c:98:6:SOBC_PORT_INIT	8	static
+../src/src_user/Drivers/Com/SOBC/SOBC.c:29:6:SOBC_SPI_init	8	static
+../src/src_user/Drivers/Com/SOBC/SOBC.c:124:6:SOBC_TLM_UPDATE	8	static
+../src/src_user/Drivers/Com/SOBC/SOBC.c:104:6:SOBC_check_tcp_headers	16	static

@@ -1,0 +1,10 @@
+SD.c:20:9:sd_block_analyze	7
+SD.c:52:9:sd_specify_write	13
+SD.c:125:9:sd_write_address	1
+SD.c:140:9:sd_specify_read	8
+SD.c:186:9:sd_read_address	1
+SD.c:203:9:sd_crc	4
+SD.c:232:9:sd_copy_sd_to_sd_	1
+SD.c:244:9:flash_copy_sd_to_flash_	1
+SD.c:262:9:sd_copy_flash_to_sd_	1
+SD.c:271:9:sd_copy_sd_to_ram_	2

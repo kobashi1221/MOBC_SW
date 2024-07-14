@@ -1,0 +1,24 @@
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:1815:1:void __static_initialization_and_destruction_0(int, int)	0	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:73:6:void SUBCAM_Init()	0	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:84:19:HAL_StatusTypeDef subcam_read_reg(uint8_t, uint8_t*)	48	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:109:9:uint8_t subcam_write_reg(uint8_t, uint8_t)	40	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:136:9:uint8_t subcam_init()	24	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:171:9:uint8_t subcam_reset()	8	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:182:6:void subcam_set_Framesize(uint8_t)	48	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:258:6:void subcam_set_Saturation(int)	16	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:277:6:void subcam_set_Brightness(int)	16	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:296:6:void subcam_set_Contrast(int)	16	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:315:5:int subcam_set_colorbar(bool)	16	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:336:6:void subcam_set_AutoExposure(bool, int)	32	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:383:6:void subcam_set_Exposure(bool, int)	24	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:409:6:void subcam_set_reg()	8	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:647:6:void subcam_bmp_capture(uint8_t)	56	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:1060:6:void RGB24_to_thumbnail(uint8_t)	136	dynamic
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:1435:6:void save_SD_BOA(uint32_t*, uint32_t)	24	dynamic
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:1565:6:void HAL_DCMI_FrameEventCallback(DCMI_HandleTypeDef*)	8	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:1578:6:void HAL_DCMI_ErrorCallback(DCMI_HandleTypeDef*)	8	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:1587:9:uint8_t subcam_configuration()	40	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:1756:9:uint8_t subcam_take_picture()	8	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:1775:5:int outputDCMI()	24	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:1809:6:void SCAM_default_setting()	0	static
+../src/src_user/Drivers/Sensor/SUBCAM.cpp:1815:1:cpp)	8	static

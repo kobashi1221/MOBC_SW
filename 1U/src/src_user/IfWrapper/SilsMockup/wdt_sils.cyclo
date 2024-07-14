@@ -1,0 +1,5 @@
+wdt_sils.c:3:5:WDT_initialize	1
+wdt_sils.c:9:5:WDT_clear	1
+wdt_sils.c:16:5:WDT_enable	1
+wdt_sils.c:22:5:WDT_disable	1
+wdt_sils.c:28:5:WDT_set_timer	1

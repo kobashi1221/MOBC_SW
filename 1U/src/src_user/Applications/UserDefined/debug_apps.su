@@ -1,0 +1,14 @@
+../src/src_user/Applications/UserDefined/debug_apps.c:68:6:APP_DBG_flush_screen_	8	static
+../src/src_user/Applications/UserDefined/debug_apps.c:164:6:APP_DBG_print_git_rev_	8	static
+../src/src_user/Applications/UserDefined/debug_apps.c:78:6:APP_DBG_print_time_stamp_	8	static
+../src/src_user/Applications/UserDefined/debug_apps.c:88:6:APP_DBG_print_cmd_status_	32	static
+../src/src_user/Applications/UserDefined/debug_apps.c:100:6:APP_DBG_print_event_logger0_	32	static
+../src/src_user/Applications/UserDefined/debug_apps.c:127:6:APP_DBG_print_event_logger1_	24	static
+../src/src_user/Applications/UserDefined/debug_apps.c:151:6:APP_DBG_print_event_handler_	24	static
+../src/src_user/Applications/UserDefined/debug_apps.c:33:9:APP_DBG_flush_screen	8	static
+../src/src_user/Applications/UserDefined/debug_apps.c:38:9:APP_DBG_print_time_stamp	8	static
+../src/src_user/Applications/UserDefined/debug_apps.c:43:9:APP_DBG_print_cmd_status	8	static
+../src/src_user/Applications/UserDefined/debug_apps.c:48:9:APP_DBG_print_event_logger0	8	static
+../src/src_user/Applications/UserDefined/debug_apps.c:53:9:APP_DBG_print_event_logger1	8	static
+../src/src_user/Applications/UserDefined/debug_apps.c:58:9:APP_DBG_print_event_handler	8	static
+../src/src_user/Applications/UserDefined/debug_apps.c:63:9:APP_DBG_print_git_rev	8	static

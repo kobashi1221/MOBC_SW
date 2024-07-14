@@ -1,0 +1,8 @@
+IGRF.cpp:212:13:void calc_trigonometric_f(float, int, float*, float*)	2
+IGRF.cpp:187:13:void conv_geocentric_to_geodetic(float, float, float*, float*)	1
+IGRF.cpp:151:13:void calc_colat(float, float, float*, float*)	1
+IGRF.cpp:241:6:void IGRF_CLASS::calc_legendre_f(float, int, float (*)[14], float (*)[14])	10
+IGRF.cpp:316:6:void IGRF_CLASS::calc_gauss_coeff(float, int, float (*)[14], float (*)[14])	7
+IGRF.cpp:356:6:void IGRF_CLASS::IGRF(float, float, float, float, int, float*)	5
+IGRF.cpp:453:6:void IGRF_CLASS::IGRF_ICRF(float, float, float, float, int, float)	1
+IGRF.cpp:480:15:CCP_EXEC_STS IGRF_CLASS::IGRF_init()	3

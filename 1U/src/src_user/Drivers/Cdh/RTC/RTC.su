@@ -1,0 +1,3 @@
+../src/src_user/Drivers/Cdh/RTC/RTC.c:11:6:Set_RTC_Time_Date	8	static
+../src/src_user/Drivers/Cdh/RTC/RTC.c:34:6:Get_RTC_Time_Date	40	static
+../src/src_user/Drivers/Cdh/RTC/RTC.c:54:6:Calib_RTC	8	static

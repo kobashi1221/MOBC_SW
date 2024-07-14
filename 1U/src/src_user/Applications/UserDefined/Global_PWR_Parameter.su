@@ -1,0 +1,6 @@
+../src/src_user/Applications/UserDefined/Global_PWR_Parameter.cpp:30:13:void pwr_global_param_init()	8	static
+../src/src_user/Applications/UserDefined/Global_PWR_Parameter.cpp:19:9:AppInfo PWR_GLOBAL_Param_update()	8	static
+../src/src_user/Applications/UserDefined/Global_PWR_Parameter.cpp:49:6:void PWR_REFLECT_MODE_(uint8_t)	8	static
+../src/src_user/Applications/UserDefined/Global_PWR_Parameter.cpp:44:6:void PWR_Mode_Set(uint32_t)	8	static
+../src/src_user/Applications/UserDefined/Global_PWR_Parameter.cpp:55:9:uint8_t PWR_GET_MODE(uint8_t)	8	static
+../src/src_user/Applications/UserDefined/Global_PWR_Parameter.cpp:62:6:void PWR_Mode_Trans()	8	static

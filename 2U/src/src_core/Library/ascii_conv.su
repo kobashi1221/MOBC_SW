@@ -1,0 +1,2 @@
+../src/src_core/Library/ascii_conv.c:4:15:ascii2hex	0	static
+../src/src_core/Library/ascii_conv.c:45:17:hex2ascii	8	static

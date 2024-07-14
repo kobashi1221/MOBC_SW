@@ -1,0 +1,7 @@
+ccsds_sils.c:5:5:CCSDS_init	1
+ccsds_sils.c:11:5:CCSDS_rx	1
+ccsds_sils.c:19:5:CCSDS_tx	1
+ccsds_sils.c:27:5:CCSDS_reopen	1
+ccsds_sils.c:34:16:CCSDS_read_sequence	1
+ccsds_sils.c:41:9:CCSDS_get_buffer_num	1
+ccsds_sils.c:46:6:CCSDS_set_rate	1

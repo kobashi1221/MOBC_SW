@@ -1,0 +1,5 @@
+../src/src_user/Settings/Modes/Phase/phase_setting.c:32:13:phase_initialize_param	8	static
+../src/src_user/Settings/Modes/Phase/phase_setting.c:23:13:phase_load_param	8	static
+../src/src_user/Settings/Modes/Phase/phase_setting.c:19:9:phase_param_update	8	static
+../src/src_user/Settings/Modes/Phase/phase_setting.c:39:12:Cmd_chage_phase_temp	280	static
+../src/src_user/Settings/Modes/Phase/phase_setting.c:68:12:Cmd_mode_transition_tabel_load	280	static

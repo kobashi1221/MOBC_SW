@@ -1,0 +1,4 @@
+../src/src_user/Settings/Modes/Eqlipse/eclipse_setting.c:30:13:CDH_eclipse_initialize_param	8	static
+../src/src_user/Settings/Modes/Eqlipse/eclipse_setting.c:22:13:CDH_eclipse_load_param	8	static
+../src/src_user/Settings/Modes/Eqlipse/eclipse_setting.c:18:9:CDH_eclipse_param_update	8	static
+../src/src_user/Settings/Modes/Eqlipse/eclipse_setting.c:43:12:Cmd_Debug_setting_eclipse_weight	8	static

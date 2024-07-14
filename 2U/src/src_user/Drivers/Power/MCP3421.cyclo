@@ -1,0 +1,5 @@
+MCP3421.cpp:72:1:MCP3421::~MCP3421()	1
+MCP3421.cpp:75:6:void MCP3421::INIT()	1
+MCP3421.cpp:80:7:float MCP3421::readADC(uint32_t*, HAL_StatusTypeDef*)	6
+MCP3421.cpp:122:6:void MCP3421::generalCallReset()	1
+MCP3421.cpp:55:1:MCP3421::MCP3421(uint8_t, void*)	1

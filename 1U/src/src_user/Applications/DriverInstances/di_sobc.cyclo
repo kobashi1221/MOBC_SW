@@ -1,0 +1,11 @@
+di_sobc.c:47:13:sobc_init_	2
+di_sobc.c:126:13:sobc_cmd_dispatcher_	1
+di_sobc.c:121:13:sobc_cmd_dispatcher_init_	1
+di_sobc.c:39:9:sobc_update	1
+di_sobc.c:114:9:sobc_cmd_dispatcher	1
+di_sobc.c:132:12:sobc_dispatch_command	1
+di_sobc.c:159:6:SOBC_TCPacket_Fixedheader_Checker	3
+di_sobc.c:169:12:sobc_debug_command_send	6
+di_sobc.c:219:6:sobc_check_life_command	3
+di_sobc.c:61:13:sobc_update_	10
+di_sobc.c:234:6:SOBC_Regular_Tlm_ganerator	19

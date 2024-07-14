@@ -1,0 +1,5 @@
+../src/src_user/Library/SDcard/stm32_matsuzawa_sd.c:85:6:SD_IO_CSState	8	static
+../src/src_user/Library/SDcard/stm32_matsuzawa_sd.c:103:6:SD_IO_WriteReadData	16	static
+../src/src_user/Library/SDcard/stm32_matsuzawa_sd.c:135:9:SD_IO_WriteByte	32	static
+../src/src_user/Library/SDcard/stm32_matsuzawa_sd.c:65:6:SD_IO_Init	8	static
+../src/src_user/Library/SDcard/stm32_matsuzawa_sd.c:165:6:SD_IO_WritData	8	static

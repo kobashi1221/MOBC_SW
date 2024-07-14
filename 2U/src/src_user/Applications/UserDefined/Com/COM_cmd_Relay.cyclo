@@ -1,0 +1,7 @@
+COM_cmd_Relay.c:64:13:CDH1_relay_initialize_param	1
+COM_cmd_Relay.c:49:13:CDH1_relay_load_param	1
+COM_cmd_Relay.c:45:9:COM_message_param_update	1
+COM_cmd_Relay.c:73:12:COM_message_from_GS	3
+COM_cmd_Relay.c:139:12:COM_message_to_SAT	8
+COM_cmd_Relay.c:201:12:COM_message_from_SAT	2
+COM_cmd_Relay.c:255:12:COM_message_to_GS	7

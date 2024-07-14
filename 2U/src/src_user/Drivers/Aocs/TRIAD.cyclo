@@ -1,0 +1,3 @@
+TRIAD.cpp:39:6:void TRIAD_CLASS::triad(const float*, const float*, const float*, const float*, float (*)[3], float*)	7
+TRIAD.cpp:121:6:void TRIAD_CLASS::reset()	3
+TRIAD.cpp:115:6:void TRIAD_CLASS::cal(const float*, const float*, const float*, const float*)	1

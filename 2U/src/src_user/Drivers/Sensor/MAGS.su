@@ -1,0 +1,18 @@
+../src/src_user/Drivers/Sensor/MAGS.cpp:58:5:int MAGS_CLASS::MAGS_SENSOR_AD7654_Get(int)	24	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:108:6:void MAGS_CLASS::Temperature_Compensation_SF(int, float)	0	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:122:6:void MAGS_CLASS::Temperature_Compensation_OFFSET(int, float)	0	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:140:7:float MAGS_CLASS::Convert_Voltage2MAG(int, float)	0	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:151:7:float MAGS_CLASS::Convert_Voltage2MAG_TempCorrect(int, float)	0	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:187:5:int MAGS_CLASS::MAGS_SENSOR_init()	0	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:200:7:float MAGS_CLASS::Convert_Voltage2MAG_MAGNARO(int, float, int)	24	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:162:6:void MAGS_CLASS::Calculate_MAG_value()	16	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:215:5:int MAGS_CLASS::MAGS_SENSOR_get_px()	8	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:227:5:int MAGS_CLASS::MAGS_SENSOR_get_mx()	8	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:239:5:int MAGS_CLASS::MAGS_SENSOR_get_py()	8	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:251:5:int MAGS_CLASS::MAGS_SENSOR_get_my()	8	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:263:5:int MAGS_CLASS::MAGS_SENSOR_get_pz()	8	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:275:5:int MAGS_CLASS::MAGS_SENSOR_get_mz()	8	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:294:6:void MAGS_CLASS::MAGS_Vector_Calc(float, float, float, float*)	24	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:307:6:void MAGS_CLASS::MAG_SENSOR_get_time()	32	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:337:6:void MAGS_CLASS::MAG_Vector_DCM_Sensor2Body_Calc()	0	static
+../src/src_user/Drivers/Sensor/MAGS.cpp:321:5:int MAGS_CLASS::MAGS_SENSOR_get_all()	8	static

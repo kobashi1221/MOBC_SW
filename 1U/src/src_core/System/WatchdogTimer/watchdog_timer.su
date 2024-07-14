@@ -1,0 +1,8 @@
+../src/src_core/System/WatchdogTimer/watchdog_timer.c:23:13:wdt_init_	8	static
+../src/src_core/System/WatchdogTimer/watchdog_timer.c:18:6:WDT_init	8	static
+../src/src_core/System/WatchdogTimer/watchdog_timer.c:33:6:WDT_clear_wdt	8	static
+../src/src_core/System/WatchdogTimer/watchdog_timer.c:47:12:Cmd_WDT_INIT	8	static
+../src/src_core/System/WatchdogTimer/watchdog_timer.c:55:12:Cmd_WDT_ENABLE	16	static
+../src/src_core/System/WatchdogTimer/watchdog_timer.c:71:12:Cmd_WDT_DISABLE	16	static
+../src/src_core/System/WatchdogTimer/watchdog_timer.c:87:12:Cmd_WDT_STOP_CLEAR	8	static
+../src/src_core/System/WatchdogTimer/watchdog_timer.c:96:12:Cmd_WDT_START_CLEAR	8	static

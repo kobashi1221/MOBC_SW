@@ -1,0 +1,2 @@
+downlink_printf.c:19:8:DL_printf	2
+downlink_printf.c:64:8:SAVE_printf_for_log	2

@@ -1,0 +1,4 @@
+../src/src_user/Settings/Modes/Eqlipse/eclipse_setting_driver.c:24:6:judge_eclipse_flag	16	static
+../src/src_user/Settings/Modes/Eqlipse/eclipse_setting_driver.c:7:6:eclipse_flag_set	8	static
+../src/src_user/Settings/Modes/Eqlipse/eclipse_setting_driver.c:14:6:eclipse_flag_reset	8	static
+../src/src_user/Settings/Modes/Eqlipse/eclipse_setting_driver.c:55:6:eclipse_flag_init	8	static

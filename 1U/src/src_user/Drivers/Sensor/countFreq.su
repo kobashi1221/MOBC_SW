@@ -1,0 +1,5 @@
+../src/src_user/Drivers/Sensor/countFreq.cpp:136:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../src/src_user/Drivers/Sensor/countFreq.cpp:23:6:void countFreq(uint32_t*, uint32_t)	12	static
+../src/src_user/Drivers/Sensor/countFreq.cpp:49:5:int freqN(uint32_t*, uint32_t, uint32_t, uint8_t*)	24	static
+../src/src_user/Drivers/Sensor/countFreq.cpp:136:1:cpp)	8	static
+../src/src_user/Drivers/Sensor/countFreq.cpp:136:1:cpp)	8	static

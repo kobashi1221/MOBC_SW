@@ -1,0 +1,10 @@
+BC_LOAD_AOCS.c:9:6:BC_load_pt_sensor_rotate	2
+BC_LOAD_AOCS.c:17:6:BC_load_mtq_curvols_rotate	2
+BC_LOAD_AOCS.c:31:6:BC_load_sensor_handler	1
+BC_LOAD_AOCS.c:74:6:BC_load_orbit_determination	6
+BC_LOAD_AOCS.c:96:6:BC_load_attitude_determination	15
+BC_LOAD_AOCS.c:140:6:BC_load_attitude_control	22
+BC_LOAD_AOCS.c:253:6:BC_load_orbit_control	5
+BC_LOAD_AOCS.c:280:6:BC_load_actuator	1
+BC_LOAD_AOCS.c:300:6:BC_load_aocs	1
+BC_LOAD_AOCS.c:310:6:BC_load_spin_control_TL	4

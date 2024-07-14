@@ -1,0 +1,2 @@
+../src/src_core/Library/endian.c:22:6:ENDIAN_conv	4	static
+../src/src_core/Library/endian.c:10:7:ENDIAN_memcpy	8	static

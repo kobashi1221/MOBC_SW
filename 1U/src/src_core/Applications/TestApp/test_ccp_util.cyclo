@@ -1,0 +1,2 @@
+test_ccp_util.c:11:12:Cmd_TEST_CCP_REGISTER_TLC_ASAP	2
+test_ccp_util.c:20:12:Cmd_TEST_CCP_GET_RAW_PARAM_INFO	5

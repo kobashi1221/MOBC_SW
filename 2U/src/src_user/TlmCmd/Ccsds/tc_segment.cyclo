@@ -1,0 +1,3 @@
+tc_segment.c:8:14:TCS_get_seq_flag	1
+tc_segment.c:16:12:TCS_get_map_id	4
+tc_segment.c:35:23:TCS_get_command_space_packet	1

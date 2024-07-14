@@ -1,0 +1,3 @@
+flag_setting.c:5:9:vote_flag	3
+flag_setting.c:21:6:flag_set	1
+flag_setting.c:26:6:flag_reset	1

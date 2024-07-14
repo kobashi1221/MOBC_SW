@@ -1,0 +1,5 @@
+realtime_command_dispatcher.c:22:13:RTCD_dispatch_	1
+realtime_command_dispatcher.c:17:13:RTCD_init_	1
+realtime_command_dispatcher.c:12:9:RTCD_create_app	1
+realtime_command_dispatcher.c:27:12:Cmd_RTCD_CLEAR_ALL_REALTIME	1
+realtime_command_dispatcher.c:35:12:Cmd_RTCD_CLEAR_ERR_LOG	1

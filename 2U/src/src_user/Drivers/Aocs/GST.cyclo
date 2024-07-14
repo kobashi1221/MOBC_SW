@@ -1,0 +1,2 @@
+GST.cpp:33:7:float GST_CLASS::GST(double)	2
+GST.cpp:63:6:void GST_CLASS::GST_calc(double)	1

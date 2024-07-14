@@ -1,0 +1,5 @@
+eb90_frame_for_driver_super.c:14:10:EB90_FRAME_get_packet_length_from_dssc	1
+eb90_frame_for_driver_super.c:22:16:EB90_FRAME_get_packet_head_from_dssc	1
+eb90_frame_for_driver_super.c:28:10:EB90_FRAME_get_crc_from_dssc	1
+eb90_frame_for_driver_super.c:45:10:EB90_FRAME_calc_crc	1
+eb90_frame_for_driver_super.c:37:9:EB90_FRAME_is_valid_crc_of_dssc	1

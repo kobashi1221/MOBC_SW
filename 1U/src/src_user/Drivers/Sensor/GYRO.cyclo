@@ -1,0 +1,9 @@
+GYRO.cpp:107:7:float GYRO_CLASS::Convert_Voltage2GYRO(int, float)	1
+GYRO.cpp:115:7:float GYRO_CLASS::Calculate_GYRO_TempCorrect(int, float)	1
+GYRO.cpp:133:6:void GYRO_CLASS::Temperature_Compensation_SF(int, float)	1
+GYRO.cpp:146:6:void GYRO_CLASS::Temperature_Compensation_OFFSET(int, float)	1
+GYRO.cpp:164:5:int GYRO_CLASS::GYRO_SENSOR_init(uint8_t*)	13
+GYRO.cpp:266:5:int GYRO_CLASS::GYRO_SENSOR_CHANGE_RANGE(uint8_t*)	13
+GYRO.cpp:371:7:float GYRO_CLASS::Convert_Voltage2GYRO_MAGNARO(int, float, int, float)	2
+GYRO.cpp:385:6:void GYRO_CLASS::GYRO_Vector_DCM_Sensor2Body_Calc(float*, float (*)[3], float*)	3
+GYRO.cpp:397:6:void GYRO_CLASS::GYRO_SENSOR_get_time()	1

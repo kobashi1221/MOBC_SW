@@ -1,0 +1,4 @@
+../src/src_core/Applications/gs_command_dispatcher.c:42:13:GSCD_dispatch_	8	static
+../src/src_core/Applications/gs_command_dispatcher.c:37:13:GSCD_init_	80	static
+../src/src_core/Applications/gs_command_dispatcher.c:32:9:GSCD_create_app	8	static
+../src/src_core/Applications/gs_command_dispatcher.c:47:12:Cmd_GSCD_CLEAR_ERR_LOG	8	static

@@ -1,0 +1,5 @@
+../src/src_user/Drivers/Aocs/aobc.c:48:20:AOBC_load_driver_super_init_settings_	8	static
+../src/src_user/Drivers/Aocs/aobc.c:87:20:AOBC_analyze_rec_data_	16	static
+../src/src_user/Drivers/Aocs/aobc.c:26:18:AOBC_init	16	static
+../src/src_user/Drivers/Aocs/aobc.c:67:17:AOBC_rec	16	static
+../src/src_user/Drivers/Aocs/aobc.c:128:17:AOBC_send_cmd	16	static

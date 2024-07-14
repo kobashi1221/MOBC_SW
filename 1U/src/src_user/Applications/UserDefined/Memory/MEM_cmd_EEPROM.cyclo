@@ -1,0 +1,10 @@
+MEM_cmd_EEPROM.c:65:13:eeprom_initialize_param	1
+MEM_cmd_EEPROM.c:61:13:eeprom_load_param	1
+MEM_cmd_EEPROM.c:69:13:eeprom_memory_patrol	4
+MEM_cmd_EEPROM.c:204:6:I2C1_ClearBusyFlagErratum	13
+MEM_cmd_EEPROM.c:50:9:EEPROM_param_update	1
+MEM_cmd_EEPROM.c:55:9:EEPROM_memory_patorol	1
+MEM_cmd_EEPROM.c:100:12:Cmd_MEM_eeprom_writeData	3
+MEM_cmd_EEPROM.c:136:12:Cmd_MEM_eeprom_ReadData	3
+MEM_cmd_EEPROM.c:165:12:Cmd_MEM_eeprom_set_patrol_addr	2
+MEM_cmd_EEPROM.c:181:12:Cmd_MEM_eeprom_reset	1

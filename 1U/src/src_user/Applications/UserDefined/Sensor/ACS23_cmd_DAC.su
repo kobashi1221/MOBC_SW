@@ -1,0 +1,2 @@
+../src/src_user/Applications/UserDefined/Sensor/ACS23_cmd_DAC.c:22:13:ACS23_DAC_init	0	static
+../src/src_user/Applications/UserDefined/Sensor/ACS23_cmd_DAC.c:16:9:ACS23_DAC_update	8	static

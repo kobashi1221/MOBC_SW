@@ -1,0 +1,4 @@
+BC_LOAD_AH_AL_full.c:10:6:BC_load_ah_al_full	1
+BC_LOAD_AH_AL_full.c:34:6:BC_load_ah_al	1
+BC_LOAD_AH_AL_full.c:51:6:BC_load_ah_ah	1
+BC_LOAD_AH_AL_full.c:68:6:BC_load_ah_ah_res	1

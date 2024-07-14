@@ -1,0 +1,5 @@
+SOBC.c:49:6:SOBC_SendReceive	1
+SOBC.c:82:6:SOBC_reset	1
+SOBC.c:90:6:SOBC_debug_GPIO	1
+SOBC.c:97:6:SOBC_PORT_INIT	1
+SOBC.c:28:6:SOBC_SPI_init	1

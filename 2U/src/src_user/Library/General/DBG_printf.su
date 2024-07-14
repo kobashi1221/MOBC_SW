@@ -1,0 +1,7 @@
+../src/src_user/Library/General/DBG_printf.c:63:13:DBG_Mode_Set	0	static
+../src/src_user/Library/General/DBG_printf.c:70:13:DBG_Mode_Reset	0	static
+../src/src_user/Library/General/DBG_printf.c:21:12:Cmd_DBG_SELECT_printf	8	static
+../src/src_user/Library/General/DBG_printf.c:54:9:DBG_Mode_Analyze	0	static
+../src/src_user/Library/General/DBG_printf.c:79:6:print	268	static
+../src/src_user/Library/General/DBG_printf.c:31:12:Cmd_DBG_Set_Print	16	static
+../src/src_user/Library/General/DBG_printf.c:41:12:Cmd_DBG_Reset_Print	16	static

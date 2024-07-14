@@ -1,0 +1,10 @@
+tc_transfer_frame.c:11:10:TCTF_get_ver	2
+tc_transfer_frame.c:28:11:TCTF_get_type	3
+tc_transfer_frame.c:47:11:TCTF_get_scid	2
+tc_transfer_frame.c:67:11:TCTF_get_vcid	2
+tc_transfer_frame.c:84:10:TCTF_get_frame_len	1
+tc_transfer_frame.c:98:9:TCTF_get_frame_seq_num	1
+tc_transfer_frame.c:103:18:TCTF_get_tc_segment	1
+tc_transfer_frame.c:108:10:TCTF_get_fecw	1
+tc_transfer_frame.c:119:9:TCTF_check_fecw	1
+tc_transfer_frame.c:127:24:TCTF_convert_from_bytes_to_tctf	1

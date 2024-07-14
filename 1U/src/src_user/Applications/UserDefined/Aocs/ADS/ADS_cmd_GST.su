@@ -1,0 +1,3 @@
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_GST.cpp:54:13:void GST_init()	0	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_GST.cpp:65:13:void GST_exe()	80	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_GST.cpp:44:9:AppInfo GST_update()	8	static

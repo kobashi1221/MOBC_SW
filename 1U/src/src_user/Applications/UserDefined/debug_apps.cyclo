@@ -1,0 +1,14 @@
+debug_apps.c:68:6:APP_DBG_flush_screen_	1
+debug_apps.c:164:6:APP_DBG_print_git_rev_	1
+debug_apps.c:78:6:APP_DBG_print_time_stamp_	1
+debug_apps.c:88:6:APP_DBG_print_cmd_status_	1
+debug_apps.c:100:6:APP_DBG_print_event_logger0_	1
+debug_apps.c:127:6:APP_DBG_print_event_logger1_	1
+debug_apps.c:151:6:APP_DBG_print_event_handler_	1
+debug_apps.c:33:9:APP_DBG_flush_screen	1
+debug_apps.c:38:9:APP_DBG_print_time_stamp	1
+debug_apps.c:43:9:APP_DBG_print_cmd_status	1
+debug_apps.c:48:9:APP_DBG_print_event_logger0	1
+debug_apps.c:53:9:APP_DBG_print_event_logger1	1
+debug_apps.c:58:9:APP_DBG_print_event_handler	1
+debug_apps.c:63:9:APP_DBG_print_git_rev	1

@@ -1,0 +1,8 @@
+../src/src_core/Applications/utility_command.c:24:13:UTIL_CMD_init_	0	static
+../src/src_core/Applications/utility_command.c:42:13:UTIL_CMD_reset_	0	static
+../src/src_core/Applications/utility_command.c:53:13:UTIL_CMD_add_	16	static
+../src/src_core/Applications/utility_command.c:65:12:UTIL_CMD_send_	8	static
+../src/src_core/Applications/utility_command.c:19:9:UTIL_CMD_create_app	8	static
+../src/src_core/Applications/utility_command.c:81:12:Cmd_UTIL_CMD_ADD	16	static
+../src/src_core/Applications/utility_command.c:108:12:Cmd_UTIL_CMD_SEND	8	static
+../src/src_core/Applications/utility_command.c:129:12:Cmd_UTIL_CMD_RESET	8	static

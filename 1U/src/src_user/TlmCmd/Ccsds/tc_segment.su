@@ -1,0 +1,3 @@
+../src/src_user/TlmCmd/Ccsds/tc_segment.c:8:14:TCS_get_seq_flag	0	static
+../src/src_user/TlmCmd/Ccsds/tc_segment.c:16:12:TCS_get_map_id	0	static
+../src/src_user/TlmCmd/Ccsds/tc_segment.c:35:23:TCS_get_command_space_packet	0	static

@@ -1,0 +1,7 @@
+COM_cmd_INTERSAT.c:70:13:COM_intersat_tlm_init	1
+COM_cmd_INTERSAT.c:47:13:COM_intersat_param_exe	1
+COM_cmd_INTERSAT.c:40:13:COM_intersat_param_init	1
+COM_cmd_INTERSAT.c:74:13:COM_intersat_tlm_exe	16
+COM_cmd_INTERSAT.c:36:9:COM_intersat_param_update	1
+COM_cmd_INTERSAT.c:55:9:COM_intersat_tlm_update	1
+COM_cmd_INTERSAT.c:60:14:Cmd_COM_debug_Intersat_Send	2

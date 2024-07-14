@@ -1,0 +1,52 @@
+IF_class.cpp:31:1:GPIO_Class::GPIO_Class()	1
+IF_class.cpp:38:1:GPIO_Class::GPIO_Class(void*, uint16_t)	1
+IF_class.cpp:45:6:void GPIO_Class::WriteH()	2
+IF_class.cpp:53:6:void GPIO_Class::WriteL()	2
+IF_class.cpp:59:5:int GPIO_Class::Write(uint8_t)	4
+IF_class.cpp:75:6:void GPIO_Class::Toggle()	2
+IF_class.cpp:82:5:int GPIO_Class::ReadPin()	1
+IF_class.cpp:89:7:void* GPIO_Class::GetPort()	1
+IF_class.cpp:94:10:uint16_t GPIO_Class::GetPin()	1
+IF_class.cpp:99:6:void GPIO_Class::SetPort(void*)	1
+IF_class.cpp:104:6:void GPIO_Class::SetPin(uint16_t)	1
+IF_class.cpp:109:6:void GPIO_Class::SetPortAndPin(void*, uint16_t)	1
+IF_class.cpp:115:1:GPIO_Class::~GPIO_Class()	1
+IF_class.cpp:121:1:I2C_Class::I2C_Class()	1
+IF_class.cpp:128:1:I2C_Class::I2C_Class(void*, uint16_t, uint16_t, uint32_t)	1
+IF_class.cpp:145:5:int I2C_Class::Read(uint16_t, uint16_t, uint8_t*, uint16_t)	1
+IF_class.cpp:164:5:int I2C_Class::Write(uint16_t, uint16_t, uint8_t*, uint16_t)	1
+IF_class.cpp:177:5:int I2C_Class::MasterTransmit(uint8_t*, uint16_t)	1
+IF_class.cpp:186:5:int I2C_Class::MasterReceive(uint8_t*, uint16_t)	1
+IF_class.cpp:196:7:void* I2C_Class::GetHandle()	1
+IF_class.cpp:201:10:uint16_t I2C_Class::GetDeviceAddressRead()	1
+IF_class.cpp:206:10:uint16_t I2C_Class::GetDeviceAddressWrite()	1
+IF_class.cpp:211:10:uint32_t I2C_Class::GetTimeout()	1
+IF_class.cpp:216:6:void I2C_Class::SetHandle(void*)	1
+IF_class.cpp:221:6:void I2C_Class::SetDeviceAddressRead(uint16_t)	1
+IF_class.cpp:226:6:void I2C_Class::SetDeviceAddressWrite(uint16_t)	1
+IF_class.cpp:231:6:void I2C_Class::SetTimeout(uint32_t)	1
+IF_class.cpp:236:1:I2C_Class::~I2C_Class()	1
+IF_class.cpp:242:1:SPI_Class::SPI_Class()	1
+IF_class.cpp:248:1:SPI_Class::SPI_Class(void*, void*, uint16_t, uint32_t)	1
+IF_class.cpp:318:7:void* SPI_Class::GetHandle()	1
+IF_class.cpp:323:6:void SPI_Class::WriteH()	1
+IF_class.cpp:328:6:void SPI_Class::WriteL()	1
+IF_class.cpp:262:5:int SPI_Class::Transmit(uint8_t*, uint16_t)	1
+IF_class.cpp:275:5:int SPI_Class::Receive(uint8_t*, uint16_t)	1
+IF_class.cpp:289:5:int SPI_Class::TransmitReceive(uint8_t*, uint8_t*, uint8_t*, uint16_t, uint16_t)	1
+IF_class.cpp:303:5:int SPI_Class::TransmitReceive(uint8_t*, uint8_t*, uint16_t)	1
+IF_class.cpp:333:7:void* SPI_Class::GetPort()	1
+IF_class.cpp:338:10:uint16_t SPI_Class::GetPin()	1
+IF_class.cpp:343:10:uint32_t SPI_Class::GetTimeout()	1
+IF_class.cpp:348:1:SPI_Class::~SPI_Class()	1
+IF_class.cpp:354:1:UART_Class::UART_Class()	1
+IF_class.cpp:361:1:UART_Class::UART_Class(void*, uint32_t)	1
+IF_class.cpp:370:19:HAL_StatusTypeDef UART_Class::Transmit(uint8_t*, uint16_t)	1
+IF_class.cpp:377:19:HAL_StatusTypeDef UART_Class::Receive(uint8_t*, uint16_t)	1
+IF_class.cpp:381:19:HAL_StatusTypeDef UART_Class::Receive_IT(uint8_t*)	1
+IF_class.cpp:386:7:void* UART_Class::GetHandle()	1
+IF_class.cpp:391:10:uint32_t UART_Class::GetTimeout()	1
+IF_class.cpp:396:6:void UART_Class::SetHandle(void*)	1
+IF_class.cpp:401:6:void UART_Class::SetTimeout(uint32_t)	1
+IF_class.cpp:406:6:void UART_Class::SetHandleAndTimeout(void*, uint32_t)	1
+IF_class.cpp:412:1:UART_Class::~UART_Class()	1

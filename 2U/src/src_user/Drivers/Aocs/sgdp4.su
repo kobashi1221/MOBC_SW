@@ -1,0 +1,6 @@
+../src/src_user/Drivers/Aocs/sgdp4h.h:142:25:DCUBE	16	static
+../src/src_user/Drivers/Aocs/sgdp4h.h:146:25:DPOW4	8	static
+../src/src_user/Drivers/Aocs/sgdp4.c:169:5:init_sgdp4	184	static
+../src/src_user/Drivers/Aocs/sgdp4.c:463:5:sgdp4	176	static
+../src/src_user/Drivers/Aocs/sgdp4.c:762:6:kep2xyz	136	static
+../src/src_user/Drivers/Aocs/sgdp4.c:816:5:satpos_xyz	88	static

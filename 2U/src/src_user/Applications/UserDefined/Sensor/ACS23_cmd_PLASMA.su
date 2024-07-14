@@ -1,0 +1,4 @@
+../src/src_user/Applications/UserDefined/Sensor/ACS23_cmd_PLASMA.c:24:6:ACS23_PLASMA_init	8	static
+../src/src_user/Applications/UserDefined/Sensor/ACS23_cmd_PLASMA.c:18:9:ACS23_PLASMA_update	8	static
+../src/src_user/Applications/UserDefined/Sensor/ACS23_cmd_PLASMA.c:50:6:ACS23_PLASMA_off	8	static
+../src/src_user/Applications/UserDefined/Sensor/ACS23_cmd_PLASMA.c:70:12:Cmd_PLASMA_change_voltage	32	static

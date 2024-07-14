@@ -1,0 +1,17 @@
+divided_cmd_utility.c:109:20:DCU_search_log_	4
+divided_cmd_utility.c:99:13:DCU_clear_log_element_	1
+divided_cmd_utility.c:88:13:DCU_clear_log_	2
+divided_cmd_utility.c:82:13:DCU_init_	1
+divided_cmd_utility.c:152:13:DCU_create_log_on_front_	3
+divided_cmd_utility.c:130:13:DCU_move_to_front_in_log_	3
+divided_cmd_utility.c:76:9:DCU_create_app	1
+divided_cmd_utility.c:177:12:DCU_check_in	3
+divided_cmd_utility.c:205:9:DCU_register_next	3
+divided_cmd_utility.c:225:6:DCU_report_finish	1
+divided_cmd_utility.c:237:6:DCU_report_err	1
+divided_cmd_utility.c:249:6:DCU_donw_abort_flag	1
+divided_cmd_utility.c:260:6:DCU_abort_cmd	1
+divided_cmd_utility.c:271:13:DCU_search_and_get_log	2
+divided_cmd_utility.c:287:12:Cmd_DCU_ABORT_CMD	1
+divided_cmd_utility.c:298:12:Cmd_DCU_DOWN_ABORT_FLAG	1
+divided_cmd_utility.c:309:12:Cmd_DCU_CLEAR_LOG	1

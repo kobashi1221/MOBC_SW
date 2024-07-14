@@ -1,0 +1,3 @@
+RTC.c:11:6:Set_RTC_Time_Date	3
+RTC.c:34:6:Get_RTC_Time_Date	1
+RTC.c:54:6:Calib_RTC	1

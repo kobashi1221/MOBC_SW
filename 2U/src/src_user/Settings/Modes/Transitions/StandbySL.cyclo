@@ -1,0 +1,4 @@
+StandbySL.c:21:6:BCL_load_standby_to_standby	1
+StandbySL.c:31:6:BCL_load_startup_to_standby	1
+StandbySL.c:45:6:BCL_load_to_standby	1
+StandbySL.c:51:6:BCL_load_to_mission_standby	1

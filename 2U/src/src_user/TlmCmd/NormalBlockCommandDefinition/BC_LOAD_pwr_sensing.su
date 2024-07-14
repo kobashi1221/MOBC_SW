@@ -1,0 +1,2 @@
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_pwr_sensing.c:17:6:BC_load_built_in_ADC	8	static
+../src/src_user/TlmCmd/NormalBlockCommandDefinition/BC_LOAD_pwr_sensing.c:51:6:BC_load_i2c_ADC	8	static

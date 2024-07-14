@@ -1,0 +1,4 @@
+gs_command_dispatcher.c:42:13:GSCD_dispatch_	1
+gs_command_dispatcher.c:37:13:GSCD_init_	1
+gs_command_dispatcher.c:32:9:GSCD_create_app	1
+gs_command_dispatcher.c:47:12:Cmd_GSCD_CLEAR_ERR_LOG	1

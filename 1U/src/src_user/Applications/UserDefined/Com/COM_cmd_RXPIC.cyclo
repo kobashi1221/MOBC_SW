@@ -1,0 +1,4 @@
+COM_cmd_RXPIC.c:46:13:COM_rxpic_clear_count_	2
+COM_cmd_RXPIC.c:61:13:COM_rxpic_DBG_couter	2
+COM_cmd_RXPIC.c:36:9:COM_rxpic_clear_count	1
+COM_cmd_RXPIC.c:41:9:COM_DBG_counter	1

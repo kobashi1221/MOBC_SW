@@ -1,0 +1,920 @@
+/*
+ * Global_AOCS_Parameter.cpp
+ *
+ *  Created on: 2021/10/19
+ *      Author: masud
+ */
+
+#include "Global_AOCS_Parameter.h"
+#include "Global_AOCS_Param_Set.h"
+
+
+#include <stdio.h>
+#include <stdint.h> //for uint8_t
+#include <math.h>
+#include <src_user/Applications/UserDefined/Global_AOCS_Value.h>
+#include <src_user/Applications/UserDefined/GlobalMemoryParam.h>
+#include <src_user/Applications/Middleware/MemoryMW.h>
+#include <stdlib.h>
+#include <string.h>
+#include <src_user/Drivers/Aocs/AOCScalc.h>
+#include <src_user/Drivers/Cdh/RTC/RTC.h>
+#include <src_user/Applications/UserDefined/Aocs/AOCS_cmd_Separation.h>
+
+static GLOBAL_AOCS_PARAMETER_STRUCT GAP;
+static GLOBAL_ADS_PARAMETER ADS_P;
+static GLOBAL_ACS_PARAMETER ACS_P;
+static GLOBAL_ODS_PARAMETER ODS_P;
+static GLOBAL_OCS_PARAMETER OCS_P;
+
+static void Global_AOCS_Param_init(void); //アプリ初期化関数
+static void Global_AOCS_Param_exe(void); //アプリ実行関数
+
+
+static const float Inertia_tensor_ini[3][3] = { {0.0505f,      0.0000191f,  0.000558f},
+					                            {0.0000191f,   0.0507f,     0.000678f},
+					                            {0.000558f,    0.000678f,   0.00911f}};
+
+// 9AX or GYRO どちらを上げるか決めるMRAMパラメータの初期値   _taguchi
+// 2="NINEAX_GYRO"   8="MEMS_GYRO"  (ADS_Flagと同じ値) <- のenumをコピーして使う
+const uint8_t ads_gyro_sensor_choice_ = NINEAX_GYRO;
+
+#ifdef TWO_U
+static const float Inertia_tensor_ini_2U[3][3] = { {0.010993f,      0.0000f,  0.000f},
+													{0.0000f,   0.011026f,     0.000f},
+													{0.000f,    0.000f,   0.001517f}};
+//static const float maglimit_[3] = {0.2f, 0.2f, 2.5f}; // for MAGNARO
+static const float maglimit_[3] = {0.6f, 0.6f, 3.3f}; // 500*0.0012, 500*0.0012, 250*0.01326
+#endif
+
+#ifdef ONE_U
+static const float Inertia_tensor_ini_1U[3][3] = { {0.002433f,      0.0000f,  0.000f},
+					                            {0.0000f,   0.002033f,     0.000f},
+					                            {0.000f,    0.000f,   0.001683f}};
+//static const float maglimit_[3] = {0.15f, 0.15f, 2.5f}; // for MAGNARO
+static const float maglimit_[3] = {0.6f, 0.6f, 2.102f}; // 500*0.0012, 500*0.0012, 250*0.002102*4
+
+#endif
+
+static const uint8_t maglimit_flag_ = 0;	// 0 -> 各軸ごとに制限 	1 -> 方向変化なし
+
+/**
+ * @brief アプリケーション作成関数
+ *
+ * @note
+ * @return アプリケーション構造体
+ */
+AppInfo Global_AOCS_update(void)
+{
+    //create_app_info()を呼び出す．
+    //
+	return AI_create_app_info("DBG", Global_AOCS_Param_init, Global_AOCS_Param_exe); //アプリを作成
+
+}
+
+//AppInfo Global_AOCS_Param_update(void)
+//{
+//	//create_app_info()を呼び出す．
+//	return create_app_info("DBG", Global_AOCS_load_param, Global_AOCS_initialize_param); //アプリを作成
+//}
+
+/**
+ * @brief アプリケーション初期化関数
+ *
+ * 構造体内の初期化が必要な変数を初期化する．
+ */
+static void Global_AOCS_Param_init(void)
+{
+//	printf("Global_AOCS_Param_initialize.\r\n");
+
+	if(!Separated()){
+	g_acs.p_GLOBAL_AOCS = &GAP;
+	g_acs.p_ACS = &ACS_P;
+	g_ads.p_ADS = &ADS_P;
+	g_ocs.p_OCS = &OCS_P;
+	g_ods.p_ODS = &ODS_P;
+	read_param(GAP.Inertia_tensor, Inertia_tensor_ini, (size_t)(sizeof(GAP.Inertia_tensor)),(uint32_t)0x00005c24);
+//	memcpy(GAP.Inertia_tensor, Inertia_tensor_ini, sizeof(float)*3*3);
+
+	Inverse(*GAP.Inertia_tensor, 3, 3, *GAP.Inertia_tensor_copy, *GAP.Inertia_tensor_inv);
+	}else{
+#ifdef TWO_U
+		g_acs.p_GLOBAL_AOCS = &GAP;
+		g_acs.p_ACS = &ACS_P;
+		g_ads.p_ADS = &ADS_P;
+		g_ocs.p_OCS = &OCS_P;
+		g_ods.p_ODS = &ODS_P;
+		read_param(GAP.Inertia_tensor, Inertia_tensor_ini_2U, (size_t)(sizeof(GAP.Inertia_tensor)),(uint32_t)0x00005c48);
+//		memcpy(GAP.Inertia_tensor, Inertia_tensor_ini_2U, sizeof(float)*3*3);
+		Inverse(*GAP.Inertia_tensor, 3, 3, *GAP.Inertia_tensor_copy, *GAP.Inertia_tensor_inv);
+#endif
+#ifdef ONE_U
+		g_acs.p_GLOBAL_AOCS = &GAP;
+		g_acs.p_ACS = &ACS_P;
+		g_ads.p_ADS = &ADS_P;
+		g_ocs.p_OCS = &OCS_P;
+		g_ods.p_ODS = &ODS_P;
+		read_param(GAP.Inertia_tensor, Inertia_tensor_ini_1U, (size_t)(sizeof(GAP.Inertia_tensor)),(uint32_t)0x00005c6c);
+//		memcpy(GAP.Inertia_tensor, Inertia_tensor_ini_1U, sizeof(float)*3*3);
+		Inverse(*GAP.Inertia_tensor, 3, 3, *GAP.Inertia_tensor_copy, *GAP.Inertia_tensor_inv);
+#endif
+	}
+
+	read_param(GAP.MagLimit, maglimit_, (size_t)(sizeof(GAP.MagLimit)),(uint32_t)0x0000719C);
+	read_param(&GAP.Maglimit_flag, &maglimit_flag_, (size_t)(sizeof(GAP.Maglimit_flag)),(uint32_t)0x000071E4);
+	read_param(&ADS_P.ads_gyro_sensor_choice, &ads_gyro_sensor_choice_, (size_t)(sizeof(ads_gyro_sensor_choice_)), (uint32_t)0x00005C94);
+}
+
+static void Global_AOCS_Param_exe(void)
+{
+	write_param(GAP.MagLimit, maglimit_, (size_t)(sizeof(GAP.MagLimit)),(uint32_t)0x0000719C);
+	write_param(&GAP.Maglimit_flag, &maglimit_flag_, (size_t)(sizeof(GAP.Maglimit_flag)),(uint32_t)0x000071E4);
+	write_param(GAP.Inertia_tensor, Inertia_tensor_ini, (size_t)(sizeof(GAP.Inertia_tensor)),(uint32_t)0x00005c24);
+	write_param(&ADS_P.ads_gyro_sensor_choice, &ads_gyro_sensor_choice_, (size_t)(sizeof(ads_gyro_sensor_choice_)), (uint32_t)0x00005C94);
+#ifdef TWO_U
+	write_param(GAP.Inertia_tensor, Inertia_tensor_ini_2U, (size_t)(sizeof(GAP.Inertia_tensor)),(uint32_t)0x00005c48);
+#endif
+#ifdef ONE_U
+	write_param(GAP.Inertia_tensor, Inertia_tensor_ini_1U, (size_t)(sizeof(GAP.Inertia_tensor)),(uint32_t)0x00005c6c);
+#endif
+
+}
+
+int Cmd_Gloval_AOCS_Param(const TCP *packet)
+{
+	return CCP_EXEC_SUCCESS;
+}
+
+// GLOBAL_AOCS_PARAMETER_STRUCT
+void GLOBAL_AOCS_set_GYROX(float omegax)
+{
+	GAP.Omega[0] = omegax;
+}
+
+void GLOBAL_AOCS_set_GYROY(float omegay)
+{
+	GAP.Omega[1] = omegay;
+}
+
+void GLOBAL_AOCS_set_GYROZ(float omegaz)
+{
+	GAP.Omega[2] = omegaz;
+}
+
+void GLOBAL_AOCS_set_GYRO_TIME(ObcTime OmePreTime, ObcTime OmeTime)
+{
+	GAP.OmePreTime = OmePreTime;
+	GAP.OmeTime = OmeTime;
+}
+
+void GLOBAL_AOCS_set_MAGX(float magx)
+{
+	GAP.MagField[0] = magx;
+}
+
+void GLOBAL_AOCS_set_MAGY(float magy)
+{
+	GAP.MagField[1] = magy;
+}
+
+void GLOBAL_AOCS_set_MAGZ(float magz)
+{
+	GAP.MagField[2] = magz;
+}
+
+void GLOBAL_AOCS_set_MAGVec(float* magvec)
+{
+	for (int i = 0; i < 3; i ++){
+		GAP.MagVec[i] = magvec[i];
+	}
+}
+
+void GLOBAL_AOCS_set_MAG_TIME(ObcTime MagPreTime, ObcTime MagTime)
+{
+	GAP.MagPreTime = MagPreTime;
+	GAP.MagTime = MagTime;
+}
+
+void GLOBAL_AOCS_set_SUNVec(float*sunvec)
+{
+	for (int i = 0; i < 3; i ++){
+		GAP.SunVec[i] = sunvec[i];
+	}
+}
+
+void GLOBAL_AOCS_set_SUN_TIME(ObcTime SunPreTime, ObcTime SunTime)
+{
+	GAP.SunPreTime = SunPreTime;
+	GAP.SunTime = SunTime;
+}
+
+void GLOBAL_AOCS_set_MEMS_GYRO_GET_TIME(ObcTime MemsGyroTime)
+{
+	GAP.MemsGyroTime = MemsGyroTime;
+}
+
+void GLOBAL_AOCS_set_MEMS_MAG_GET_TIME(ObcTime MemsMagTime)
+{
+	GAP.MemsMagTime = MemsMagTime;
+}
+
+void GLOBAL_AOCS_set_NineAx_GET_TIME(ObcTime NineAxTime)
+{
+	GAP.NineAxTime = NineAxTime;
+}
+
+void GLOBAL_AOCS_set_SUNS_GET_TIME(int i, ObcTime SunsTime)
+{
+	GAP.SunsTime[i] = SunsTime;
+}
+
+void GLOBAL_AOCS_set_Mag_moment(float* Mag_moment)
+{
+	for (int i = 0; i < 3; i ++){
+		// NaN checker _kanie
+		if(isnan(Mag_moment[i]))  Mag_moment[i] = 1e-6;
+
+		GAP.Mag_moment[i] = Mag_moment[i];
+	}
+}
+
+void GLOBAL_AOCS_set_Quaternion(float* Quaternion)
+{
+	for (int i = 0; i < 4; i ++){
+		GAP.Quaternion[i] = Quaternion[i];
+	}
+}
+
+void GLOBAL_AOCS_set_DCM(float* DCM)
+{
+	copy(DCM, 3, 3, *GAP.DCM_i2b);
+}
+
+void GLOBAL_AOCS_set_Velocity(float* Velocity)
+{
+	for (int i = 0; i < 3; i ++){
+		GAP.Velocity[i] = Velocity[i];
+	}
+}
+
+void GLOBAL_AOCS_set_velocity_norm(float velocity_norm)
+{
+  GAP.velocity_norm = velocity_norm;
+}
+
+void GLOBAL_AOCS_set_Position(float* Position)
+{
+	for (int i = 0; i < 3; i ++){
+		GAP.Position[i] = Position[i];
+	}
+}
+
+void GLOBAL_AOCS_set_Eclipse()
+{
+	GAP.Eclipse_flag = 0xff;
+}
+
+void GLOBAL_AOCS_reset_Eclipse()
+{
+	GAP.Eclipse_flag = 0x00;
+}
+
+
+/**
+ * @brief フラグのビット多数決
+ * 　　　　　　　８つのビットの内，1が4以上であれば蝕フラグを0xFFとし，蝕であると判定する．
+ * 　　　　　　　1が4未満であれば蝕フラグを0x00とし，蝕でないと判定する．
+ * @param flag  蝕フラグ
+ * @return 蝕であると判定すると1，蝕でないと判定すると0を返す．
+ *
+ * 作成者: 蟹江 不明
+ * コメント記入者: 浮田 2023/06/22
+ */
+uint8_t vote_eclipse_flag(const uint8_t* flag){
+	uint8_t ret=0;
+	for(int i=0;i<8;i++){
+		ret+= ((*flag >> i) & 0x01);
+	}
+	if (ret>=4) {
+		GLOBAL_AOCS_set_Eclipse();
+		return 1;
+	}
+	else {
+		GLOBAL_AOCS_reset_Eclipse();
+		return 0;
+	}
+}
+
+void GLOBAL_AOCS_set_GPS_Status(uint8_t status)
+{
+	GAP.GPS_Status = status;
+}
+
+void GLOBAL_AOCS_set_Latitude(float Latitude)
+{
+	GAP.Latitude = Latitude;
+}
+
+void GLOBAL_AOCS_set_Longitude(float Longitude)
+{
+	GAP.Longitude = Longitude;
+}
+
+void GLOBAL_AOCS_set_Altitude(float Altitude)
+{
+	GAP.Altitude = Altitude;
+}
+
+void GLOBAL_AOCS_set_Position_ECEF(float* Position_ECEF)
+{
+	for (int i = 0; i < 3; i ++){
+		GAP.Position_ECEF[i] = Position_ECEF[i];
+	}
+}
+
+void GLOBAL_AOCS_set_Velocity_ECEF(float* Velocity_ECEF)
+{
+	for (int i = 0; i < 3; i ++){
+		GAP.Velocity_ECEF[i] = Velocity_ECEF[i];
+	}
+}
+
+void GLOBAL_AOCS_set_PreMAG(float* mag)
+{
+	for (int i = 0; i < 3; i ++){
+		GAP.pre_MagField[i] = mag[i];
+	}
+}
+
+void GLOBAL_AOCS_set_PreMAGVec(float* magvec)
+{
+	for (int i = 0; i < 3; i ++){
+		GAP.pre_MagVec[i] = magvec[i];
+	}
+}
+
+void GLOBAL_AOCS_set_SensorTime(step_t time)
+{
+	GAP.Sensor_time = time;
+}
+
+// GLOBAL_ACS_PARAMETER_STRUCT
+void GLOBAL_ACS_set_GYRO(float* omega)
+{
+	for (int i = 0; i < 3; i ++){
+		ACS_P.Omega[i] = omega[i];
+	}
+}
+
+void GLOBAL_ACS_set_MAG(float* mag)
+{
+	for (int i = 0; i < 3; i ++){
+		ACS_P.MagField[i] = mag[i];
+	}
+}
+
+void GLOBAL_ACS_set_MAGVec(float* magvec)
+{
+	for (int i = 0; i < 3; i ++){
+		ACS_P.MagVec[i] = magvec[i];
+	}
+}
+
+void GLOBAL_ACS_set_SUNVec(float*sunvec)
+{
+	for (int i = 0; i < 3; i ++){
+		ACS_P.SunVec[i] = sunvec[i];
+	}
+}
+
+void GLOBAL_ACS_set_Mag_moment(float* Mag_moment)
+{
+	for (int i = 0; i < 3; i ++){
+		// NaN checker _taguchi
+		if(isnan(Mag_moment[i]))  Mag_moment[i] = 1e-6;
+
+		ACS_P.Mag_moment[i] = Mag_moment[i];
+	}
+}
+
+
+/**
+ * @brief  制御則により計算された要求磁気モーメントをGLOBAL_ACS_PARAMETERに代入する
+ * @param  Mag_moment_Cn   機体座標系の要求磁気モーメント [Am^2]
+ * @return  なし
+ *
+ * 作成者　不明
+ * コメント記入者　浮田 2023/06/19
+ */
+void GLOBAL_ACS_set_Mag_moment_Cn(float* Mag_moment_Cn)
+{
+	for (int i = 0; i < 3; i ++){
+		// NaN checker _taguchi
+		if(isnan(Mag_moment_Cn[i]))  Mag_moment_Cn[i] = 1e-6;
+
+		ACS_P.Mag_moment_Cn[i] = Mag_moment_Cn[i];
+	}
+}
+
+void GLOBAL_ACS_set_Mag_moment_Co(float* Mag_moment_Co)
+{
+	for (int i = 0; i < 3; i ++){
+		// NaN checker _taguchi
+		if(isnan(Mag_moment_Co[i]))  Mag_moment_Co[i] = 1e-6;
+
+		ACS_P.Mag_moment_Co[i] = Mag_moment_Co[i];
+	}
+}
+
+void GLOBAL_ACS_set_Mag_moment_Co_EarthAng(float* Mag_moment_Co)
+{
+	for (int i = 0; i < 3; i ++){
+		// NaN checker _taguchi
+		if(isnan(Mag_moment_Co[i]))  Mag_moment_Co[i] = 1e-6;
+
+		ACS_P.Mag_moment_Co_EarthAng[i] = Mag_moment_Co[i];
+	}
+}
+
+void GLOBAL_ACS_set_Mag_moment_Co_Coupling(float* Mag_moment_Co)
+{
+	for (int i = 0; i < 3; i ++){
+		// NaN checker _taguchi
+		if(isnan(Mag_moment_Co[i]))  Mag_moment_Co[i] = 1e-6;
+
+		ACS_P.Mag_moment_Co_Coupling[i] = Mag_moment_Co[i];
+	}
+}
+
+void GLOBAL_ACS_set_Mag_moment_Co_Anisotropy(float* Mag_moment_Co)
+{
+	for (int i = 0; i < 3; i ++){
+		// NaN checker _taguchi
+		if(isnan(Mag_moment_Co[i]))  Mag_moment_Co[i] = 1e-6;
+
+		ACS_P.Mag_moment_Co_Anisotropy[i] = Mag_moment_Co[i];
+	}
+}
+
+void GLOBAL_ACS_set_Mag_moment_Co_RMM(float* Mag_moment_Co)
+{
+	for (int i = 0; i < 3; i ++){
+		// NaN checker _taguchi
+		if(isnan(Mag_moment_Co[i]))  Mag_moment_Co[i] = 1e-6;
+
+		ACS_P.Mag_moment_Co_RMM[i] = Mag_moment_Co[i];
+	}
+}
+
+void GLOBAL_ACS_set_Mag_moment_Co_Eddy(float* Mag_moment_Co)
+{
+	for (int i = 0; i < 3; i ++){
+		// NaN checker _taguchi
+		if(isnan(Mag_moment_Co[i]))  Mag_moment_Co[i] = 1e-6;
+
+		ACS_P.Mag_moment_Co_Eddy[i] = Mag_moment_Co[i];
+	}
+}
+
+void GLOBAL_ACS_set_Mag_moment_Co_ConstMag(float* Mag_moment_Co)
+{
+	for (int i = 0; i < 3; i ++){
+		// NaN checker _taguchi
+		if(isnan(Mag_moment_Co[i]))  Mag_moment_Co[i] = 1e-6;
+
+		ACS_P.Mag_moment_Co_ConstMag[i] = Mag_moment_Co[i];
+	}
+}
+
+void GLOBAL_ACS_set_Before_Mag_moment(float* Mag_moment)
+{
+	for (int i = 0; i < 3; i ++){
+		ACS_P.Before_Mag_moment[i] = Mag_moment[i];
+	}
+}
+
+void GLOBAL_ACS_set_Quaternion(float* Quaternion)
+{
+	for (int i = 0; i < 4; i ++){
+		ACS_P.Quaternion[i] = Quaternion[i];
+	}
+}
+
+void GLOBAL_ACS_set_DCM(float* DCM)
+{
+	copy(DCM, 3, 3, *ACS_P.DCM_i2b);
+}
+
+void GLOBAL_ACS_set_Velocity(float* Velocity)
+{
+	for (int i = 0; i < 3; i ++){
+		ACS_P.Velocity[i] = Velocity[i];
+	}
+}
+
+void GLOBAL_ACS_set_Position(float* Position)
+{
+	for (int i = 0; i < 3; i ++){
+		ACS_P.Position[i] = Position[i];
+	}
+}
+
+void GLOBAL_ACS_set_BallCoef(float BC)
+{
+	ACS_P.Ballistic_Coefficient = BC;
+}
+
+void GLOBAL_ACS_set_InertialVec(float* InertialVec)
+{
+	for (int i = 0; i < 3; i ++){
+		ACS_P.InertialTagetVec[i] = InertialVec[i];
+	}
+}
+
+void GLOBAL_ACS_set_COBCVec(float* COBCVec)
+{
+	for (int i = 0; i < 3; i ++){
+		ACS_P.COBC_TargetDirection[i] = COBCVec[i];
+	}
+}
+
+void GLOBAL_ACS_set_TargetVec(const float* TargetVec)
+{
+	for (int i = 0; i < 3; i ++){
+		ACS_P.TagetVec[i] = TargetVec[i];
+	}
+}
+
+void GLOBAL_ACS_set_Velocity_b(const float* VelVec)
+{
+	for (int i = 0; i < 3; i ++){
+		ACS_P.Velocity_b[i] = VelVec[i];
+	}
+}
+
+void GLOBAL_ACS_set_ACScaltime(step_t time)
+{
+	ACS_P.ACS_time = time;
+}
+
+// GLOBAL_ADS_PARAMETER_STRUCT
+void GLOBAL_ADS_set_GYRO(float* omega)
+{
+	for (int i = 0; i < 3; i ++){
+		ADS_P.Omega[i] = omega[i];
+	}
+}
+
+void GLOBAL_ADS_set_MAG(float* mag)
+{
+	for (int i = 0; i < 3; i ++){
+		ADS_P.MagField[i] = mag[i];
+	}
+}
+
+void GLOBAL_ADS_set_MAGVec(float* magvec)
+{
+	for (int i = 0; i < 3; i ++){
+		ADS_P.MagVec[i] = magvec[i];
+	}
+}
+
+void GLOBAL_ADS_set_SUNVec(float*sunvec)
+{
+	for (int i = 0; i < 3; i ++){
+		ADS_P.SunVec[i] = sunvec[i];
+	}
+}
+
+void GLOBAL_ADS_set_Mag_moment(float* Mag_moment)
+{
+	for (int i = 0; i < 3; i ++){
+		ADS_P.Mag_moment[i] = Mag_moment[i];
+	}
+}
+
+void GLOBAL_ADS_set_Mag_moment_Cn(float* Mag_moment_Cn)
+{
+	for (int i = 0; i < 3; i ++){
+		ADS_P.Mag_moment_Cn[i] = Mag_moment_Cn[i];
+	}
+}
+
+void GLOBAL_ADS_set_Mag_moment_Co(float* Mag_moment_Co)
+{
+	for (int i = 0; i < 3; i ++){
+		ADS_P.Mag_moment_Co[i] = Mag_moment_Co[i];
+	}
+}
+
+void GLOBAL_ADS_set_Quaternion(float* Quaternion)
+{
+	for (int i = 0; i < 4; i ++){
+		ADS_P.Quaternion[i] = Quaternion[i];
+	}
+}
+
+void GLOBAL_ADS_set_DCM(float* DCM)
+{
+	copy(DCM, 3, 3, *ADS_P.DCM_i2b);
+}
+
+void GLOBAL_ADS_set_Velocity(float* Velocity)
+{
+	for (int i = 0; i < 3; i ++){
+		ADS_P.Velocity[i] = Velocity[i];
+	}
+}
+
+void GLOBAL_ADS_set_Position(float* Position)
+{
+	for (int i = 0; i < 3; i ++){
+		ADS_P.Position[i] = Position[i];
+	}
+}
+
+// GLOBAL_OCS_PARAMETER_STRUCT
+void GLOBAL_OCS_set_GYRO(float* omega)
+{
+	for (int i = 0; i < 3; i ++){
+		OCS_P.Omega[i] = omega[i];
+	}
+}
+
+void GLOBAL_OCS_set_MAG(float* mag)
+{
+	for (int i = 0; i < 3; i ++){
+		OCS_P.MagField[i] = mag[i];
+	}
+}
+
+void GLOBAL_OCS_set_MAGVec(float* magvec)
+{
+	for (int i = 0; i < 3; i ++){
+		OCS_P.MagVec[i] = magvec[i];
+	}
+}
+
+void GLOBAL_OCS_set_SUNVec(float*sunvec)
+{
+	for (int i = 0; i < 3; i ++){
+		OCS_P.SunVec[i] = sunvec[i];
+	}
+}
+
+void GLOBAL_OCS_set_Mag_moment(float* Mag_moment)
+{
+	for (int i = 0; i < 3; i ++){
+		OCS_P.Mag_moment[i] = Mag_moment[i];
+	}
+}
+
+void GLOBAL_OCS_set_Mag_moment_Cn(float* Mag_moment_Cn)
+{
+	for (int i = 0; i < 3; i ++){
+		OCS_P.Mag_moment_Cn[i] = Mag_moment_Cn[i];
+	}
+}
+
+void GLOBAL_OCS_set_Mag_moment_Co(float* Mag_moment_Co)
+{
+	for (int i = 0; i < 3; i ++){
+		OCS_P.Mag_moment_Co[i] = Mag_moment_Co[i];
+	}
+}
+
+void GLOBAL_OCS_set_Before_Mag_moment(float* Mag_moment)
+{
+	for (int i = 0; i < 3; i ++){
+		OCS_P.Before_Mag_moment[i] = Mag_moment[i];
+	}
+}
+
+void GLOBAL_OCS_set_Quaternion(float* Quaternion)
+{
+	for (int i = 0; i < 4; i ++){
+		OCS_P.Quaternion[i] = Quaternion[i];
+	}
+}
+
+void GLOBAL_OCS_set_DCM(float* DCM)
+{
+	copy(DCM, 3, 3, *OCS_P.DCM_i2b);
+}
+
+void GLOBAL_OCS_set_Velocity(float* Velocity)
+{
+	for (int i = 0; i < 3; i ++){
+		OCS_P.Velocity[i] = Velocity[i];
+	}
+}
+
+void GLOBAL_OCS_set_Position(float* Position)
+{
+	for (int i = 0; i < 3; i ++){
+		OCS_P.Position[i] = Position[i];
+	}
+}
+
+void GLOBAL_OCS_set_BallCoef(float BC)
+{
+	OCS_P.Ballistic_Coefficient = BC;
+}
+
+void GLOBAL_OCS_set_OCScaltime(step_t time)
+{
+	OCS_P.OCS_time = time;
+}
+
+// GLOBAL_ODS_PARAMETER_STRUCT
+void GLOBAL_ODS_set_GYRO(float* omega)
+{
+	for (int i = 0; i < 3; i ++){
+		ODS_P.Omega[i] = omega[i];
+	}
+}
+
+void GLOBAL_ODS_set_MAG(float* mag)
+{
+	for (int i = 0; i < 3; i ++){
+		ODS_P.MagField[i] = mag[i];
+	}
+}
+
+void GLOBAL_ODS_set_MAGVec(float* magvec)
+{
+	for (int i = 0; i < 3; i ++){
+		ODS_P.MagVec[i] = magvec[i];
+	}
+}
+
+void GLOBAL_ODS_set_SUNVec(float*sunvec)
+{
+	for (int i = 0; i < 3; i ++){
+		ODS_P.SunVec[i] = sunvec[i];
+	}
+}
+
+void GLOBAL_ODS_set_Mag_moment(float* Mag_moment)
+{
+	for (int i = 0; i < 3; i ++){
+		ODS_P.Mag_moment[i] = Mag_moment[i];
+	}
+}
+
+void GLOBAL_ODS_set_Mag_moment_Cn(float* Mag_moment_Cn)
+{
+	for (int i = 0; i < 3; i ++){
+		ODS_P.Mag_moment_Cn[i] = Mag_moment_Cn[i];
+	}
+}
+
+void GLOBAL_ODS_set_Mag_moment_Co(float* Mag_moment_Co)
+{
+	for (int i = 0; i < 3; i ++){
+		ODS_P.Mag_moment_Co[i] = Mag_moment_Co[i];
+	}
+}
+
+void GLOBAL_ODS_set_Quaternion(float* Quaternion)
+{
+	for (int i = 0; i < 4; i ++){
+		ODS_P.Quaternion[i] = Quaternion[i];
+	}
+}
+
+void GLOBAL_ODS_set_DCM(float* DCM)
+{
+	copy(DCM, 3, 3, *ODS_P.DCM_i2b);
+}
+
+void GLOBAL_ODS_set_Velocity(float* Velocity)
+{
+	for (int i = 0; i < 3; i ++){
+		ODS_P.Velocity[i] = Velocity[i];
+	}
+}
+
+void GLOBAL_ODS_set_Position(float* Position)
+{
+	for (int i = 0; i < 3; i ++){
+		ODS_P.Position[i] = Position[i];
+	}
+}
+
+void GLOBAL_ODS_set_Latitude(float Latitude)
+{
+	ODS_P.Latitude = Latitude;
+}
+
+void GLOBAL_ODS_set_Longitude(float Longitude)
+{
+	ODS_P.Longitude = Longitude;
+}
+
+void GLOBAL_ODS_set_Altitude(float Altitude)
+{
+	ODS_P.Altitude = Altitude;
+}
+
+void GLOBAL_ODS_set_Position_ECEF(float* Position_ECEF)
+{
+	for (int i = 0; i < 3; i ++){
+		ODS_P.Position_ECEF[i] = Position_ECEF[i];
+	}
+}
+
+void GLOBAL_ODS_set_Velocity_ECEF(float* Velocity_ECEF)
+{
+	for (int i = 0; i < 3; i ++){
+		ODS_P.Velocity_ECEF[i] = Velocity_ECEF[i];
+	}
+}
+
+void GLOBAL_ODS_set_BallCoef(float BC)
+{
+	ODS_P.Ballistic_Coefficient = BC;
+}
+
+int ADS_Mode(ADS_MODE ADS_MODE){
+	int ret = ((g_acs.p_GLOBAL_AOCS->AOCS_MODE.ADS_MODE_Number >> ADS_MODE) & 0b00000001);
+	if(ret != 1){
+		return 0; //OFF
+	}
+	return 1; //ON
+}
+
+int ACS_Mode(ACS_MODE ACS_MODE){
+	int ret = ((g_acs.p_GLOBAL_AOCS->AOCS_MODE.ACS_MODE_Number >> ACS_MODE) & 0b00000001);
+	if(ret != 1){
+		return 0; //OFF
+	}
+	return 1; //ON
+}
+
+int ODS_Mode(ODS_MODE ODS_MODE){
+	int ret = ((g_acs.p_GLOBAL_AOCS->AOCS_MODE.ODS_MODE_Number >> ODS_MODE) & 0b00000001);
+	if(ret != 1){
+		return 0; //OFF
+	}
+	return 1; //ON
+}
+
+int OCS_Mode(OCS_MODE OCS_MODE){
+	int ret = ((g_acs.p_GLOBAL_AOCS->AOCS_MODE.OCS_MODE_Number >> OCS_MODE) & 0b00000001);
+	if(ret != 1){
+		return 0; //OFF
+	}
+	return 1; //ON
+}
+
+
+
+
+void ADS_Mode_Set(uint32_t ADS_Mode_Num){
+	GAP.AOCS_MODE.ADS_MODE_Number = ADS_Mode_Num;
+}
+
+void ACS_Mode_Set(uint32_t ACS_Mode_Num){
+	GAP.AOCS_MODE.ACS_MODE_Number = ACS_Mode_Num;
+}
+
+void ODS_Mode_Set(uint32_t ODS_Mode_Num){
+	GAP.AOCS_MODE.ODS_MODE_Number = ODS_Mode_Num;
+}
+
+void OCS_Mode_Set(uint32_t OCS_Mode_Num){
+	GAP.AOCS_MODE.OCS_MODE_Number = OCS_Mode_Num;
+}
+
+uint32_t ADS_Mode_Get(void){
+	return g_acs.p_GLOBAL_AOCS->AOCS_MODE.ADS_MODE_Number;
+}
+
+uint32_t ACS_Mode_Get(void){
+	return g_acs.p_GLOBAL_AOCS->AOCS_MODE.ACS_MODE_Number;
+}
+
+uint32_t ODS_Mode_Get(void){
+	return g_acs.p_GLOBAL_AOCS->AOCS_MODE.ODS_MODE_Number;
+}
+
+uint32_t OCS_Mode_Get(void){
+	return g_acs.p_GLOBAL_AOCS->AOCS_MODE.OCS_MODE_Number;
+}
+
+AOCS_STATUS_STRUCT GLOBAL_AOCS_set_Status(float *value, int n)
+{
+  AOCS_STATUS_STRUCT ret;
+  for(int i=0;i<n;i++){
+    float a = value[i];
+    if(isfinite(a)==0){
+//      printf("AOCS nan or inf occured\r\n");
+      ret = CALCULATION_FAILED;
+      break;
+    }else{
+      ret = CALCULATION_SUCCESS;
+    }
+  }
+  return ret;
+}

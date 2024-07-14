@@ -1,0 +1,37 @@
+LAFunction.cpp:36:6:void partialsubstitute(AOCSMatrix&, AOCSMatrix&, uint8_t, uint8_t)	5
+LAFunction.cpp:46:6:void partialsubstitute(AOCSVector&, AOCSVector&, uint8_t)	4
+LAFunction.cpp:67:12:AOCSMatrix convertVec2Mat(AOCSVector)	2
+LAFunction.cpp:77:12:AOCSVector convertMat2Vec(AOCSMatrix)	2
+LAFunction.cpp:86:12:AOCSVector similar(AOCSVector&)	1
+LAFunction.cpp:92:12:AOCSMatrix similar(AOCSMatrix&)	1
+LAFunction.cpp:99:6:void reset(AOCSVector&)	2
+LAFunction.cpp:105:6:void reset(AOCSMatrix&)	3
+LAFunction.cpp:160:6:void getCofactor(const AOCSMatrix&, AOCSMatrix&, int, int, int)	6
+LAFunction.cpp:114:10:AOCStype det(AOCSMatrix&, uint8_t)	3
+LAFunction.cpp:134:6:void adjoint(AOCSMatrix&, AOCSMatrix&)	5
+LAFunction.cpp:287:6:void set_size(AOCSVector&, AOCSVector&)	1
+LAFunction.cpp:31:6:void copy(AOCSVector&, AOCSVector&)	1
+LAFunction.cpp:54:12:AOCSVector copy_(AOCSVector&)	1
+LAFunction.cpp:226:6:void add(AOCSVector&, AOCSVector&, AOCSVector&)	2
+LAFunction.cpp:233:6:void pull(AOCSVector&, AOCSVector&, AOCSVector&)	2
+LAFunction.cpp:291:6:void set_size(AOCSVector&, uint8_t)	1
+LAFunction.cpp:249:6:void mul(AOCSVector&, AOCSMatrix&, AOCSVector&)	3
+LAFunction.cpp:259:6:void mul(AOCSVector&, AOCStype, AOCSVector&)	2
+LAFunction.cpp:295:6:void set_size(AOCSMatrix&, AOCSMatrix&)	1
+LAFunction.cpp:22:6:void copy(AOCSMatrix&, AOCSMatrix&)	3
+LAFunction.cpp:60:12:AOCSMatrix copy_(AOCSMatrix&)	1
+LAFunction.cpp:183:6:bool inverse(AOCSMatrix&, AOCSMatrix&)	4
+LAFunction.cpp:217:6:void add(AOCSMatrix&, AOCSMatrix&, AOCSMatrix&)	3
+LAFunction.cpp:240:6:void pull(AOCSMatrix&, AOCSMatrix&, AOCSMatrix&)	3
+LAFunction.cpp:278:6:void mul(AOCSMatrix&, AOCStype, AOCSMatrix&)	3
+LAFunction.cpp:300:6:void set_size(AOCSMatrix&, uint8_t, uint8_t)	1
+LAFunction.cpp:208:6:void Transpose(AOCSMatrix&, AOCSMatrix&)	3
+LAFunction.cpp:202:12:AOCSMatrix Transpose(AOCSMatrix&)	1
+LAFunction.cpp:266:6:void mul(AOCSMatrix&, AOCSMatrix&, AOCSMatrix&)	4
+LAFunction.cpp:307:6:void MatExp(AOCSMatrix&, AOCSMatrix&, AOCStype)	1
+LAFunction.cpp:316:12:AOCSVector operator+(AOCSVector&, AOCSVector&)	1
+LAFunction.cpp:322:12:AOCSVector operator-(AOCSVector&, AOCSVector&)	1
+LAFunction.cpp:329:12:AOCSVector operator*(AOCSMatrix&, AOCSVector&)	1
+LAFunction.cpp:335:12:AOCSMatrix operator+(AOCSMatrix&, AOCSMatrix&)	1
+LAFunction.cpp:341:12:AOCSMatrix operator-(AOCSMatrix&, AOCSMatrix&)	1
+LAFunction.cpp:348:12:AOCSMatrix operator*(AOCSMatrix&, AOCSMatrix&)	1

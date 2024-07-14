@@ -1,0 +1,2 @@
+../src/src_user/Applications/app_registry.c:327:15:add_application_	40	static
+../src/src_user/Applications/app_registry.c:11:6:AR_load_initial_settings	8	static

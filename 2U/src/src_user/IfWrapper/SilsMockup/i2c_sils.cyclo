@@ -1,0 +1,6 @@
+i2c_sils.c:4:5:I2C_init	1
+i2c_sils.c:10:5:I2C_rx	1
+i2c_sils.c:18:5:I2C_tx	1
+i2c_sils.c:26:5:I2C_reopen	1
+i2c_sils.c:33:6:I2C_set_stop_flag	1
+i2c_sils.c:40:6:I2C_set_rx_length	1

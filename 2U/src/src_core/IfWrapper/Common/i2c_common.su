@@ -1,0 +1,6 @@
+../src/src_core/IfWrapper/Common/i2c_common.c:48:20:I2C_write_bytes_	32	static
+../src/src_core/IfWrapper/Common/i2c_common.c:75:20:I2C_read_bytes_	32	static
+../src/src_core/IfWrapper/Common/i2c_common.c:38:13:I2C_write_byte	16	static
+../src/src_core/IfWrapper/Common/i2c_common.c:43:13:I2C_write_2bytes	16	static
+../src/src_core/IfWrapper/Common/i2c_common.c:63:13:I2C_read_byte	16	static
+../src/src_core/IfWrapper/Common/i2c_common.c:69:13:I2C_read_2bytes	16	static

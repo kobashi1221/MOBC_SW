@@ -1,0 +1,7 @@
+../src/src_user/Applications/UserDefined/Com/COM_cmd_Relay.c:64:13:CDH1_relay_initialize_param	8	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_Relay.c:49:13:CDH1_relay_load_param	8	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_Relay.c:45:9:COM_message_param_update	8	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_Relay.c:73:12:COM_message_from_GS	560	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_Relay.c:139:12:COM_message_to_SAT	536	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_Relay.c:201:12:COM_message_from_SAT	552	static
+../src/src_user/Applications/UserDefined/Com/COM_cmd_Relay.c:255:12:COM_message_to_GS	544	static

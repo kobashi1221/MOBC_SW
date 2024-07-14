@@ -1,0 +1,5 @@
+Bdot.cpp:36:6:void BDOT_CLASS::Bdot(float*, float*, float*)	2
+Bdot.cpp:58:6:void BDOT_CLASS::B_delta(float*, float*, float*)	3
+Bdot.cpp:88:6:void BDOT_CLASS::cal(float*, float*)	1
+Bdot.cpp:93:6:void BDOT_CLASS::Dcal(float*, float*)	1
+Bdot.cpp:98:6:void BDOT_CLASS::reset()	1

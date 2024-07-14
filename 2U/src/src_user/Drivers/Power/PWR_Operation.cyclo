@@ -1,0 +1,7 @@
+PWR_Operation.cpp:356:1:void __static_initialization_and_destruction_0(int, int)	5
+PWR_Operation.cpp:46:6:void PWR_Operate_ON_OFF(PWR_STATE, uint8_t)	55
+PWR_Operation.cpp:347:6:void PWR_Operate_IOEX_init()	1
+PWR_Operation.cpp:272:6:void PWR_Operate_ONInit(PWR_STATE)	6
+PWR_Operation.cpp:317:6:void PWR_Operate_Restart(PWR_STATE)	8
+PWR_Operation.cpp:356:1:cpp)	1
+PWR_Operation.cpp:356:1:cpp)	1

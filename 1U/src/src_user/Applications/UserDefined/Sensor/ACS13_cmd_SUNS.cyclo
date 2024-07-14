@@ -1,0 +1,21 @@
+ACS13_cmd_SUNS.cpp:852:1:void __static_initialization_and_destruction_0(int, int)	4
+ACS13_cmd_SUNS.cpp:522:13:void ACS13_SUNS_SOLAR_IRRADIANCE(int, int, int*)	10
+ACS13_cmd_SUNS.cpp:611:13:void ACS13_SUNS_ANGULAR_POSITION(int)	2
+ACS13_cmd_SUNS.cpp:480:13:void ACS13_SUNS_FET_ON(uint8_t)	5
+ACS13_cmd_SUNS.cpp:500:13:void ACS13_SUNS_FET_OFF(uint8_t, uint8_t)	5
+ACS13_cmd_SUNS.cpp:772:13:void ACS13_SUNS_GLOBAL_AOCS_set_SUN_TIME(int, int)	2
+ACS13_cmd_SUNS.cpp:834:13:void ACS13_sun_vector_propagate(const float*, const float*, float*)	1
+ACS13_cmd_SUNS.cpp:260:13:void ACS13_SUNS_init()	2
+ACS13_cmd_SUNS.cpp:173:13:void ACS13_SUNS_initialize_param()	1
+ACS13_cmd_SUNS.cpp:214:13:void ACS13_SUNS_load_param()	1
+ACS13_cmd_SUNS.cpp:160:9:AppInfo ACS13_SUNS_update()	1
+ACS13_cmd_SUNS.cpp:166:9:AppInfo ACS13_SUNS_param_update()	1
+ACS13_cmd_SUNS.cpp:797:6:void VectorCopy(const float*, float*)	1
+ACS13_cmd_SUNS.cpp:653:12:int ACS13_SUNS_AVE_Calc(int, int*, float*, float*)	5
+ACS13_cmd_SUNS.cpp:805:7:float VectorInnerProduct(const float*, const float*)	1
+ACS13_cmd_SUNS.cpp:752:13:void ACS13_SUNS_ANOMALY(int, float*)	6
+ACS13_cmd_SUNS.cpp:737:13:void ACS13_SUNS_VOTING_METHOD(int*, float*, float*)	4
+ACS13_cmd_SUNS.cpp:682:12:int ACS13_SUNS_UNI_Calc(int, int*, float*, uint8_t, float*, int*, float*, int*)	10
+ACS13_cmd_SUNS.cpp:284:13:void ACS13_SUNS_exe()	22
+ACS13_cmd_SUNS.cpp:814:6:void ACS13_SUNS_Set_Duty_Counter()	1
+ACS13_cmd_SUNS.cpp:852:1:cpp)	1

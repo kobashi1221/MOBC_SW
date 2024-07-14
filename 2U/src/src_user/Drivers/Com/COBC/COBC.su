@@ -1,0 +1,9 @@
+../src/src_user/Drivers/Com/COBC/COBC.c:35:6:COBC_PORT_INIT	16	static
+../src/src_user/Drivers/Com/COBC/COBC.c:48:6:COBC_UART_init	8	static
+../src/src_user/Drivers/Com/COBC/COBC.c:59:6:COBC_GPIO_ON_OFF	8	static
+../src/src_user/Drivers/Com/COBC/COBC.c:69:6:COBC_reset	8	static
+../src/src_user/Drivers/Com/COBC/COBC.c:84:6:COBC_Send	40	static
+../src/src_user/Drivers/Com/COBC/COBC.c:150:6:COBC_TLM_UPDATE	16	static
+../src/src_user/Drivers/Com/COBC/COBC.c:188:6:COBC_CAM_INFO_UPDATE	16	static
+../src/src_user/Drivers/Com/COBC/COBC.c:211:6:COBC_CAM_DATA_UPDATE	288	static
+../src/src_user/Drivers/Com/COBC/COBC.c:118:6:COBC_check_tcp_headers	16	static

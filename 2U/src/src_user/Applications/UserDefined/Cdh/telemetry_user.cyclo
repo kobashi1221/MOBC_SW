@@ -1,0 +1,2 @@
+telemetry_user.c:18:12:Cmd_GENERATE_TLM_user	4
+telemetry_user.c:75:12:Cmd_GENERATE_HK_DEBUG	4

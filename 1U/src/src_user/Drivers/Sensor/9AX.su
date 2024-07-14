@@ -1,0 +1,12 @@
+../src/src_user/Drivers/Sensor/9AX.cpp:193:9:uint8_t accgyro_read_reg(LSM9DS1*, uint8_t, uint8_t*, uint8_t)	24	static
+../src/src_user/Drivers/Sensor/9AX.cpp:156:9:uint8_t lsm9ds1_get_acc_all(LSM9DS1*, int16_t*)	24	static
+../src/src_user/Drivers/Sensor/9AX.cpp:168:9:uint8_t lsm9ds1_get_gyro_all(LSM9DS1*, int16_t*)	24	static
+../src/src_user/Drivers/Sensor/9AX.cpp:200:9:uint8_t accgyro_write_reg(LSM9DS1*, uint8_t, uint8_t*, uint8_t)	24	static
+../src/src_user/Drivers/Sensor/9AX.cpp:56:9:uint8_t lsm9ds1_ctrl_acc(LSM9DS1*)	16	static
+../src/src_user/Drivers/Sensor/9AX.cpp:85:9:uint8_t lsm9ds1_ctrl_gyro(LSM9DS1*)	16	static
+../src/src_user/Drivers/Sensor/9AX.cpp:207:9:uint8_t mag_read_reg(LSM9DS1*, uint8_t, uint8_t*, uint8_t)	24	static
+../src/src_user/Drivers/Sensor/9AX.cpp:44:9:uint8_t lsm9ds1_id_check(LSM9DS1*)	16	static
+../src/src_user/Drivers/Sensor/9AX.cpp:180:9:uint8_t lsm9ds1_get_mag_all(LSM9DS1*, int16_t*)	24	static
+../src/src_user/Drivers/Sensor/9AX.cpp:214:9:uint8_t mag_write_reg(LSM9DS1*, uint8_t, uint8_t*, uint8_t)	24	static
+../src/src_user/Drivers/Sensor/9AX.cpp:115:9:uint8_t lsm9ds1_ctrl_mag(LSM9DS1*)	16	static
+../src/src_user/Drivers/Sensor/9AX.cpp:31:9:uint8_t lsm9ds1_power_on_init(LSM9DS1*)	16	static

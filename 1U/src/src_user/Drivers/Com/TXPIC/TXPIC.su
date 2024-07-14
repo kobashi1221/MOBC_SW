@@ -1,0 +1,8 @@
+../src/src_user/Drivers/Com/TXPIC/TXPIC.c:60:6:TXPIC_Send	48	static
+../src/src_user/Drivers/Com/TXPIC/TXPIC.c:113:6:TXPIC_Receive	32	static
+../src/src_user/Drivers/Com/TXPIC/TXPIC.c:162:6:TXPIC_TLM_UPDATE	16	static
+../src/src_user/Drivers/Com/TXPIC/TXPIC.c:242:6:TXPIC_AH1_UPDATE	8	static
+../src/src_user/Drivers/Com/TXPIC/TXPIC.c:324:6:TXPIC_AH2_UPDATE	8	static
+../src/src_user/Drivers/Com/TXPIC/TXPIC.c:131:6:TXPIC_check_tcp_headers	16	static
+../src/src_user/Drivers/Com/TXPIC/TXPIC.c:407:6:TXPIC_PORT_INIT	16	static
+../src/src_user/Drivers/Com/TXPIC/TXPIC.c:39:6:TXPIC_UART_init	16	static

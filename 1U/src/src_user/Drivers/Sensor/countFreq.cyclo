@@ -1,0 +1,5 @@
+countFreq.cpp:136:1:void __static_initialization_and_destruction_0(int, int)	5
+countFreq.cpp:23:6:void countFreq(uint32_t*, uint32_t)	6
+countFreq.cpp:49:5:int freqN(uint32_t*, uint32_t, uint32_t, uint8_t*)	14
+countFreq.cpp:136:1:cpp)	1
+countFreq.cpp:136:1:cpp)	1

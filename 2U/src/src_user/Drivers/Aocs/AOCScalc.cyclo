@@ -1,0 +1,40 @@
+AOCScalc.cpp:251:6:void Omega4Kinematics(const float*, float (*)[4])	1
+AOCScalc.cpp:289:6:void OmegaCross4Kalman(const float*, float (*)[3])	1
+AOCScalc.cpp:303:6:void CrossOmega4Kalman(const float*, float (*)[3])	1
+AOCScalc.cpp:337:6:void Quaternion_Conjugate(float*, float*)	2
+AOCScalc.cpp:389:6:void DCM_To_Quaternion(const float*, float*)	9
+AOCScalc.cpp:456:6:void blh2ecef(float, float, float, float*)	4
+AOCScalc.cpp:478:6:void ecef2blh(float*, float*)	1
+AOCScalc.cpp:536:6:void display(float*, int, int)	4
+AOCScalc.cpp:554:6:void display_exp(float*, int, int)	4
+AOCScalc.cpp:574:6:void Outer_product(const float*, const float*, float*)	1
+AOCScalc.cpp:594:6:void add(const float*, int, int, const float*, int, int, float*)	3
+AOCScalc.cpp:615:6:void sub(const float*, int, int, const float*, int, int, float*)	3
+AOCScalc.cpp:639:6:void multiplication(const float*, int, int, const float*, int, int, float*, int, int)	4
+AOCScalc.cpp:31:6:void DynamicsKinematics(const float*, const float*, float*)	8
+AOCScalc.cpp:115:6:void FunctionQuaGBias(const float*, const float*, float, float*)	7
+AOCScalc.cpp:176:6:void FunctionOmeRmm(const float*, const float*, float, float*)	3
+AOCScalc.cpp:229:6:void OneStepOmeRmm(float, const float*, const float*, float, float*)	5
+AOCScalc.cpp:318:6:void Quaternion_Product(const float*, const float*, float*)	1
+AOCScalc.cpp:260:6:void Quaternion_obs_update(const float*, const float*, float*, uint8_t*)	2
+AOCScalc.cpp:354:6:void Quaternion_To_DCM(const float*, float*)	6
+AOCScalc.cpp:670:6:void trans(float*, int, int, float*, int, int)	3
+AOCScalc.cpp:688:6:void CoeffVec(float*, int, float, float*)	2
+AOCScalc.cpp:703:6:void Normalization(const float*, int, float*)	5
+AOCScalc.cpp:86:6:void RungeOneStep(float, const float*, const float*, float*)	7
+AOCScalc.cpp:146:6:void OneStepQuaGBias(float, const float*, const float*, float, float*)	8
+AOCScalc.cpp:500:6:void DCMeci2lvlh(float*, float*, float*)	2
+AOCScalc.cpp:731:7:float Fabs(const float*, int)	3
+AOCScalc.cpp:754:6:void Identity(int, int, float*)	4
+AOCScalc.cpp:775:6:void Zeros(int, int, float*)	3
+AOCScalc.cpp:792:6:void CoeffMat(const float*, int, int, float, float*)	3
+AOCScalc.cpp:809:6:void ExtractMat(const float*, int, int, float*)	3
+AOCScalc.cpp:825:6:void ExtractVec(const float*, int, int, float*)	3
+AOCScalc.cpp:837:5:int isnanMat(const float*, int, int)	4
+AOCScalc.cpp:854:7:float determinant(float*, int)	12
+AOCScalc.cpp:908:6:void Inverse(float*, int, int, float*, float*)	11
+AOCScalc.cpp:959:6:void copy(const float*, int, int, float*)	3
+AOCScalc.cpp:973:6:void initQuaternion(float*)	1
+AOCScalc.cpp:988:7:float VecAngle(float*, float*, int, int)	5
+AOCScalc.cpp:1030:6:void Rotate_one_axis(const float*, int, int, float, float*)	6
+AOCScalc.cpp:1081:6:void make_rotate_matrix(int, float, float*)	4

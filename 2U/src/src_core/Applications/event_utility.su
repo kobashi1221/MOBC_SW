@@ -1,0 +1,6 @@
+../src/src_core/Applications/event_utility.c:24:13:EVENT_UTIL_init_	0	static
+../src/src_core/Applications/event_utility.c:29:13:EVENT_UTIL_update_	8	static
+../src/src_core/Applications/event_utility.c:19:9:EVENT_UTIL_create_app	8	static
+../src/src_core/Applications/event_utility.c:37:12:Cmd_EVENT_UTIL_ENABLE_EH_EXEC	8	static
+../src/src_core/Applications/event_utility.c:44:12:Cmd_EVENT_UTIL_DISABLE_EH_EXEC	8	static
+../src/src_core/Applications/event_utility.c:51:12:Cmd_EVENT_UTIL_EXEC_EH	8	static

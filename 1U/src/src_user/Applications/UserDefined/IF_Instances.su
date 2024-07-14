@@ -1,0 +1,5 @@
+../src/src_user/Applications/UserDefined/IF_Instances.cpp:33:6:void IF_instances_init()	24	static
+../src/src_user/Applications/UserDefined/IF_Instances.cpp:169:1:void __static_initialization_and_destruction_0(int, int)	24	static
+../src/src_user/Applications/UserDefined/IF_Instances.cpp:27:9:AppInfo IF_instances_update()	8	static
+../src/src_user/Applications/UserDefined/IF_Instances.cpp:169:1:cpp)	8	static
+../src/src_user/Applications/UserDefined/IF_Instances.cpp:169:1:cpp)	8	static

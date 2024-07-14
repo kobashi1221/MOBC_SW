@@ -1,0 +1,2 @@
+../src/src_user/Applications/UserDefined/Cdh/telemetry_user.c:18:12:Cmd_GENERATE_TLM_user	40	static
+../src/src_user/Applications/UserDefined/Cdh/telemetry_user.c:75:12:Cmd_GENERATE_HK_DEBUG	24	static

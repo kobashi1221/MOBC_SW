@@ -1,0 +1,10 @@
+common_tlm_cmd_packet.c:23:18:CTCP_get_packet_type	3
+common_tlm_cmd_packet.c:38:10:CTCP_get_packet_len	1
+common_tlm_cmd_packet.c:15:5:CTCP_is_valid_packet	3
+common_tlm_cmd_packet.c:43:6:CTCP_get_apid	1
+common_tlm_cmd_packet.c:48:6:CTCP_set_apid	1
+common_tlm_cmd_packet.c:53:6:CTCP_copy_packet	1
+common_tlm_cmd_packet.c:59:24:CTCP_convert_to_ctp	2
+common_tlm_cmd_packet.c:65:27:CTCP_convert_from_ctp	1
+common_tlm_cmd_packet.c:70:24:CTCP_convert_to_ccp	2
+common_tlm_cmd_packet.c:76:27:CTCP_convert_from_ccp	1

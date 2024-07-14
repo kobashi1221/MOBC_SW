@@ -1,0 +1,10 @@
+vt100.c:6:6:VT100_erase_down	1
+vt100.c:11:6:VT100_erase_up	1
+vt100.c:16:6:VT100_erase_screen	1
+vt100.c:21:6:VT100_erase_end_of_line	1
+vt100.c:26:6:VT100_erase_start_of_line	1
+vt100.c:31:6:VT100_erase_line	1
+vt100.c:36:6:VT100_set_color	5
+vt100.c:62:6:VT100_set_background	5
+vt100.c:88:6:VT100_reset_color	1
+vt100.c:93:6:VT100_reset_cursor	1

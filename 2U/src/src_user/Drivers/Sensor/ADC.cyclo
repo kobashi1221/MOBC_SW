@@ -1,0 +1,7 @@
+ADC.cpp:57:6:void ADC_Delay(uint16_t)	1
+ADC.cpp:62:6:void ADC_CLASS::ADC_GPIO_BUSY()	3
+ADC.cpp:111:6:void ADC_CLASS::Select_ANASEN_Channel()	1
+ADC.cpp:121:6:void ADC_CLASS::Select_PtTems_Channel()	1
+ADC.cpp:131:6:void ADC_CLASS::MUX_ANASEN(int)	9
+ADC.cpp:171:6:void ADC_CLASS::MUX_PtTEMS(int)	9
+ADC.cpp:227:5:int ADC_CLASS::ADC_GPIO_All_Read()	2

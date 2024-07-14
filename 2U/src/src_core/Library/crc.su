@@ -1,0 +1,6 @@
+../src/src_core/Library/crc.c:113:10:CRC_calc_crc_16_ibm_right	8	static
+../src/src_core/Library/crc.c:126:10:CRC_calc_crc_16_ccitt_left	12	static
+../src/src_core/Library/crc.c:139:10:CRC_calc_crc_16_ccitt_right	8	static
+../src/src_core/Library/crc.c:152:6:CRC_make_crc_8_table	4	static
+../src/src_core/Library/crc.c:176:6:CRC_make_crc_16_table	4	static
+../src/src_core/Library/crc.c:201:6:CRC_make_crc_32_table	8	static

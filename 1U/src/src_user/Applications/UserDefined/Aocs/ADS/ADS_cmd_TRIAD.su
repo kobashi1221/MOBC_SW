@@ -1,0 +1,5 @@
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_TRIAD.cpp:52:13:void TRIAD_init()	0	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_TRIAD.cpp:104:1:void __static_initialization_and_destruction_0(int, int)	4	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_TRIAD.cpp:70:13:void TRIAD_exe()	56	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_TRIAD.cpp:40:9:AppInfo TRIAD_update()	8	static
+../src/src_user/Applications/UserDefined/Aocs/ADS/ADS_cmd_TRIAD.cpp:104:1:cpp)	8	static

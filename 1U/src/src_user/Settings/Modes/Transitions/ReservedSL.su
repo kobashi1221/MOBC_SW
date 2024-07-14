@@ -1,0 +1,4 @@
+../src/src_user/Settings/Modes/Transitions/ReservedSL.c:19:6:BCL_load_to_reserved1	8	static
+../src/src_user/Settings/Modes/Transitions/ReservedSL.c:26:6:BCL_load_to_reserved2	8	static
+../src/src_user/Settings/Modes/Transitions/ReservedSL.c:33:6:BCL_load_to_reserved3	8	static
+../src/src_user/Settings/Modes/Transitions/ReservedSL.c:40:6:BCL_load_to_reserved4	8	static

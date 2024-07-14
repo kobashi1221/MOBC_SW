@@ -1,0 +1,4 @@
+sample_code.c:58:13:CDH_sample_code_init_	1
+sample_code.c:72:13:CDH_sample_code_update_	4
+sample_code.c:48:9:CDH_sample_code_create_app	1
+sample_code.c:156:12:Cmd_CDH_SAMPLE_CODE_TEST	1

@@ -1,0 +1,7 @@
+memory_dump.c:53:13:MEM_init_	1
+memory_dump.c:275:16:MEM_get_next_adu_counter_	1
+memory_dump.c:48:9:MEM_create_app	1
+memory_dump.c:62:12:Cmd_MEM_SET_REGION	3
+memory_dump.c:205:12:Cmd_MEM_LOAD	1
+memory_dump.c:224:12:Cmd_MEM_SET_DESTINATION	3
+memory_dump.c:244:12:Cmd_MEM_COPY_REGION_SEQ	3

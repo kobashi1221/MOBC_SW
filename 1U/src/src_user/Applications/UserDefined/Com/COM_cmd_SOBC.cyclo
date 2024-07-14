@@ -1,0 +1,7 @@
+COM_cmd_SOBC.c:54:6:SOBC_regular_tlm	1
+COM_cmd_SOBC.c:19:9:SOBC_Regular_Tlm	1
+COM_cmd_SOBC.c:23:12:Cmd_SOBC_DEBUG_SPI_Send	2
+COM_cmd_SOBC.c:35:12:Cmd_SOBC_Reset	1
+COM_cmd_SOBC.c:46:12:Cmd_DEBUG_GPIO	1
+COM_cmd_SOBC.c:82:12:Cmd_DEBUG_regular_tlm_on	3
+COM_cmd_SOBC.c:96:12:Cmd_DEBUG_anomaly_count	1

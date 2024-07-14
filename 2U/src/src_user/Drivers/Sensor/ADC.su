@@ -1,0 +1,7 @@
+../src/src_user/Drivers/Sensor/ADC.cpp:57:6:void ADC_Delay(uint16_t)	0	static
+../src/src_user/Drivers/Sensor/ADC.cpp:62:6:void ADC_CLASS::ADC_GPIO_BUSY()	24	static
+../src/src_user/Drivers/Sensor/ADC.cpp:111:6:void ADC_CLASS::Select_ANASEN_Channel()	24	static
+../src/src_user/Drivers/Sensor/ADC.cpp:121:6:void ADC_CLASS::Select_PtTems_Channel()	24	static
+../src/src_user/Drivers/Sensor/ADC.cpp:131:6:void ADC_CLASS::MUX_ANASEN(int)	64	static
+../src/src_user/Drivers/Sensor/ADC.cpp:171:6:void ADC_CLASS::MUX_PtTEMS(int)	64	static
+../src/src_user/Drivers/Sensor/ADC.cpp:227:5:int ADC_CLASS::ADC_GPIO_All_Read()	160	static

@@ -1,0 +1,14 @@
+/**
+ * @file   rxpic_telemetry_data_definitions.h
+ * @brief  バッファリングされているテレメをパースしてMOBC内でかんたんに利用できるようにするためのテレメデータ構造体定義
+ * @note   このコードは自動生成されています！
+ */
+#ifndef SOBC_TELEMETRY_DATA_DEFINITIONS_H_
+#define SOBC_TELEMETRY_DATA_DEFINITIONS_H_
+
+typedef struct
+{
+
+} SOBC_TlmData;
+
+#endif

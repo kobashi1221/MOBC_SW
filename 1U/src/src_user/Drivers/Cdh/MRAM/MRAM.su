@@ -1,0 +1,7 @@
+../src/src_user/Drivers/Cdh/MRAM/MRAM.c:97:13:SetHeader	0	static
+../src/src_user/Drivers/Cdh/MRAM/MRAM.c:109:13:SetPayload	8	static
+../src/src_user/Drivers/Cdh/MRAM/MRAM.c:47:19:MRAM_Enable	24	static
+../src/src_user/Drivers/Cdh/MRAM/MRAM.c:67:19:MRAM_Disable	24	static
+../src/src_user/Drivers/Cdh/MRAM/MRAM.c:85:6:MRAM_Init	0	static
+../src/src_user/Drivers/Cdh/MRAM/MRAM.c:118:19:MRAM_GeneralWrite	24	dynamic
+../src/src_user/Drivers/Cdh/MRAM/MRAM.c:143:19:MRAM_GeneralRead	40	dynamic

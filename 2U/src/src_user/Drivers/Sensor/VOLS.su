@@ -1,0 +1,5 @@
+../src/src_user/Drivers/Sensor/VOLS.cpp:43:5:int VOLS_CLASS::VOLS_SENSOR_AD7654_Get(int)	24	static
+../src/src_user/Drivers/Sensor/VOLS.cpp:130:5:int VOLS_CLASS::VOLS_SENSOR_init()	0	static
+../src/src_user/Drivers/Sensor/VOLS.cpp:135:5:int VOLS_CLASS::VOLS_SENSOR_get_MTQA()	8	static
+../src/src_user/Drivers/Sensor/VOLS.cpp:147:5:int VOLS_CLASS::VOLS_SENSOR_get_MTQO()	8	static
+../src/src_user/Drivers/Sensor/VOLS.cpp:159:5:int VOLS_CLASS::VOLS_SENSOR_get_all()	8	static

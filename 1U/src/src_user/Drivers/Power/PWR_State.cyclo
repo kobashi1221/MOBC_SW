@@ -1,0 +1,5 @@
+PWR_State.cpp:21:6:void PWR_State_SET(PWR_STATE, uint8_t)	2
+PWR_State.cpp:29:9:uint8_t PWR_VOTE(PWR_STATE)	3
+PWR_State.cpp:25:9:uint8_t PWR_State_GET(PWR_STATE)	1
+PWR_State.cpp:45:6:void PWR_Sepcoil_Guard_SET(uint8_t, uint8_t)	2
+PWR_State.cpp:49:9:uint8_t PWR_Sepcoil_Guard_GET(uint8_t)	3

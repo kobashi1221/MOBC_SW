@@ -1,0 +1,11 @@
+../src/src_user/TlmCmd/user_packet_handler.c:204:15:PH_add_rxpic_cmd_	8	static
+../src/src_user/TlmCmd/user_packet_handler.c:222:15:PH_add_cobc_cmd_	8	static
+../src/src_user/TlmCmd/user_packet_handler.c:231:15:PH_add_sobc_cmd_	8	static
+../src/src_user/TlmCmd/user_packet_handler.c:213:15:PH_add_txpic_cmd_	8	static
+../src/src_user/TlmCmd/user_packet_handler.c:249:15:PH_add_intersat_cmd_	8	static
+../src/src_user/TlmCmd/user_packet_handler.c:240:15:PH_add_lora_cmd_	8	static
+../src/src_user/TlmCmd/user_packet_handler.c:176:15:PH_add_tl_cmd_user	8	static
+../src/src_user/TlmCmd/user_packet_handler.c:66:6:PH_user_init	8	static
+../src/src_user/TlmCmd/user_packet_handler.c:79:8:PH_user_analyze_cmd	16	static
+../src/src_user/TlmCmd/user_packet_handler.c:132:12:PH_user_cmd_router	16	static
+../src/src_user/TlmCmd/user_packet_handler.c:168:17:PH_user_telemetry_router	0	static

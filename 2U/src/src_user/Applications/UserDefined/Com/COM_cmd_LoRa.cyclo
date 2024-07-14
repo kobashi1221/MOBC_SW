@@ -1,0 +1,10 @@
+COM_cmd_LoRa.c:80:13:COM_lora_initialize_param	1
+COM_cmd_LoRa.c:68:13:COM_lora_load_param	1
+COM_cmd_LoRa.c:64:9:CDH1_lora_param_update	1
+COM_cmd_LoRa.c:99:12:Cmd_COM_LoRa_Debug_Set	1
+COM_cmd_LoRa.c:115:12:Cmd_COM_LoRa_Debug_Check	1
+COM_cmd_LoRa.c:134:12:Cmd_COM_LoRa_Debug_Transmit	5
+COM_cmd_LoRa.c:190:12:Cmd_COM_user_RTCmd_send	1
+COM_cmd_LoRa.c:228:12:Cmd_COM_user_TLCmd_send	1
+COM_cmd_LoRa.c:262:12:Cmd_COM_LoRa_default_setting	1
+COM_cmd_LoRa.c:273:12:Cmd_COM_LoRa_tlm_update	1

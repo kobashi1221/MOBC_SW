@@ -1,0 +1,12 @@
+../src/src_core/TlmCmd/telemetry_generator.c:326:17:TG_get_next_seq_count_	0	static
+../src/src_core/TlmCmd/telemetry_generator.c:215:19:TG_generate_tlm_	40	static
+../src/src_core/TlmCmd/telemetry_generator.c:272:19:TG_forward_tlm_	40	static
+../src/src_core/TlmCmd/telemetry_generator.c:60:12:Cmd_GENERATE_TLM	32	static
+../src/src_core/TlmCmd/telemetry_generator.c:139:12:Cmd_TG_GENERATE_TLM	32	static
+../src/src_core/TlmCmd/telemetry_generator.c:150:12:Cmd_TG_GENERATE_HP_TLM	16	static
+../src/src_core/TlmCmd/telemetry_generator.c:158:12:Cmd_TG_GENERATE_RT_TLM	16	static
+../src/src_core/TlmCmd/telemetry_generator.c:166:12:Cmd_TG_GENERATE_ST_TLM	24	static
+../src/src_core/TlmCmd/telemetry_generator.c:175:12:Cmd_TG_FORWARD_TLM	40	static
+../src/src_core/TlmCmd/telemetry_generator.c:187:12:Cmd_TG_FORWARD_AS_HP_TLM	24	static
+../src/src_core/TlmCmd/telemetry_generator.c:196:12:Cmd_TG_FORWARD_AS_RT_TLM	24	static
+../src/src_core/TlmCmd/telemetry_generator.c:205:12:Cmd_TG_FORWARD_AS_ST_TLM	32	static

@@ -1,0 +1,5 @@
+PWR_cmd_GPIO_input_MOBC.cpp:69:13:void PWR_GPIO_input_MOBC_exe()	1
+PWR_cmd_GPIO_input_MOBC.cpp:60:13:void PWR_GPIO_input_MOBC_init()	1
+PWR_cmd_GPIO_input_MOBC.cpp:50:9:AppInfo PWR_GPIO_input_MOBC_update()	1
+PWR_cmd_GPIO_input_MOBC.cpp:135:9:uint8_t Get_GPIO_state(uint8_t)	5
+PWR_cmd_GPIO_input_MOBC.cpp:75:12:CCP_CmdRet Cmd_PWR_GPIO_input_MOBC_Read(const CommonCmdPacket*)	7

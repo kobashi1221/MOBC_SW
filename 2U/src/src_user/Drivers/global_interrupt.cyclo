@@ -1,0 +1,4 @@
+global_interrupt.c:21:6:HAL_UART_RxCpltCallback	7
+global_interrupt.c:71:6:HAL_UARTEx_RxEventCallback	5
+global_interrupt.c:142:6:HAL_UART_ErrorCallback	8
+global_interrupt.c:228:6:HAL_GPIO_EXTI_Callback	7

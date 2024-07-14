@@ -1,0 +1,2 @@
+../src/src_user/Applications/UserDefined/Cdh/Developer_message.c:20:12:Cmd_CDH_develop_register_msg	88	static
+../src/src_user/Applications/UserDefined/Cdh/Developer_message.c:38:12:Cmd_CDH_develop_msg_send_txpic	360	dynamic

@@ -1,0 +1,11 @@
+gs_validate.c:84:24:GS_check_tctf_header_	4
+gs_validate.c:109:24:GS_check_tcs_headers_	2
+gs_validate.c:124:24:GS_check_cmd_space_packet_headers_	6
+gs_validate.c:93:24:GS_check_tc_segment_	2
+gs_validate.c:158:24:GS_check_ad_cmd_	6
+gs_validate.c:199:24:GS_check_bd_cmd_	2
+gs_validate.c:213:24:GS_check_bc_cmd_	7
+gs_validate.c:42:6:GS_validate_init	1
+gs_validate.c:51:17:GS_validate_tctf	6
+gs_validate.c:250:10:GS_form_clcw	3
+gs_validate.c:288:17:GS_set_farm_pw	2

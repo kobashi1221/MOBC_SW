@@ -1,0 +1,3 @@
+../src/src_user/Applications/UserDefined/Aocs/AOCS_hils.c:32:13:AOCS_HILS_init_	0	static
+../src/src_user/Applications/UserDefined/Aocs/AOCS_hils.c:40:13:AOCS_HILS_update_	0	static
+../src/src_user/Applications/UserDefined/Aocs/AOCS_hils.c:26:9:AOCS_HILS_create_app	8	static

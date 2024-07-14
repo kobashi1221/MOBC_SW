@@ -1,0 +1,3 @@
+../src/src_core/TlmCmd/packet_list_util.c:8:8:PL_initialize_with_ctcp	16	static
+../src/src_core/TlmCmd/packet_list_util.c:21:8:PL_initialize_with_ctp	16	static
+../src/src_core/TlmCmd/packet_list_util.c:34:8:PL_initialize_with_ccp	16	static

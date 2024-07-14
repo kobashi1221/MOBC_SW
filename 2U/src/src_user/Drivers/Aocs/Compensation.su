@@ -1,0 +1,13 @@
+../src/src_user/Drivers/Aocs/Compensation.cpp:46:6:void COMPENSATION_CLASS::compesation_EarthAngularVelocity(float*, float*, float*, float*, float*)	96	static
+../src/src_user/Drivers/Aocs/Compensation.cpp:88:6:void COMPENSATION_CLASS::compesation_Coupling(float*, float*, float*)	80	static
+../src/src_user/Drivers/Aocs/Compensation.cpp:118:6:void COMPENSATION_CLASS::compesation_RMM(float*, float*, float*)	56	static
+../src/src_user/Drivers/Aocs/Compensation.cpp:147:6:void COMPENSATION_CLASS::compesation_ShapeAnisortropy(float*, float (*)[3], float*)	80	static
+../src/src_user/Drivers/Aocs/Compensation.cpp:177:6:void COMPENSATION_CLASS::compesation_EddyCurrent(float*, float*, float*)	56	static
+../src/src_user/Drivers/Aocs/Compensation.cpp:204:6:void COMPENSATION_CLASS::compesation_ConstantMagnetic(float*, float*, float*)	40	static
+../src/src_user/Drivers/Aocs/Compensation.cpp:221:6:void COMPENSATION_CLASS::Eartcal(float*, float*, float*, float*)	16	static
+../src/src_user/Drivers/Aocs/Compensation.cpp:226:6:void COMPENSATION_CLASS::Coupcal(float*, float*)	8	static
+../src/src_user/Drivers/Aocs/Compensation.cpp:231:6:void COMPENSATION_CLASS::RMMcal(float*, float*)	8	static
+../src/src_user/Drivers/Aocs/Compensation.cpp:236:6:void COMPENSATION_CLASS::Shapecal(float*, float (*)[3])	8	static
+../src/src_user/Drivers/Aocs/Compensation.cpp:242:6:void COMPENSATION_CLASS::Eddycal(float*, float*)	8	static
+../src/src_user/Drivers/Aocs/Compensation.cpp:248:6:void COMPENSATION_CLASS::Conscal(float*, float*)	8	static
+../src/src_user/Drivers/Aocs/Compensation.cpp:254:6:void COMPENSATION_CLASS::reset()	0	static

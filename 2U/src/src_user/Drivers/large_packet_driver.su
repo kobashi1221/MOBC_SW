@@ -1,0 +1,14 @@
+../src/src_user/Drivers/large_packet_driver.c:73:9:COM_large_packet_Analyzer	8	static
+../src/src_user/Drivers/large_packet_driver.c:287:6:header_common_init	0	static
+../src/src_user/Drivers/large_packet_driver.c:304:6:header_tlm_init	0	static
+../src/src_user/Drivers/large_packet_driver.c:316:6:header_cmd_init	0	static
+../src/src_user/Drivers/large_packet_driver.c:281:6:header_init	8	static
+../src/src_user/Drivers/large_packet_driver.c:322:6:large_packet_set	0	static
+../src/src_user/Drivers/large_packet_driver.c:326:6:large_packet_reset	0	static
+../src/src_user/Drivers/large_packet_driver.c:189:6:set_packet_header	16	static
+../src/src_user/Drivers/large_packet_driver.c:103:6:default_tlm_analyze	48	dynamic
+../src/src_user/Drivers/large_packet_driver.c:138:6:picture_tlm_analyze	48	dynamic
+../src/src_user/Drivers/large_packet_driver.c:87:6:large_packet_exe	8	static
+../src/src_user/Drivers/large_packet_driver.c:271:6:analyzer_init	16	static
+../src/src_user/Drivers/large_packet_driver.c:22:6:large_packet_TLM_analyze	16	static
+../src/src_user/Drivers/large_packet_driver.c:77:6:large_packet_init	8	static

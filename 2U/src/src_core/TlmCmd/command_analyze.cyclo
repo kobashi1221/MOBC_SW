@@ -1,0 +1,11 @@
+command_analyze.c:172:27:CA_get_param_size_type_	4
+command_analyze.c:37:6:CA_initialize	2
+command_analyze.c:93:9:CA_get_cmd_param_num	4
+command_analyze.c:108:9:CA_get_cmd_param_size	4
+command_analyze.c:132:10:CA_get_cmd_param_min_len	3
+command_analyze.c:164:5:CA_has_raw_param	2
+command_analyze.c:146:8:CA_ckeck_cmd_param_len	5
+command_analyze.c:56:12:CA_execute_cmd	4
+command_analyze.c:186:12:Cmd_CA_INIT	1
+command_analyze.c:193:12:Cmd_CA_REGISTER_CMD	5
+command_analyze.c:224:12:Cmd_CA_SET_PAGE_FOR_TLM	2

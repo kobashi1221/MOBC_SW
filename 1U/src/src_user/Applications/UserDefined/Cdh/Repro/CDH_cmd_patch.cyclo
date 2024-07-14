@@ -1,0 +1,2 @@
+CDH_cmd_patch.c:12:12:Cmd_CDH_patch_seq_data	3
+CDH_cmd_patch.c:44:12:Cmd_CDH_patch_scatter_data	4

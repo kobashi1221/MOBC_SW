@@ -1,0 +1,4 @@
+eclipse_setting_driver.c:24:6:judge_eclipse_flag	6
+eclipse_setting_driver.c:7:6:eclipse_flag_set	1
+eclipse_setting_driver.c:14:6:eclipse_flag_reset	1
+eclipse_setting_driver.c:55:6:eclipse_flag_init	1

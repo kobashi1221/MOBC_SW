@@ -1,0 +1,5 @@
+../src/src_user/Drivers/Aocs/Bdot.cpp:36:6:void BDOT_CLASS::Bdot(float*, float*, float*)	56	static
+../src/src_user/Drivers/Aocs/Bdot.cpp:58:6:void BDOT_CLASS::B_delta(float*, float*, float*)	88	static
+../src/src_user/Drivers/Aocs/Bdot.cpp:88:6:void BDOT_CLASS::cal(float*, float*)	8	static
+../src/src_user/Drivers/Aocs/Bdot.cpp:93:6:void BDOT_CLASS::Dcal(float*, float*)	8	static
+../src/src_user/Drivers/Aocs/Bdot.cpp:98:6:void BDOT_CLASS::reset()	0	static

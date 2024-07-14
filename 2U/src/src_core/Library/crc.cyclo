@@ -1,0 +1,6 @@
+crc.c:113:10:CRC_calc_crc_16_ibm_right	3
+crc.c:126:10:CRC_calc_crc_16_ccitt_left	5
+crc.c:139:10:CRC_calc_crc_16_ccitt_right	3
+crc.c:152:6:CRC_make_crc_8_table	6
+crc.c:176:6:CRC_make_crc_16_table	7
+crc.c:201:6:CRC_make_crc_32_table	7

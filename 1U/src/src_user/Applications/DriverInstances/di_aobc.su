@@ -1,0 +1,9 @@
+../src/src_user/Applications/DriverInstances/di_aobc.c:79:13:DI_AOBC_cmd_dispatcher_init_	0	static
+../src/src_user/Applications/DriverInstances/di_aobc.c:85:13:DI_AOBC_cmd_dispatcher_	0	static
+../src/src_user/Applications/DriverInstances/di_aobc.c:60:13:DI_AOBC_update_	8	static
+../src/src_user/Applications/DriverInstances/di_aobc.c:39:13:DI_AOBC_init_	8	static
+../src/src_user/Applications/DriverInstances/di_aobc.c:33:9:DI_AOBC_update	8	static
+../src/src_user/Applications/DriverInstances/di_aobc.c:71:9:DI_AOBC_cmd_dispatcher	8	static
+../src/src_user/Applications/DriverInstances/di_aobc.c:91:12:DI_AOBC_dispatch_command	8	static
+../src/src_user/Applications/DriverInstances/di_aobc.c:120:12:Cmd_DI_AOBC_CDIS_CLEAR_ALL_REALTIME	8	static
+../src/src_user/Applications/DriverInstances/di_aobc.c:129:12:Cmd_DI_AOBC_CDIS_CLEAR_ERR_LOG	8	static

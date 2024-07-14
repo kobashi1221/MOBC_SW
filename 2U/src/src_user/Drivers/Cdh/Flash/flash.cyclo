@@ -1,0 +1,8 @@
+flash.c:96:9:Calc_Sector_From_block	2
+flash.c:112:6:Set_Erase_Flag	1
+flash.c:54:9:Flash_Sector_Erase	7
+flash.c:116:6:Unset_Erase_Flag	1
+flash.c:120:9:Get_Erase_Flag	1
+flash.c:124:9:flash_copy_flash_to_flash_	7
+flash.c:156:14:Flash_Redundancy_check	5
+flash.c:189:9:flash_write	7
