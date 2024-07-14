@@ -54,8 +54,8 @@ AppInfo BCT_Tlm_Page(void);
 AppInfo Global_AOCS_flag_app(void);
 AppInfo Global_Mission_flag_app(void);
 
-CCP_CmdRet SD_combine_block_cmd(const CommonCmdPacket* packet);
-CCP_CmdRet SD_deploy_block_cmd(const CommonCmdPacket* packet);
+CCP_CmdRet Cmd_SD_combine_block_cmd(const CommonCmdPacket* packet);
+CCP_CmdRet Cmd_SD_deploy_block_cmd(const CommonCmdPacket* packet);
 CCP_CmdRet Cmd_BCT_CHANGE_ALT_BC(const CommonCmdPacket* packet);
 CCP_CmdRet Cmd_SAME_TL_MODE_TRANS(const CommonCmdPacket* packet);
 CCP_CmdRet Cmd_SAVE_BCT(const CommonCmdPacket* packet);

@@ -7,8 +7,8 @@ src/src_core/IfWrapper/Common/i2c_common.o: \
  ../src/src_core/IfWrapper/Common/../../Drivers/Super/../../Library/endian.h \
  ../src/src_core/IfWrapper/Common/../../Drivers/Super/../../System/TimeManager/time_manager.h \
  ../src/src_core/IfWrapper/Common/../../Drivers/Super/../../System/TimeManager/obc_time.h \
- ../src/src_core/IfWrapper/Common/../../Drivers/Super/../../System/TimeManager/../../TlmCmd/common_cmd_packet.h \
- c:\inamorilab\cubesat\magnaroii\magnaroii_sw\cdh\cdh1_main_for_blockcommand\src\src_core\system\timemanager\obc_time.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_core\tlmcmd\common_cmd_packet.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_core\system\timemanager\obc_time.h \
  ../src/src_user/TlmCmd/command_definitions.h \
  ../src/src_user/Settings/TlmCmd/common_cmd_packet_define.h \
  ../src/src_user/Settings/TlmCmd/./Ccsds/apid_define.h \
@@ -26,8 +26,8 @@ src/src_core/IfWrapper/Common/i2c_common.o: \
 ../src/src_core/IfWrapper/Common/../../Drivers/Super/../../Library/endian.h:
 ../src/src_core/IfWrapper/Common/../../Drivers/Super/../../System/TimeManager/time_manager.h:
 ../src/src_core/IfWrapper/Common/../../Drivers/Super/../../System/TimeManager/obc_time.h:
-../src/src_core/IfWrapper/Common/../../Drivers/Super/../../System/TimeManager/../../TlmCmd/common_cmd_packet.h:
-c:\inamorilab\cubesat\magnaroii\magnaroii_sw\cdh\cdh1_main_for_blockcommand\src\src_core\system\timemanager\obc_time.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_core\tlmcmd\common_cmd_packet.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_core\system\timemanager\obc_time.h:
 ../src/src_user/TlmCmd/command_definitions.h:
 ../src/src_user/Settings/TlmCmd/common_cmd_packet_define.h:
 ../src/src_user/Settings/TlmCmd/./Ccsds/apid_define.h:

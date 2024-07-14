@@ -101,7 +101,7 @@ src/src_user/Drivers/Power/PWR_Operation.o: \
  ../src/src_user/Settings/System/flag_setting.h \
  ../src/src_user/Drivers/Power/../../Applications/DriverInstances/di_LoRa.h \
  ../src/src_user/Drivers/Power/../../Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa.h \
- c:\inamorilab\cubesat\magnaroii\magnaroii_sw\cdh\cdh1_main_for_blockcommand\src\src_user\ifwrapper\hal.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\ifwrapper\hal.h \
  ../src/src_user/Drivers/Power/../../Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa_Struct.h \
  ../src/src_user/TlmCmd/CCSDS/TCPacket.h \
  ../src/src_core/TlmCmd/packet_handler.h \
@@ -251,7 +251,7 @@ src/src_user/Drivers/Power/PWR_Operation.o: \
 ../src/src_user/Settings/System/flag_setting.h:
 ../src/src_user/Drivers/Power/../../Applications/DriverInstances/di_LoRa.h:
 ../src/src_user/Drivers/Power/../../Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa.h:
-c:\inamorilab\cubesat\magnaroii\magnaroii_sw\cdh\cdh1_main_for_blockcommand\src\src_user\ifwrapper\hal.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\ifwrapper\hal.h:
 ../src/src_user/Drivers/Power/../../Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa_Struct.h:
 ../src/src_user/TlmCmd/CCSDS/TCPacket.h:
 ../src/src_core/TlmCmd/packet_handler.h:

@@ -222,6 +222,11 @@ void CA_load_cmd_table(CA_CmdInfo cmd_table[CA_MAX_CMDS])
   cmd_table[Cmd_CODE_BCT_LOAD_ROM].cmd_func = Cmd_LOAD_BCT;
   cmd_table[Cmd_CODE_BCT_LOAD_ROM].param_size_infos[0].packed_info.bit.first = CA_PARAM_SIZE_TYPE_2BYTE;
   cmd_table[Cmd_CODE_BCT_LOAD_ROM].param_size_infos[0].packed_info.bit.second = CA_PARAM_SIZE_TYPE_4BYTE;
+  cmd_table[Cmd_CODE_BCT_SD_COMBINE].cmd_func = Cmd_SD_combine_block_cmd;
+  cmd_table[Cmd_CODE_BCT_SD_COMBINE].param_size_infos[0].packed_info.bit.first = CA_PARAM_SIZE_TYPE_2BYTE;
+  cmd_table[Cmd_CODE_BCT_SD_DEPLOY].cmd_func = Cmd_SD_deploy_block_cmd;
+  cmd_table[Cmd_CODE_BCT_SD_DEPLOY].param_size_infos[0].packed_info.bit.first = CA_PARAM_SIZE_TYPE_1BYTE;
+  cmd_table[Cmd_CODE_BCT_SD_DEPLOY].param_size_infos[0].packed_info.bit.second = CA_PARAM_SIZE_TYPE_2BYTE;
 
   /* --- Repro --- */
   cmd_table[Cmd_CODE_CDH_RESET_SEQ_CNT].cmd_func = Cmd_CDH_AllRepro_reset_flag;

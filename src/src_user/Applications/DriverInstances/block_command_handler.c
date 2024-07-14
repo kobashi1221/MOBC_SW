@@ -228,13 +228,13 @@ void mode_definition_param_init(void){
  * @author： kobayashi
  * @return なし
  */
-CCP_CmdRet SD_combine_block_cmd(const CommonCmdPacket* packet)
+CCP_CmdRet Cmd_SD_combine_block_cmd(const CommonCmdPacket* packet)
 {
   const uint8_t *param = CCP_get_param_head(packet);
   uint16_t sd_bcid;
   uint8_t cmd_num;
   TCP TCP;
-  memcpy(&sd_bcid, param, 2);
+  ENDIAN_memcpy(&sd_bcid, param, 2);
 
   if(sd_bcid > SD_BCT_NUM)  return CCP_make_cmd_ret_without_err_code(CCP_EXEC_ILLEGAL_PARAMETER);
   
@@ -244,6 +244,7 @@ CCP_CmdRet SD_combine_block_cmd(const CommonCmdPacket* packet)
     CCP_CmdRet cmd_ret = PH_dispatch_command(&TCP);
     if (cmd_ret.exec_sts != CCP_EXEC_SUCCESS) return cmd_ret;
   }
+  printf("combine block command ID %d\r\n", sd_bcid);
   return CCP_make_cmd_ret_without_err_code(CCP_EXEC_SUCCESS);
 }
 
@@ -256,12 +257,12 @@ CCP_CmdRet SD_combine_block_cmd(const CommonCmdPacket* packet)
  * @author： kobayashi
  * @return なし
  */
-CCP_CmdRet SD_deploy_block_cmd(const CommonCmdPacket* packet)
+CCP_CmdRet Cmd_SD_deploy_block_cmd(const CommonCmdPacket* packet)
 {
   const uint8_t *param = CCP_get_param_head(packet);
   uint16_t sd_bcid;
   TLCD_ID id = (TLCD_ID)CCP_get_param_from_packet(packet, 0, uint8_t);
-  memcpy(&sd_bcid, param+1, 2);
+  ENDIAN_memcpy(&sd_bcid, param+1, 2);
   // 指定されたライン番号が存在しない場合は異常判定
   if (id >= TLCD_ID_MAX)     return CCP_make_cmd_ret_without_err_code(CCP_EXEC_ILLEGAL_PARAMETER);
   if (sd_bcid > SD_BCT_NUM)  return CCP_make_cmd_ret_without_err_code(CCP_EXEC_ILLEGAL_PARAMETER);
@@ -282,7 +283,7 @@ CCP_CmdRet SD_deploy_block_cmd(const CommonCmdPacket* packet)
       return CCP_make_cmd_ret(CCP_EXEC_ILLEGAL_CONTEXT, (uint32_t)ack);
     }
   }
-
+  printf("deploy block command ID %d\r\n", sd_bcid);
   return CCP_make_cmd_ret(CCP_EXEC_SUCCESS, (uint32_t)ack);
 }
 
@@ -546,6 +547,7 @@ CCP_CmdRet Cmd_BCT_SD_SET_CMD(const CommonCmdPacket* packet)
 	SD_write_param(&save_packet, NULL, TCP_PRM_HDR_LEN + TCP_CMD_2ND_HDR_LEN + TCP_CMD_USER_HDR_LEN + len,
 			        SD_SAVE_ADDRESS + BCT_SIZE * SD_saved_id + sizeof(uint8_t) + BCT_CMD_MAX_LENGTH * cmd_pos);
 
+	printf("command registration done BCID = %d, cmd_pos = %d, cmd_id = %d\r\n", SD_saved_id, cmd_pos, cmd_id);
 	return CCP_make_cmd_ret_without_err_code(CCP_EXEC_SUCCESS);
 }
 
@@ -565,6 +567,8 @@ CCP_CmdRet Cmd_BCT_SD_SET_CMD_NUM(const CommonCmdPacket* packet)
 	}
 
 	SD_write_param(param + 2, NULL, sizeof(uint8_t), SD_SAVE_ADDRESS + BCT_SIZE * SD_saved_id);
+
+    printf("registration done BCID = %d, length = %d\r\n", SD_saved_id,cmd_num);
 
 	return CCP_make_cmd_ret_without_err_code(CCP_EXEC_SUCCESS);
 }

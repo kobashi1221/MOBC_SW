@@ -115,12 +115,12 @@ src/src_user/Applications/UserDefined/Aocs/AOCS_tlm_param.o: \
  ../src/src_user/TlmCmd/../Applications/DriverInstances/di_gs.h \
  ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/gs.h \
  ../src/src_core/TlmCmd/packet_handler.h \
- ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/../../IfWrapper/ccsds_user.h \
- ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/../../TlmCmd/Ccsds/vcdu.h \
- ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/../../TlmCmd/Ccsds/m_pdu.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\ifwrapper\ccsds_user.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\tlmcmd\ccsds\vcdu.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\tlmcmd\ccsds\m_pdu.h \
  ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/gs_validate.h \
- ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/../../TlmCmd/Ccsds/tc_transfer_frame.h \
- ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/../../TlmCmd/Ccsds/tc_segment.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\tlmcmd\ccsds\tc_transfer_frame.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\tlmcmd\ccsds\tc_segment.h \
  ../src/src_core/TlmCmd/Ccsds/cmd_space_packet.h \
  ../src/src_user/Settings/TlmCmd/Ccsds/cmd_space_packet_params.h \
  ../src/src_core/TlmCmd/Ccsds/space_packet_typedef.h \
@@ -213,7 +213,7 @@ src/src_user/Applications/UserDefined/Aocs/AOCS_tlm_param.o: \
  ../src/src_user/Applications/UserDefined/IF_Instances.h \
  ../src/src_user/TlmCmd/../Applications/DriverInstances/di_LoRa.h \
  ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa.h \
- ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/CDH/LoRa/../../../IfWrapper/HAL.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\ifwrapper\hal.h \
  ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa_Struct.h \
  ../src/src_user/Drivers/Com/INTER_SAT/Inter_Sat_telemetry_data_definitions.h \
  ../src/src_user/Drivers/Com/GS/command_response_struct.h \
@@ -241,7 +241,7 @@ src/src_user/Applications/UserDefined/Aocs/AOCS_tlm_param.o: \
  ../src/src_user/TlmCmd/../Applications/DriverInstances/dbg_packet_handler.h \
  ../src/src_user/TlmCmd/../Applications/DriverInstances/../../TlmCmd/user_packet_handler.h \
  ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Dbg/DBG.h \
- ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Dbg/../../TlmCmd/CCSDS/TCPacket.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\tlmcmd\ccsds\tcpacket.h \
  ../src/src_user/TlmCmd/../Applications/UserDefined/debug_apps.h \
  ../src/src_user/Applications/UserDefined/AOCS/ACS/ACS_cmd_Bdot.h \
  ../src/src_user/Applications/UserDefined/AOCS/ACS/ACS_cmd_CrossProduct.h \
@@ -523,12 +523,12 @@ src/src_user/Applications/UserDefined/Aocs/AOCS_tlm_param.o: \
 ../src/src_user/TlmCmd/../Applications/DriverInstances/di_gs.h:
 ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/gs.h:
 ../src/src_core/TlmCmd/packet_handler.h:
-../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/../../IfWrapper/ccsds_user.h:
-../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/../../TlmCmd/Ccsds/vcdu.h:
-../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/../../TlmCmd/Ccsds/m_pdu.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\ifwrapper\ccsds_user.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\tlmcmd\ccsds\vcdu.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\tlmcmd\ccsds\m_pdu.h:
 ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/gs_validate.h:
-../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/../../TlmCmd/Ccsds/tc_transfer_frame.h:
-../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Com/../../TlmCmd/Ccsds/tc_segment.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\tlmcmd\ccsds\tc_transfer_frame.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\tlmcmd\ccsds\tc_segment.h:
 ../src/src_core/TlmCmd/Ccsds/cmd_space_packet.h:
 ../src/src_user/Settings/TlmCmd/Ccsds/cmd_space_packet_params.h:
 ../src/src_core/TlmCmd/Ccsds/space_packet_typedef.h:
@@ -622,7 +622,7 @@ src/src_user/Applications/UserDefined/Aocs/AOCS_tlm_param.o: \
 ../src/src_user/Applications/UserDefined/IF_Instances.h:
 ../src/src_user/TlmCmd/../Applications/DriverInstances/di_LoRa.h:
 ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa.h:
-../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/CDH/LoRa/../../../IfWrapper/HAL.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\ifwrapper\hal.h:
 ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa_Struct.h:
 ../src/src_user/Drivers/Com/INTER_SAT/Inter_Sat_telemetry_data_definitions.h:
 ../src/src_user/Drivers/Com/GS/command_response_struct.h:
@@ -650,7 +650,7 @@ src/src_user/Applications/UserDefined/Aocs/AOCS_tlm_param.o: \
 ../src/src_user/TlmCmd/../Applications/DriverInstances/dbg_packet_handler.h:
 ../src/src_user/TlmCmd/../Applications/DriverInstances/../../TlmCmd/user_packet_handler.h:
 ../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Dbg/DBG.h:
-../src/src_user/TlmCmd/../Applications/DriverInstances/../../Drivers/Dbg/../../TlmCmd/CCSDS/TCPacket.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\tlmcmd\ccsds\tcpacket.h:
 ../src/src_user/TlmCmd/../Applications/UserDefined/debug_apps.h:
 ../src/src_user/Applications/UserDefined/AOCS/ACS/ACS_cmd_Bdot.h:
 ../src/src_user/Applications/UserDefined/AOCS/ACS/ACS_cmd_CrossProduct.h:

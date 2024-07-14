@@ -8,7 +8,7 @@ src/src_core/Drivers/Protocol/eb90_frame_for_driver_super.o: \
  ../src/src_core/Drivers/Protocol/../Super/../../System/TimeManager/time_manager.h \
  ../src/src_core/Drivers/Protocol/../Super/../../System/TimeManager/obc_time.h \
  ../src/src_core/Drivers/Protocol/../Super/../../System/TimeManager/../../TlmCmd/common_cmd_packet.h \
- ../src/src_core/Drivers/Protocol/../Super/../../System/TimeManager/../../TlmCmd/../System/TimeManager/obc_time.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_core\system\timemanager\obc_time.h \
  ../src/src_user/TlmCmd/command_definitions.h \
  ../src/src_user/Settings/TlmCmd/common_cmd_packet_define.h \
  ../src/src_user/Settings/TlmCmd/./Ccsds/apid_define.h \
@@ -27,7 +27,7 @@ src/src_core/Drivers/Protocol/eb90_frame_for_driver_super.o: \
 ../src/src_core/Drivers/Protocol/../Super/../../System/TimeManager/time_manager.h:
 ../src/src_core/Drivers/Protocol/../Super/../../System/TimeManager/obc_time.h:
 ../src/src_core/Drivers/Protocol/../Super/../../System/TimeManager/../../TlmCmd/common_cmd_packet.h:
-../src/src_core/Drivers/Protocol/../Super/../../System/TimeManager/../../TlmCmd/../System/TimeManager/obc_time.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_core\system\timemanager\obc_time.h:
 ../src/src_user/TlmCmd/command_definitions.h:
 ../src/src_user/Settings/TlmCmd/common_cmd_packet_define.h:
 ../src/src_user/Settings/TlmCmd/./Ccsds/apid_define.h:

@@ -179,6 +179,8 @@ typedef enum
   Cmd_CODE_BCT_SD_SET_CMD_NUM,
   Cmd_CODE_BCT_SAVE_ROM,
   Cmd_CODE_BCT_LOAD_ROM,
+  Cmd_CODE_BCT_SD_COMBINE,
+  Cmd_CODE_BCT_SD_DEPLOY,
 
   /* --- Repro --- */
   Cmd_CODE_CDH_RESET_SEQ_CNT,

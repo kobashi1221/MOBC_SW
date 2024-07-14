@@ -134,7 +134,7 @@ src/src_user/Applications/UserDefined/Com/COM_cmd_response.o: \
  ../src/src_user/Applications/UserDefined/Com/../../DriverInstances/../../Drivers/Com/COBC/cobc_telemetry_definitions.h \
  ../src/src_user/Applications/UserDefined/Com/../../DriverInstances/di_lora.h \
  ../src/src_user/Applications/UserDefined/Com/../../DriverInstances/../../Drivers/CDH/LoRa/LoRa.h \
- c:\inamorilab\cubesat\magnaroii\magnaroii_sw\cdh\cdh1_main_for_blockcommand\src\src_user\ifwrapper\hal.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\ifwrapper\hal.h \
  ../src/src_user/Applications/UserDefined/Com/../../DriverInstances/../../Drivers/CDH/LoRa/LoRa_Struct.h \
  ../src/src_user/Library/Delay.h \
  ../src/src_user/Drivers/Com/Circular_buffer.h \
@@ -287,7 +287,7 @@ src/src_user/Applications/UserDefined/Com/COM_cmd_response.o: \
 ../src/src_user/Applications/UserDefined/Com/../../DriverInstances/../../Drivers/Com/COBC/cobc_telemetry_definitions.h:
 ../src/src_user/Applications/UserDefined/Com/../../DriverInstances/di_lora.h:
 ../src/src_user/Applications/UserDefined/Com/../../DriverInstances/../../Drivers/CDH/LoRa/LoRa.h:
-c:\inamorilab\cubesat\magnaroii\magnaroii_sw\cdh\cdh1_main_for_blockcommand\src\src_user\ifwrapper\hal.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\ifwrapper\hal.h:
 ../src/src_user/Applications/UserDefined/Com/../../DriverInstances/../../Drivers/CDH/LoRa/LoRa_Struct.h:
 ../src/src_user/Library/Delay.h:
 ../src/src_user/Drivers/Com/Circular_buffer.h:

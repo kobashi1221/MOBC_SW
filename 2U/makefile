@@ -153,8 +153,8 @@ all: main-build
 main-build: Nucube_C2A_MOBC.elf secondary-outputs
 
 # Tool invocations
-Nucube_C2A_MOBC.elf Nucube_C2A_MOBC.map: $(OBJS) $(USER_OBJS) C:\INAMORILAB\cubesat\MAGNAROII\MAGNAROII_SW\CDH\CDH1_main_for_blockcommand\STM32F469BITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "Nucube_C2A_MOBC.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\INAMORILAB\cubesat\MAGNAROII\MAGNAROII_SW\CDH\CDH1_main_for_blockcommand\STM32F469BITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Nucube_C2A_MOBC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Nucube_C2A_MOBC.elf Nucube_C2A_MOBC.map: $(OBJS) $(USER_OBJS) C:\Users\SAT86\Documents\kobayashi\MAGNARO2\MOBC\C2A\C2A_git\STM32F469BITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "Nucube_C2A_MOBC.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\SAT86\Documents\kobayashi\MAGNARO2\MOBC\C2A\C2A_git\STM32F469BITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Nucube_C2A_MOBC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

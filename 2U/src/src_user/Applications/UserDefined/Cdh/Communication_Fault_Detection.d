@@ -88,7 +88,7 @@ src/src_user/Applications/UserDefined/Cdh/Communication_Fault_Detection.o: \
  ../src/src_core/TlmCmd/telemetry_frame.h \
  ../src/src_user/Settings/TlmCmd/telemetry_frame_params.h \
  ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/Com/../../TlmCmd/telemetry_definitions.h \
- ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/Com/../../TlmCmd/../Settings/TlmCmd/Ccsds/apid_define.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\settings\tlmcmd\ccsds\apid_define.h \
  ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/Com/INTER_SAT/Inter_Sat.h \
  ../src/src_user/Applications/DriverInstances/di_struct.h \
  ../src/src_user/Applications/DriverInstances/../../TlmCmd/user_packet_handler.h \
@@ -129,7 +129,7 @@ src/src_user/Applications/UserDefined/Cdh/Communication_Fault_Detection.o: \
  ../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.h \
  ../src/src_user/Applications/UserDefined/IF_Instances.h \
  ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/../Applications/DriverInstances/di_sobc.h \
- c:\inamorilab\cubesat\magnaroii\magnaroii_sw\cdh\cdh1_main_for_blockcommand\src\src_user\drivers\com\sobc\sobc.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\drivers\com\sobc\sobc.h \
  ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/Dbg/DBG.h \
  ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/Dbg/../../TlmCmd/CCSDS/TCPacket.h \
  ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/Power/PWR_Operation.h \
@@ -237,7 +237,7 @@ src/src_user/Applications/UserDefined/Cdh/Communication_Fault_Detection.o: \
 ../src/src_core/TlmCmd/telemetry_frame.h:
 ../src/src_user/Settings/TlmCmd/telemetry_frame_params.h:
 ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/Com/../../TlmCmd/telemetry_definitions.h:
-../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/Com/../../TlmCmd/../Settings/TlmCmd/Ccsds/apid_define.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\settings\tlmcmd\ccsds\apid_define.h:
 ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/Com/INTER_SAT/Inter_Sat.h:
 ../src/src_user/Applications/DriverInstances/di_struct.h:
 ../src/src_user/Applications/DriverInstances/../../TlmCmd/user_packet_handler.h:
@@ -279,7 +279,7 @@ src/src_user/Applications/UserDefined/Cdh/Communication_Fault_Detection.o: \
 ../src/src_user/Applications/UserDefined/Power/PWR_cmd_IOEX_PWR2.h:
 ../src/src_user/Applications/UserDefined/IF_Instances.h:
 ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/../Applications/DriverInstances/di_sobc.h:
-c:\inamorilab\cubesat\magnaroii\magnaroii_sw\cdh\cdh1_main_for_blockcommand\src\src_user\drivers\com\sobc\sobc.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\drivers\com\sobc\sobc.h:
 ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/Dbg/DBG.h:
 ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/Dbg/../../TlmCmd/CCSDS/TCPacket.h:
 ../src/src_user/Applications/UserDefined/Cdh/../../../Drivers/Power/PWR_Operation.h:

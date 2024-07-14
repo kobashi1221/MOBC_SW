@@ -43,7 +43,7 @@ src/src_user/Applications/DriverInstances/di_LoRa.o: \
  ../2U_config/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../2U_config/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
  ../src/src_user/Drivers/Cdh/reset_counter.h \
- ../src/src_user/Applications/DriverInstances/../../Drivers/CDH/LoRa/../../../IfWrapper/HAL.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\ifwrapper\hal.h \
  ../src/src_user/Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa_Struct.h \
  ../src/src_user/TlmCmd/CCSDS/TCPacket.h \
  ../src/src_core/TlmCmd/packet_handler.h \
@@ -170,7 +170,7 @@ src/src_user/Applications/DriverInstances/di_LoRa.o: \
 ../2U_config/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../2U_config/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
 ../src/src_user/Drivers/Cdh/reset_counter.h:
-../src/src_user/Applications/DriverInstances/../../Drivers/CDH/LoRa/../../../IfWrapper/HAL.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\ifwrapper\hal.h:
 ../src/src_user/Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa_Struct.h:
 ../src/src_user/TlmCmd/CCSDS/TCPacket.h:
 ../src/src_core/TlmCmd/packet_handler.h:

@@ -128,7 +128,7 @@ src/src_user/Applications/DriverInstances/tlm_packet_handler.o: \
  ../src/src_user/Drivers/COM/INTER_SAT/Inter_Sat_telemetry_definitions.h \
  ../src/src_user/Applications/DriverInstances/di_lora.h \
  ../src/src_user/Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa.h \
- ../src/src_user/Applications/DriverInstances/../../Drivers/CDH/LoRa/../../../IfWrapper/HAL.h \
+ c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\ifwrapper\hal.h \
  ../src/src_user/Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa_Struct.h \
  ../src/src_user/Drivers/Com/INTER_SAT/Inter_Sat_telemetry_data_definitions.h \
  ../src/src_user/Drivers/Com/GS/command_response_struct.h \
@@ -275,7 +275,7 @@ src/src_user/Applications/DriverInstances/tlm_packet_handler.o: \
 ../src/src_user/Drivers/COM/INTER_SAT/Inter_Sat_telemetry_definitions.h:
 ../src/src_user/Applications/DriverInstances/di_lora.h:
 ../src/src_user/Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa.h:
-../src/src_user/Applications/DriverInstances/../../Drivers/CDH/LoRa/../../../IfWrapper/HAL.h:
+c:\users\sat86\documents\kobayashi\magnaro2\mobc\c2a\c2a_git\src\src_user\ifwrapper\hal.h:
 ../src/src_user/Applications/DriverInstances/../../Drivers/CDH/LoRa/LoRa_Struct.h:
 ../src/src_user/Drivers/Com/INTER_SAT/Inter_Sat_telemetry_data_definitions.h:
 ../src/src_user/Drivers/Com/GS/command_response_struct.h:
