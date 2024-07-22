@@ -105,6 +105,9 @@ static void DBG_cmd_packet_handler_(void)	//Noro
 
 //	  CCP_form_tlc(&(dbg->tcp),TMGR_get_master_total_cycle()+5,cmd_id,param,packet_len);
 	  CCP_form_rtc(&(dbg->tcp),cmd_id,param,packet_len);
+	  TCP_CMD_set_res_packet_id(&(dbg->tcp), 0xfe);
+	  CCP_set_exec_type(&(dbg->tcp), CCP_EXEC_TYPE_GS);
+
 	  /////////////response test//////////////////////
 //	  CCP_set_exec_type(&(dbg->tcp), CCP_EXEC_TYPE_GS);
 //	  TCP_CMD_set_res_packet_id(&(dbg->tcp), 0x4f);//HK

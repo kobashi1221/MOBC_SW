@@ -54,6 +54,7 @@ typedef enum{
 
 	TCP tcp;
 	uint8_t tlc_goal_response;
+	uint8_t packet_header[6];
 }GS_RESPONS_STRUCT;
 
  extern GS_RESPONS_STRUCT* const p_gs_response_struct;

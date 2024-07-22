@@ -43,6 +43,7 @@ void command_response_handler(const TCP* packet){
 		p_gs_response_struct->res_route = TCP_CMD_get_res_route(packet);
 
 		p_gs_response_struct->res_flag = GSC_RES;
+		memcpy(&p_gs_response_struct->packet_header, packet->packet ,6);
 	}
 	else if(tl_command_checker(packet) == _SUCCESS){
 		if(CCP_get_id(packet) == Cmd_CODE_CDH_PROGRAM_TO_SD){//リプロコマンドはシーケンスカウントの位置が異なる
@@ -62,6 +63,7 @@ void command_response_handler(const TCP* packet){
 		p_gs_response_struct->tlc_register_time = CCP_get_ti(packet);
 
 		p_gs_response_struct->res_flag = TLC_RES;
+        memcpy(&p_gs_response_struct->packet_header, packet->packet ,6);
 	}
 	else{
 		//GSからのTLC or GSCでないと何もしない

@@ -16,10 +16,8 @@ main.c:869:13:MX_UART8_Init	1
 main.c:902:13:MX_USART1_UART_Init	1
 main.c:935:13:MX_USART2_UART_Init	1
 main.c:968:13:MX_USART3_UART_Init	1
-main.c:739:13:MX_TIM14_Init	1
 main.c:701:13:MX_TIM6_Init	1
 main.c:245:13:MX_ADC1_Init	1
-main.c:421:13:MX_IWDG_Init	1
 main.c:449:13:MX_RTC_Init	1
 main.c:197:6:SystemClock_Config	1
 main.c:123:5:main	1

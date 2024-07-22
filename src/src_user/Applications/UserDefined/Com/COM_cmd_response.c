@@ -201,28 +201,41 @@ void response_init(void){
 }
 
 void gsc_response_handler(void){
-	uint8_t gsc_buffer[27];
+	uint8_t gsc_buffer[17];
 	if(p_gs_response_struct->res_packet_id == ONLY_RESULT_RESPONSE){
-		TF_copy_u8(&gsc_buffer[0], (uint8_t)(p_gs_response_struct->res_apid));
-		TF_copy_u8(&gsc_buffer[1], (uint8_t)(p_gs_response_struct->res_route));
-		TF_copy_u32(&gsc_buffer[2], (uint32_t)(TMGR_get_master_total_cycle()));
-		TF_copy_u16(&gsc_buffer[6], (uint16_t)(gs_command_dispatcher->prev.code));
-		TF_copy_i8(&gsc_buffer[8], (int8_t)(gs_command_dispatcher->prev.cmd_ret.exec_sts));
-		TF_copy_u16(&gsc_buffer[9], (uint16_t)(p_gs_response_struct->res_seq_count));
-		TF_copy_u32(&gsc_buffer[11], (uint32_t)(gs_command_dispatcher->prev_err.time.total_cycle));
-		TF_copy_u16(&gsc_buffer[15], (uint16_t)(gs_command_dispatcher->prev_err.code));
-		TF_copy_i8(&gsc_buffer[17], (int8_t)(gs_command_dispatcher->prev_err.cmd_ret.exec_sts));
-		TF_copy_u32(&gsc_buffer[18], (uint32_t)(gs_command_dispatcher->error_counter));
+//		TF_copy_u8(&gsc_buffer[0], (uint8_t)(p_gs_response_struct->res_apid));
+//		TF_copy_u8(&gsc_buffer[1], (uint8_t)(p_gs_response_struct->res_route));
+//		TF_copy_u32(&gsc_buffer[2], (uint32_t)(TMGR_get_master_total_cycle()));
+//		TF_copy_u16(&gsc_buffer[6], (uint16_t)(gs_command_dispatcher->prev.code));
+//		TF_copy_i8(&gsc_buffer[8], (int8_t)(gs_command_dispatcher->prev.cmd_ret.exec_sts));
+//		TF_copy_u16(&gsc_buffer[9], (uint16_t)(p_gs_response_struct->res_seq_count));
+//		TF_copy_u32(&gsc_buffer[11], (uint32_t)(gs_command_dispatcher->prev_err.time.total_cycle));
+//		TF_copy_u16(&gsc_buffer[15], (uint16_t)(gs_command_dispatcher->prev_err.code));
+//		TF_copy_i8(&gsc_buffer[17], (int8_t)(gs_command_dispatcher->prev_err.cmd_ret.exec_sts));
+//		TF_copy_u32(&gsc_buffer[18], (uint32_t)(gs_command_dispatcher->error_counter));
 
-		parse_tlm_info(&gsc_buffer[22]);
-#ifdef TWO_U
-		CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_2U, (CMD_CODE)command_response_rtc_CMDcode,&gsc_buffer[0],sizeof(gsc_buffer));
-#endif
-#ifdef ONE_U
-		CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_1U, (CMD_CODE)command_response_rtc_CMDcode,&gsc_buffer[0],sizeof(gsc_buffer));
-#endif
-		memcpy(&code_id, &gs_command_dispatcher->prev.code, 2);
+//		parse_tlm_info(&gsc_buffer[22]);
+        memcpy(&gsc_buffer[0], p_gs_response_struct->packet_header, sizeof(p_gs_response_struct->packet_header));
+        TF_copy_u16(&gsc_buffer[6], (uint16_t)(gs_command_dispatcher->prev.code));
+        TF_copy_i8(&gsc_buffer[8], (int8_t)(gs_command_dispatcher->prev.cmd_ret.exec_sts));
+        TF_copy_u32(&gsc_buffer[9], (uint32_t)(gs_command_dispatcher->prev_err.time.total_cycle));
+        TF_copy_u16(&gsc_buffer[13], (uint16_t)(gs_command_dispatcher->prev_err.code));
+        TF_copy_i8(&gsc_buffer[15], (int8_t)(gs_command_dispatcher->prev_err.cmd_ret.exec_sts));
+        TF_copy_u32(&gsc_buffer[16], (uint32_t)(gs_command_dispatcher->error_counter));
+//#ifdef TWO_U
+////		CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_2U, (CMD_CODE)command_response_rtc_CMDcode,&gsc_buffer[0],sizeof(gsc_buffer));
+//#endif
+//#ifdef ONE_U
+////		CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_1U, (CMD_CODE)command_response_rtc_CMDcode,&gsc_buffer[0],sizeof(gsc_buffer));
+//#endif
+////		memcpy(&code_id, &gs_command_dispatcher->prev.code, 2);
 
+//        CCP_form_rtc_(&p_gs_response_struct->tcp, (CMD_CODE)command_response_rtc_CMDcode, p_gs_response_struct->packet_header, sizeof(p_gs_response_struct->packet_header));
+        CCP_set_common_hdr(&p_gs_response_struct->tcp);
+        CCP_set_id(&p_gs_response_struct->tcp, (CMD_CODE)command_response_rtc_CMDcode);
+        CCP_set_exec_type(&p_gs_response_struct->tcp, CCP_EXEC_TYPE_RT);
+        CCP_set_ti(&p_gs_response_struct->tcp, 0);  // RTの場合、TIは0固定
+        CCP_set_param(&p_gs_response_struct->tcp, gsc_buffer, sizeof(gsc_buffer));
 		TCP_set_apid_sat_id(&p_gs_response_struct->tcp, p_gs_response_struct->res_sat_id);
 		TCP_set_apid_executer_id(&p_gs_response_struct->tcp, TCP_EXE_ID_TXPIC);
 		TCP_set_route(&p_gs_response_struct->tcp, p_gs_response_struct->res_route);
@@ -243,30 +256,47 @@ void gsc_response_handler(void){
 	else{
 		//電流値が反映されないことがあるからelifにはしない
 		if(tlm_count == tlm_time_counter){
-			TF_copy_u8(&gsc_buffer[0], (uint8_t)(p_gs_response_struct->res_apid));
-			TF_copy_u8(&gsc_buffer[1], (uint8_t)(p_gs_response_struct->res_route));
-			TF_copy_u32(&gsc_buffer[2], (uint32_t)(TMGR_get_master_total_cycle()));
-			TF_copy_u16(&gsc_buffer[6], (uint16_t)(gs_command_dispatcher->prev.code));
-			TF_copy_i8(&gsc_buffer[8], (int8_t)(gs_command_dispatcher->prev.cmd_ret.exec_sts));
-			TF_copy_u16(&gsc_buffer[9], (uint16_t)(p_gs_response_struct->res_seq_count));
-			TF_copy_u32(&gsc_buffer[11], (uint32_t)(gs_command_dispatcher->prev_err.time.total_cycle));
-			TF_copy_u16(&gsc_buffer[15], (uint16_t)(gs_command_dispatcher->prev_err.code));
-			TF_copy_i8(&gsc_buffer[17], (int8_t)(gs_command_dispatcher->prev_err.cmd_ret.exec_sts));
-			TF_copy_u32(&gsc_buffer[18], (uint32_t)(gs_command_dispatcher->error_counter));
+//			TF_copy_u8(&gsc_buffer[0], (uint8_t)(p_gs_response_struct->res_apid));
+//			TF_copy_u8(&gsc_buffer[1], (uint8_t)(p_gs_response_struct->res_route));
+//			TF_copy_u32(&gsc_buffer[2], (uint32_t)(TMGR_get_master_total_cycle()));
+//			TF_copy_u16(&gsc_buffer[6], (uint16_t)(gs_command_dispatcher->prev.code));
+//			TF_copy_i8(&gsc_buffer[8], (int8_t)(gs_command_dispatcher->prev.cmd_ret.exec_sts));
+//			TF_copy_u16(&gsc_buffer[9], (uint16_t)(p_gs_response_struct->res_seq_count));
+//			TF_copy_u32(&gsc_buffer[11], (uint32_t)(gs_command_dispatcher->prev_err.time.total_cycle));
+//			TF_copy_u16(&gsc_buffer[15], (uint16_t)(gs_command_dispatcher->prev_err.code));
+//			TF_copy_i8(&gsc_buffer[17], (int8_t)(gs_command_dispatcher->prev_err.cmd_ret.exec_sts));
+//			TF_copy_u32(&gsc_buffer[18], (uint32_t)(gs_command_dispatcher->error_counter));
+//
+//			parse_tlm_info(&gsc_buffer[22]);
 
-			parse_tlm_info(&gsc_buffer[22]);
+	        memcpy(&gsc_buffer[0], p_gs_response_struct->packet_header, sizeof(p_gs_response_struct->packet_header));
+	        TF_copy_u16(&gsc_buffer[6], (uint16_t)(gs_command_dispatcher->prev.code));
+	        TF_copy_i8(&gsc_buffer[8], (int8_t)(gs_command_dispatcher->prev.cmd_ret.exec_sts));
+	        TF_copy_u32(&gsc_buffer[9], (uint32_t)(gs_command_dispatcher->prev_err.time.total_cycle));
+	        TF_copy_u16(&gsc_buffer[13], (uint16_t)(gs_command_dispatcher->prev_err.code));
+	        TF_copy_i8(&gsc_buffer[15], (int8_t)(gs_command_dispatcher->prev_err.cmd_ret.exec_sts));
+	        TF_copy_u32(&gsc_buffer[16], (uint32_t)(gs_command_dispatcher->error_counter));
+//#ifdef TWO_U
+////			CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_2U, (CMD_CODE)command_response_rtc_CMDcode,&gsc_buffer[0],sizeof(gsc_buffer));
+//#endif
+//#ifdef ONE_U
+//			CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_1U, (CMD_CODE)command_response_rtc_CMDcode,&gsc_buffer[0],sizeof(gsc_buffer));
+//#endif
+//			memcpy(&code_id, &gs_command_dispatcher->prev.code, 2);
 
-#ifdef TWO_U
-			CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_2U, (CMD_CODE)command_response_rtc_CMDcode,&gsc_buffer[0],sizeof(gsc_buffer));
-#endif
-#ifdef ONE_U
-			CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_1U, (CMD_CODE)command_response_rtc_CMDcode,&gsc_buffer[0],sizeof(gsc_buffer));
-#endif
-			memcpy(&code_id, &gs_command_dispatcher->prev.code, 2);
-
-			TCP_set_apid_sat_id(&p_gs_response_struct->tcp, p_gs_response_struct->res_sat_id);
-			TCP_set_apid_executer_id(&p_gs_response_struct->tcp, TCP_EXE_ID_TXPIC);
-			TCP_set_route(&p_gs_response_struct->tcp, p_gs_response_struct->res_route);
+//            CCP_form_rtc(&p_gs_response_struct->tcp, command_response_rtc_CMDcode, p_gs_response_struct->packet_header, sizeof(p_gs_response_struct->packet_header));
+//			TCP_set_apid_sat_id(&p_gs_response_struct->tcp, p_gs_response_struct->res_sat_id);
+//			TCP_set_apid_executer_id(&p_gs_response_struct->tcp, TCP_EXE_ID_TXPIC);
+//			TCP_set_route(&p_gs_response_struct->tcp, p_gs_response_struct->res_route);
+	        CCP_set_common_hdr(&p_gs_response_struct->tcp);
+	        CCP_set_id(&p_gs_response_struct->tcp, (CMD_CODE)command_response_rtc_CMDcode);
+	        CCP_set_exec_type(&p_gs_response_struct->tcp, CCP_EXEC_TYPE_RT);
+	        CCP_set_ti(&p_gs_response_struct->tcp, 0);  // RTの場合、TIは0固定
+	        CCP_set_param(&p_gs_response_struct->tcp, gsc_buffer, sizeof(gsc_buffer));
+	        TCP_set_apid_sat_id(&p_gs_response_struct->tcp, p_gs_response_struct->res_sat_id);
+	        TCP_set_apid_executer_id(&p_gs_response_struct->tcp, TCP_EXE_ID_TXPIC);
+	        TCP_set_route(&p_gs_response_struct->tcp, p_gs_response_struct->res_route);
+//	        TCP_CMD_set_param(&p_gs_response_struct->tcp, p_gs_response_struct->packet_header, 6);
 
 			print(TXPIC,"gsc_buffer is");
 			for(int i = 0; i< 17 + sizeof(gsc_buffer);i++){
@@ -303,14 +333,17 @@ void tlc_response_handler(void){
 
 		memcpy(&code_id, &timeline_command_dispatcher->dispatcher[0].prev.code, 2);
 #ifdef TWO_U
-		CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_2U, (CMD_CODE)command_response_tlc_CMDcode,&tlc_buffer[0],sizeof(tlc_buffer));
+//		CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_2U, (CMD_CODE)command_response_tlc_CMDcode,&tlc_buffer[0],sizeof(tlc_buffer));
 #endif
 #ifdef ONE_U
 		CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_1U, (CMD_CODE)command_response_tlc_CMDcode,&tlc_buffer[0],sizeof(tlc_buffer));
 #endif
+        CCP_form_rtc(&p_gs_response_struct->tcp, command_response_rtc_CMDcode, p_gs_response_struct->packet_header, sizeof(p_gs_response_struct->packet_header));
 		TCP_set_apid_sat_id(&p_gs_response_struct->tcp, p_gs_response_struct->res_sat_id);
 		TCP_set_apid_executer_id(&p_gs_response_struct->tcp, TCP_EXE_ID_TXPIC);
 		TCP_set_route(&p_gs_response_struct->tcp, p_gs_response_struct->res_route);
+
+//        TCP_CMD_set_param(&p_gs_response_struct->tcp, p_gs_response_struct->packet_header, 6);
 
 		PH_analyze_packet(&p_gs_response_struct->tcp);
 
@@ -340,15 +373,18 @@ void tlc_response_handler(void){
 			parse_tlm_info(&tlc_buffer[21]);
 
 			memcpy(&code_id, &timeline_command_dispatcher->dispatcher[0].prev.code, 2);
-#ifdef TWO_U
+//#ifdef TWO_U
 			CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_2U, (CMD_CODE)command_response_tlc_CMDcode,&tlc_buffer[0],sizeof(tlc_buffer));
-#endif
-#ifdef ONE_U
-			CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_1U, (CMD_CODE)command_response_tlc_CMDcode,&tlc_buffer[0],sizeof(tlc_buffer));
-#endif
+//#endif
+//#ifdef ONE_U
+//			CCP_form_rtc_to_other_obc(&p_gs_response_struct->tcp, TCP_APID_TXPIC_1U, (CMD_CODE)command_response_tlc_CMDcode,&tlc_buffer[0],sizeof(tlc_buffer));
+//#endif
+			CCP_form_rtc(&p_gs_response_struct->tcp, command_response_rtc_CMDcode, p_gs_response_struct->packet_header, sizeof(p_gs_response_struct->packet_header));
 			TCP_set_apid_sat_id(&p_gs_response_struct->tcp, p_gs_response_struct->res_sat_id);
 			TCP_set_apid_executer_id(&p_gs_response_struct->tcp, TCP_EXE_ID_TXPIC);
 			TCP_set_route(&p_gs_response_struct->tcp, p_gs_response_struct->res_route);
+
+//			TCP_CMD_set_param(&p_gs_response_struct->tcp, p_gs_response_struct->packet_header, 6);
 
 			PH_analyze_packet(&p_gs_response_struct->tcp);
 
